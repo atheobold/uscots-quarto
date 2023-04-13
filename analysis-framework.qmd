@@ -1,0 +1,68 @@
+---
+title: "Step 1: Selecting a Unit of Analysis"
+page-layout: full
+reference-location: margin
+citation-location: margin
+bibliography: ref-1.bib
+---
+
+The process of data analysis begins by identifying segments in your data set
+that are responsive to your research questions" [@merriam].
+These segments form the units of analysis (UOA), which can be as small as a
+single word or as large as an entire report. Collectively, themes identified in
+these units will answer a study's research question(s). @lincoln suggest that
+a unit of analysis ought to meet two criteria. First,
+the UOA should be heuristic, that is, it should reveal information pertinent to
+the study and move the reader to think beyond the singular piece of information. 
+Second, the unit should be the smallest piece of information about something
+that can stand by itself." Moreover, a UOA must be interpretable in the absence
+of any additional information, requiring only that the reader have a broad
+understanding of the study context.
+
+For qualitative investigations of students' computing code, we propose
+researchers consider the Block Model as an analytical lens. The Block Model is
+an educational framework that supports the analysis of the different aspects of
+a computer program.
+
+## Block Model 
+
+In the [Block Model](https://dl.acm.org/doi/10.1145/1404520.1404535) [@schulte],
+each row represents one selection for the unit of analysis and each column speaks to a
+different lens of analysis. To decide between the 12 possible options a
+researcher must consider the context of inquiry. This context dictates the scale
+of the code that deserves attention. 
+
+An investigation focusing on the broader purpose or structure of a program
+requires a researcher to zoom out and consider a program's macrostructure. 
+Whereas, studying individual pieces or segments of a program requires a
+researcher to zoom in on the atoms or the blocks.
+
+|   Level   |        |   Dimension   |       |
+|:----------|:------:|:-------------:|:-------:|
+|           |   Text Surface    |   Program Execution   |   Function / Purpose    |
+| *Macrostructure* | Understanding the overall structure of the program text. | Understanding the algorithm underlying a program. | Understanding the goal/purpose of the program (in the context at hand). |
+| *Relationships* | Relations & references between blocks (e.g. method calls, object creation, accessing data...) | Sequence of method calls, object sequence diagrams. | Understanding how subgoals are related to goals, how function is achieved by subfunctions. |
+| *Blocks* | Regions of interest (ROI) that syntactically or semantically build a unit | Operations of a block, a method, or a ROI (chunk from a set of statements). | Understanding the function of a block, seen as a subgoal. |
+| *Atoms* | Language elements | Operation of a statement. | Function of a statement: its purpose can only be understood in a context. |
+
+
+## Analytical Framework Used
+
+For the study I will walk you through, I chose to use **atoms** as my unit of 
+study. An atom constitutes a language element in a program, and can thus have a
+variety of grain sizes, from characters to words to statements. I chose to have
+my "atom" be a syntactic statement of R code. A syntactic statement is a line,
+or set of lines, which constitute the smallest syntactically valid statement of
+code. Some statements of code were completed in a single line, while others took
+multiple lines.*[*As R belongs to the family of "curly bracket" programming
+languages, influenced by C, R has a syntax which defines statements using curly
+brackets (`{}`), many of these statements are introduced by identifiers such as
+`if()`, `for()`, or `while()`.]{.aside}
+
+For this study, I selected the **program execution** as my dimension of 
+analysis. This dimension focuses on the action of each statement, or more
+specifically what operation it carries out. I chose this dimension as I was 
+interested in understanding what data science skills students were employing 
+within their projects. A program execution lens views these skills as 
+distinct rather than considering their role in the broader function of the
+program. 

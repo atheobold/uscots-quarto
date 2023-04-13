@@ -1,0 +1,62 @@
+project:
+  type: website
+  title: "Quarto at USCOTS"
+  execute-dir: project
+  render: 
+      - index.qmd
+      - blog.qmd
+      - bio.qmd
+      #- step1.qmd
+      #- documents.qmd
+      #- slides.qmd
+      #- websites.qmd
+      #- conclusion.qmd
+
+website:
+  title: "Reproducible documents, presentations, and websites with Quarto"
+  #site-url: https://crsl4.github.io/julia-workshop
+  repo-url: https://github.com/atheobold/uscots-quarto
+  repo-actions: [issue]
+  navbar:
+    background: primary
+    search: true
+    left:
+       - text: Home
+         file: index.qmd
+       - text: About
+         file: about.qmd
+       - text: Presenters
+         file: bio.qmd
+    right: 
+      - icon: github
+        href: https://github.com/atheobold/uscots-quarto
+
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2023, Allison Theobold"
+    background: "#D9E3E4"
+    
+  sidebar:
+    logo: "images/quarto_icon.pnd"
+    pinned: true
+    align: center
+    search: true
+    style: "docked"
+    background: light
+    contents:
+      - about.qmd
+      #- step1.qmd
+      #- documents.qmd
+      #- slides.qmd
+      #- websites.qmd
+      #- conclusion.qmd
+    
+  page-navigation: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+callout-appearance: simple

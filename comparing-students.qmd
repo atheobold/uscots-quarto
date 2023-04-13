@@ -1,0 +1,307 @@
+---
+title: "Optional: Comparing Across Students"
+page-layout: full
+reference-location: margin
+citation-location: margin
+bibliography: ref-1.bib
+execute: 
+  echo: false
+---
+
+```{r}
+#| include: false
+
+library(readxl)
+library(DT)
+library(tidyverse)
+
+studentA <- read_xlsx(
+  here::here("data", "code_book.xlsx"), 
+  sheet = "studentA"
+  ) %>% 
+  pivot_longer(cols = starts_with("note"), 
+               names_to = "note", 
+               values_to = "notes"
+               ) %>% 
+  drop_na(notes) %>% 
+  pivot_longer(cols = starts_with("theme"),
+               names_to = "theme", 
+               values_to = "theme_note"
+              ) %>% 
+  drop_na(theme_note) %>% 
+  mutate(notes = 
+           case_when(
+             note == "note1" & theme == "theme1" ~ notes, 
+             note == "note2" & theme == "theme2" ~ notes,
+             note == "note3" & theme == "theme3" ~ notes,
+             note == "note4" & theme == "theme4" ~ notes
+           )
+         ) %>% 
+  drop_na(notes) %>% 
+  select(code, descriptive_code, theme_note, notes) %>% 
+  mutate(student = "studentA")
+
+
+studentB <- read_xlsx(
+  here::here("data", "code_book.xlsx"), 
+  sheet = "studentB"
+  ) %>% 
+  pivot_longer(cols = starts_with("note"), 
+               names_to = "note", 
+               values_to = "notes"
+               ) %>% 
+  drop_na(notes) %>% 
+  pivot_longer(cols = starts_with("theme"),
+               names_to = "theme", 
+               values_to = "theme_note"
+              ) %>% 
+  drop_na(theme_note) %>% 
+  mutate(notes = 
+           case_when(
+             note == "note1" & theme == "theme1" ~ notes, 
+             note == "note2" & theme == "theme2" ~ notes,
+             note == "note3" & theme == "theme3" ~ notes,
+             note == "note4" & theme == "theme4" ~ notes
+           )
+         ) %>% 
+  drop_na(notes) %>% 
+  select(code, descriptive_code, theme_note, notes) %>% 
+  mutate(student = "studentA")
+
+students <- full_join(studentA, 
+                      studentB, 
+                      by = c("code", 
+                             "descriptive_code",
+                             "theme_note",
+                             "notes",
+                             "student")
+                      )
+```
+
+## Workflow
+
+::: {.column-margin}
+![](images/workflow.png)
+:::
+
+One of the most substantial differences between Student A's code and Student B's
+was found in the theme of workflow. In Student A's code, there was no obvious
+structure to their workflow. Sporadic code comments were used to describe what 
+the code below was for, yet it was also unclear what some comments corresponded
+to (e.g., `#Tanner's code/help`). Student A, on the other hand, has a nearly 
+meticulous workflow, starting with sourcing in common functions, then loading
+in the data, then cleaning the data, and finally analyzing the data. Moreover, 
+Student A used code comments to generate "sections" of code, describing the 
+overall context of the code (e.g., `#### Carboy D ####`), and "subsections" of
+code, describing the process being taken (e.g., `# Estimate Initial
+concentration of N15-NO3 relative to Ar`). 
+
+Interestingly, there were almost no instances of code in Student B's analysis
+where an object was inspected. Alternatively, in Student A's code there were
+frequent instances where an object was inspected (e.g., 
+`summary(linearAnterior)`, `WeightChange`). 
+
+</br>
+
+```{r workflow}
+students %>% 
+  filter(theme_note == "workflow") %>%
+  distinct(code, .keep_all = TRUE) %>% 
+  select(code, descriptive_code, student) %>% 
+  datatable(class = 'row-border stripe', 
+            colnames = c("R Code", "Descriptive Code", "Student")
+            )
+
+```
+
+### Readability 
+
+::: {.column-margin}
+![](images/read.png)
+:::
+
+Aside from student's use of code comments for organizing their workflow, I 
+noticed differences in their use of whitespace, returns for long lines of code, 
+and named arguments. Whereas Student A would consistently use whitespace 
+surrounding arithmetic operators (e.g., `+`, `-`, `=`. `*`, ), relational
+operators (e.g., `==`, `<`, `>`) operators, and commas, Student B's use of
+whitespace was again sporadic. Most frequently, Student A's statements would have
+some combination of present and absent whitespace 
+(e.g., `Early <- subset(RPMA2GrowthSub, StockYear<2004)`). 
+
+Similar to the use of whitespace, differences were found in how each student
+handled long lines of code. In all but a few instances of Student B's code, she
+used returns to break lines longer than 80 characters. Student A, however, 
+never used returns to break long lines of code. When paired with a lack of 
+whitespace, these long lines made Student A's code difficult to interpret (as
+demonstrated in the code below). 
+
+```{r student-B-whitespace}
+#| eval: false
+#| echo: true
+with(PADataNoOutlier, plot(Lipid~log(PSUA), las = 1, col = ifelse(PADataNoOutlier$`Fork Length`<260,"red","black")))
+```
+
+Interestingly, Student B would habitually use named arguments for functions she
+employed. Paired with her use of whitespace and returns, these named arguments
+made her code more easily readable and digestible. Aside from the code used 
+to produce visualizations (e.g., `col = `, `las = `), Student A's code, however,
+did not contain references to named arguments. Combined with a sporadic use
+of whitespace and returns, this lack of named arguments made Student A's code
+difficult to read and interpret the processes being enacted. 
+
+Below are two examples of code which contrast all three of these 
+instances of "readability": 
+
+**Student A**
+
+```{r student-A-longline}
+#| eval: false
+#| echo: true
+EarlyLengthAge <- ddply(Early, ~Age, summarise, meanLE=mean(ForkLength, na.rm = T))
+```
+
+**Student B**
+```{r student-B-longline}
+#| eval: false
+#| echo: true
+likelihoods <- apply(X = pMat,
+                     MARGIN = 1, 
+                     FUN = nmle, 
+                     t = timeD, 
+                     y = obsD,  
+                     N15_NO3_O = fracDenD*(N15_NO3_O_D)
+)
+```
+
+
+### Reproducibility
+
+::: {.column-margin}
+![](images/reproduce.png)
+:::
+
+As mentioned previously, at the beginning of Student B's code were explicit 
+references to the data being used for analysis. Specifically, Student B used the
+`load()` function to source her data. Rather than writing statements of code, 
+Student A instead used the RStudio GUI to import her data into her workspace. 
+Thus, in Student A's code there are no lines of code which load in the data
+she worked with. Not only does this make Student A's code not reproducible, but
+references to dataframes named `PADataNoOutlier` become increasingly concerning. 
+When asked about how the "outliers" were removed from the `PADataNoOutlier` 
+dataset, Student A stated that she had used Excel to clean the data and then 
+loaded the cleaned data into RStudio (using the GUI).
+
+Student A's code had additional statements which raise concerns for 
+reproducibilty. Specifically, there are statements which call on the `ddply()`
+function *before* the plyr package has been loaded. In addition, Student A 
+had two instances of script fragments, code which would not execute or which 
+would not produce the desired result (displayed below). The first instance 
+(`plot(LengthAge$mean ~ LengthAge$Age)`) references a non-existent variable
+(`LengthAge$mean`). The second instance attempts to create a dataframe of 
+previously created objects, but the `Growth` column is not correctly created, as
+Student A neglects to use the `c()` function to combine these objects into a 
+vector. 
+
+```{r reproducibility}
+students %>% 
+  filter(theme_note == "reproducibility") %>%
+  distinct(code, .keep_all = TRUE) %>% 
+  select(code, descriptive_code, notes) %>% 
+  datatable(class = 'row-border stripe', 
+            colnames = c("R Code", "Descriptive Code", "Notes")
+            )
+```
+
+</br> 
+
+**A Note About Student's Script Files**
+
+Both Student A and Student B interacted with R through R scripts created in 
+RStudio. While R Markdown [@rmarkdown] documents existed at the time of their
+GLAS course, the instructor of the course did not demonstrate the use of these
+dynamic documents. Thus, these student's analysis copied and pasted their
+results from RStudio into a Word file. 
+
+Although it was noted that Student B used functions (e.g., `source()`, `load()`)
+to load functions and data into her R script, these statements used a mix of 
+full and relative paths to access these materials. This mix of full and relative
+paths also makes Student B's script limited in its reproducibility. It is, 
+however, worth noting that at the time of their GLAS course, RStudio projects
+did not exist. Thus, the methods 
+
+### Summary
+
+Viewing these differences through the lens of these student's computing
+experiences, helps us understand potential reasons for *why* these differences 
+occurred. As discussed in [Digging Deeper](digging-deeper.qmd), Student A entered 
+graduate school (and GLAS) with hardly any computing experiences. Student B, 
+however, entered graduate school having numerous experiences programming in 
+Matlab, and completed the Swirl tutorial [@swirl] before enrolling in GLAS.
+
+Student B's prior programming experiences provided her with an appreciation for
+structured programs, as well as an understanding of the importance of
+reproducible code. Due to her limited programming experiences, Student A's 
+attention was pulled toward getting a working solution rather that writing 
+readable code, organizing her code, or ensuring her analysis was fully
+reproducible. 
+
+## Efficiency / Inefficiency
+
+::: {.column-margin}
+![](images/efficient.png)
+:::
+
+Efficiency of student's code was determined based on a statement's 
+adheres to the "don't repeat yourself" principle [@greg]. Student B's prior 
+programming experiences allowed her to see the importance of writing 
+efficient code, sourcing in functions she frequently used and utilizing 
+iteration for repeated operations (e.g., `apply()`). With her limited
+programming experiences, Student A was unfamiliar with this programming
+practice. Instead, Student A was focused on finding a working solution for the
+task at hand. Thus, when a working solution was found, Student A would 
+copy, paste, and modify the code to suit a variety of situations. 
+
+</br>
+
+```{r efficiency}
+students %>% 
+  filter(theme_note %in% c("inefficiency", "efficiency")) %>%
+  distinct(code, .keep_all = TRUE) %>% 
+  select(code, descriptive_code, student) %>% 
+  datatable(class = 'row-border stripe', 
+            colnames = c("R Code", "Descriptive Code", "Student")
+            )
+```
+
+
+## Data Visualization
+
+Despite the considerable differences in Student A and Student B's workflow and
+programming efficiency, they had substantial similarities in the data
+visualizations they produced. Both students primarily produced scatterplots, 
+often including a third variable by coloring points. Both students would 
+consistently modify their axis labels, rotate their axis tick mark labels 
+(`las`), and include a legend in their plot. Each of these similarities 
+arose from their experiences in the GLAS course, where these practices were 
+modeled by the instructor for the visualizations the class produced. 
+
+There are, however, notable differences within these similarities. Where Student
+A paired the `plot()` and `lines()` functions, Student B used the built-in
+`type` argument to produce a line plot. Additionally, Student B's 
+scatterplot had more polished axis labels through her use of the `title()` 
+function. Finally, although small in nature, each student used a different 
+method to declare the legend position, with Student A specifying x and y
+coordinates and Student B using the ("bottomright") string specification.
+
+</br> 
+
+```{r visualization}
+students %>% 
+  filter(theme_note %in% c("inefficiency", "efficiency")) %>%
+  distinct(code, .keep_all = TRUE) %>% 
+  select(code, descriptive_code, student) %>% 
+  datatable(class = 'row-border stripe', 
+            colnames = c("R Code", "Descriptive Code", "Student")
+            )
+```

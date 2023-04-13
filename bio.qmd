@@ -1,0 +1,24 @@
+---
+title: "Workshop Presenters"
+---
+
+## Dr. Hunter Glanz
+
+::: {.column-margin}
+![Dr. Hunter Glanz](images/hunter_glanz_smaller.jpg)
+:::
+
+## Dr. Emily Robinson
+
+::: {.column-margin}
+![Dr. Emily Robinson](images/emily-robinson.jpg)
+:::
+
+## Allison Theobold
+
+::: {.column-margin}
+![](images/allison_headshot.jpg)
+:::
+
+Allison Theobold is an Associate Professor of Statistics at California Polytechnic University in beautiful San Luis Obispo, California. Allison's work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations.
+

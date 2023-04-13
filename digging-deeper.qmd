@@ -1,0 +1,245 @@
+---
+title: "Step 4: Digging Deeper"
+page-layout: full
+reference-location: margin
+citation-location: margin
+bibliography: ref-1.bib
+---
+
+I purposefully excluded the words "knowledge" or "understanding" from the 
+definitions of the themes that emerged from the data, because I cannot state
+that a student "understands" or "knows" a concept solely based on their R code.
+Additional information is absolutely necessary in order to make this type of
+statement. 
+
+Therefore, to better understand a student's conceptual understand of the code
+they produced, I conducted interviews with each student. I asked both students
+to articulate for me the purpose of each line of code in their R script,
+following up with additional clarifying questions if necessary. 
+
+In each section below I detail how these interviews informed my understanding 
+of the themes outlined previously. Each section begins with a description of 
+each student, providing the reader with an overview of each student's previous
+computing experiences prior to the graduate-level Applied Statistics (GLAS) I 
+course. 
+
+
+## Student A
+
+::: {.column-margin}
+![](images/alicia.png)
+:::
+
+The spring of 2018 was Student A's first semester as a graduate student, 
+pursuing a master’s degree in Fisheries and Wildlife Management. Student A
+identified as a Hispanic woman. She had completed a Bachelors in Ecology at a
+medium sized research university in the western United States. Student A had
+minimal programming experiences during her bachelor’s degree, with experiences
+stemming through three main outlets. Helping a postdoc in her lab analyze data
+from a lab trip exposed her to R, completing the Calculus series for engineers
+exposed her to MatLab, and enrolling in an information technology course exposed
+her to Python and Java. In her first semester as a graduate student, Student A
+enrolled in GLAS, at the recommendation of her adviser. 
+
+
+### Workflow
+
+Something I noticed initially when reading through Student A's R script was the
+absence of any code importing the dataset(s) used throughout their analysis. 
+Thus, I asked Student A about their process of importing their data into R:
+
+Allison: "How do you read your data into R?"
+Student A: "I do import dataset."
+Allison: "Ah, you use the "Import Dataset" button in the Enviornment tab to load 
+your dataset in?" 
+Student A: "Mhmm." 
+
+Through this conversation, I realized that Student A did not understand how to
+write code to import their dataset into R. Moreover, they had not recognized 
+the code associated with their "Import Dataset" process appeared in the console
+once they pressed the "Import" button. 
+
+### Reproducibility
+
+Directly connected to the absence of code to importing the datasets, the name 
+of a dataset indicated "outliers" had been removed (`PADataNoOutlier`), yet 
+there were no statements of code performing this data filtering process. Thus, 
+I asked Student A how they had carried out this process:
+
+__Allison__: "Right here, it appears that you have removed an outlier from the data,
+but I don’t see any code related to this removal. How did you do that?"   
+
+__Student A__: "In Excel. I know there's `subset()`...that I could have subset it.
+But I forgot how to do that and I was trying to crunch this out, so I just
+wanted to get the data out, so I just went into Excel and deleted that and then
+imported the data. 
+
+This was an eye opening exchange! First and foremost, I discovered that although
+Student A had used the `subset()` function in their code, they were not
+comfortable enough with the function to use it when removing an outlier from a
+dataset. This implies that, athough data filtering played a major role in
+Student A's code, they did not have an understanding of *how* the `subset()` 
+function could be applied in a scenario where more than one variable needed to 
+be considered for inclusion / exclusion criteria. 
+
+### R Environment
+
+The theme of R Environment manifested in Student A's code in two ways, (1) the
+use of `with()` to temporarily attach a dataset when plotting, and (2) the 
+absence of the `data = ` argument when using `lm()`. As both processes require
+the same step--selecting a column from a dataframe--I was intrigued why Student
+A exclusively used `with()` when creating data visualizations and the `$`
+operator when using `lm()`:
+
+__Allison__: "So, I notice that you are using `with()` here---with your data, plot
+these variables. But then here when you are fitting your model, you say fit the
+model of `data$something`. I'm wondering why you used `with()` when making plots
+and `$` when fitting your model."
+
+__Student A__: "Yeah, and so that [pointing to `$` code] is what I think we
+learned in class. I think we did talk about this, “Oh if you don’t want to do 
+`$` and call the data every time, you can do it like that." 
+
+__Allison__: "Okay." 
+
+__Student A__: "Um, and then I started doing that [points to `with()` code], because I found
+that online and I was like "okay." And it wasn’t getting an error, I don’t know
+why I changed, but it wasn’t getting an error."
+
+__Allison__: "I see." 
+
+__Student A__: "And then it worked, so then I just copied and pasted everything and kept
+working with that."
+
+Another interesting discovery! Student A was simply copying the behavior they 
+had learned in their GLAS course when using the `$` within the `lm()` function 
+rather than utilizing the `data = ` argument. The use of `with()`, however, 
+Student A did not learn in class, but was gleaned from the internet. Their 
+litmus test for using the code was whether it returned an error, implying 
+Student A did not, in fact, understand the difference between these two methods 
+for extracting variables from a dataframe. 
+
+### External Resources
+
+This theme of Student A pulling solutions from external resources was found
+throughout their interview. Asking clarifying details about Student A's use of 
+`transform()`, I discovered they were unaware of the general purpose of the 
+function*[*`transform()` converts its first argument to a data frame.]{.aside}
+and the existance of alternative methods for changing the datatype of a 
+variable in a dataframe.**[**For example, 
+`RPMA2$Age <- as.integer(RPMA2Growth$Age)` would have coverted the `Age`
+variable without the need to make a new dataframe.]{.aside}
+
+It was clear from Student A's code they had used another student as a resource
+(`#Tanner's code/help`), however, it was unclear what portion of their code
+had been influenced by Tanner. Conversing with Student A, I learned they had
+discovered a bruteforce method for calculating the mean of specific values from 
+one variable through Googling (`Weight1 <- mean(RPMA2GrowthSub$Weight[RPMA2GrowthSub$Age == 1], na.rm = TRUE)`). However, after talking with another graduate student about the
+process they were attempting to carry out, this student (Tanner) offered to send
+Student A their code. Enter `ddply()`. Using this code, Student A was able to 
+obtain the mean length / weight across a variety of ages, accomplishing in two 
+lines what had previously taken them 18 lines.***[***Yet, these 18 lines
+continued to live in Student A's code even after she found a more efficient 
+method.]{.aside}
+
+
+# Student B 
+
+::: {.column-margin}
+![](images/ellie.png)
+:::
+
+The spring of 2018 was Student B's second semester as a graduate student,
+pursuing an interdisciplinary doctorate in Ecology and Environmental Sciences.
+Student B identified as White and a woman. She had completed a bachelor's degree
+in engineering at a medium sized research university in the Midwestern United
+States. During her undergraduate degree, Student B's coursework entailed
+extensive programming experiences in MatLab, multiple courses in GIS. Student B
+also had experiences working with relational databases using Access through a
+post-baccalaureate internship. During her first semester, Student B completed
+the "R programming" module in **swirl**, at the recommendation of her adviser,
+due to the extensive amount of computational work done in their lab. In her
+second semester, Student B enrolled in GLAS I, at the recommendation of her
+adviser. 
+
+### Workflow
+
+Reading through Student B's code, I noticed straight away that she had a 
+robust workflow for carrying out analysis. First, cleaning her workspace 
+(`rm(list = ls())`)*[*Jenny Bryan has some great advice on why not to use `setwd()`
+and `rm(list = ls())` at the top of R scripts
+[here](https://www.tidyverse.org/blog/2017/12/workflow-vs-script).]{.aside}, then
+sourcing in functions from an external R script. As the GLAS course did not
+teach this type of process, I asked Student B for additional details about these
+statements of code:
+
+__Allison__: "What is the purpose of the first line of your R script?"
+
+__Student B__: "That clears the work space. That's something you see in a lot 
+of people's R code."
+
+__Allison__: "What is the nature of this file you are sourcing in?"
+
+__Student B__: "So, these are just like utility functions that are more generic
+that could be used for different kinds of analysis."
+
+This conversation led me to believe that Student B understands the importance
+of not repeating yourself by reusing code she has already written. However, 
+in terms of workflow, there still existed some problematic elements of Student
+A's code. The mix of full paths and relative paths would make it rather 
+difficult to share this script with another person.**[**It is important to note
+that RStudio projects did not exist when these students were completing their
+project.]{.aside}
+
+### Efficiency
+
+I was also intrigued by Student A's use of `apply()` to calculate the likelihood
+across a matrix of possible values, as this repeated process was not explicitly
+taught in the GLAS course. Through my conversation with Student B, it became 
+clear that their previous programming experiences during their undergrad opened
+the door for them to begin thinking about "optimizing" their code: 
+
+__Student B__: "Well, I was an engineering undergrad, so I had some Matlab and
+I remember we had to take an Intro to Matlab class freshman year and I remember
+being so frustrated during that class. It just didn’t make sense, like this
+coding stuff there is a jargon associated with it. I just remember being really
+frustrated and towards the end kinda getting it. And then I had to use Matlab
+not like a ton, but a little bit throughout my undergrad, so I got some practice
+writing functions and for-loops. But I didn’t necessarily start to think about,
+and this is a bad example of it, but I didn’t start to think about optimizing
+my code or I didn’t even know what object-oriented programming was until I
+started working with [my advisor]."
+
+### Data Wrangling
+
+I had also noticed that throughout Student B's code she used a variety of 
+methods for filtering data, not sticking with one method for every instance. 
+Sometimes Student B would use some combination of relational and / or logical
+statements and bracketing to filter observations: 
+
+```{r}
+#| eval: false
+gas <- gas[!(substr(gas$sampleID,3,3) %in% c("b","c")), ]
+```
+
+Other times, Student B would use the `subset()` function:
+
+```{r}
+#| eval: false
+timeD <- (subset(gas, gas$carboy == "D"))$days```
+```
+And sometimes, Student B would combine both bracketing and `subset()` in the 
+same statement:
+
+```{r}
+#| eval: false
+N15_NO3_O_D <- 40*((carboys[carboys$CarboyID == "D",]$EstN15NO3) + (0.7*RstN/(1 +RstN)))/(subset(gas, gas$carboy == "D")$Ar[1])
+```
+
+When I discussed these different methods with Student B, they were seemingly 
+unphased about using different data filtering methods throughout their code. 
+Moreover, she provided sophisticated descriptions of how each data filtering 
+process was carried out by R. Seemingly, Student B's prior programming
+experiences allowed her to access a more robust understanding of R, making her
+more agile at using a variety of methods to filter observations and select 
+variables. 
