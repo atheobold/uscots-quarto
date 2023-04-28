@@ -6,10 +6,10 @@ project:
       - index.qmd
       - blog.qmd
       - bio.qmd
-      #- step1.qmd
-      #- documents.qmd
-      #- slides.qmd
-      #- websites.qmd
+      - module-0.qmd
+      - module-1.qmd
+      - module-2.qmd
+      - module-3.qmd
       #- conclusion.qmd
 
 website:
@@ -37,7 +37,7 @@ website:
     background: "#D9E3E4"
     
   sidebar:
-    logo: "images/quarto_icon.pnd"
+    logo: "images/quarto_icon.png"
     pinned: true
     align: center
     search: true
@@ -45,10 +45,10 @@ website:
     background: light
     contents:
       - about.qmd
-      #- step1.qmd
-      #- documents.qmd
-      #- slides.qmd
-      #- websites.qmd
+      - module-0.qmd
+      - module-1.qmd
+      - module-2.qmd
+      - module-3.qmd
       #- conclusion.qmd
     
   page-navigation: true
@@ -60,3 +60,6 @@ format:
     toc: true
 
 callout-appearance: simple
+
+execute:
+  freeze: auto

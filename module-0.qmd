@@ -1,0 +1,10 @@
+---
+title: "Module 0: Introduction to RStudio"
+editor: visual
+---
+
+__Outline:__
+
+- Introduction to RStudio IDE
+- What is an RStudio Project?
+- What is the difference between using RStudio on Posit Cloud and locally installing RStudio?

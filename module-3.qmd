@@ -1,0 +1,19 @@
+---
+title: "Module 3: Publishing Content & Quarto Websites"
+editor: visual
+---
+
+
+__Outline:__
+
+- Introduction to version control 
+  * What is version control?
+  * Why do we want to use version control?
+  * How can you use version control?
+
+- Hacky method for creating website to link course materials
+  * GitHub pages
+  
+- Creating a Quarto website
+  * Layout
+  * Methods of publishing

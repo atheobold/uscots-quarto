@@ -1,0 +1,18 @@
+---
+title: "Module 2: Authorig Quarto Presentations"
+editor: visual
+---
+
+__Outline:__
+
+- Outline structure of Quarto presentations
+  * Slide separation
+  * 
+  
+- Styling Quarto presentations
+  * colors
+  * incremental content (lists, body, columns)
+  * callouts
+  * tabsets
+  * output location
+

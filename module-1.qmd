@@ -1,0 +1,27 @@
+---
+title: "Module 1: Authoring Quarto Documents"
+editor: visual
+---
+
+__Outline:__
+
+- Introduction to Quarto documents
+  * Outline structure of document
+  * Compare Source versus Visual Editor
+  * Rendering documents
+
+- Discuss common student pitfalls
+  * Executing in RStudio versus rendering
+
+- Activity: Explore YAML embellishments
+
+- Using Quarto documents for teaching resources
+  * sections
+  * table of contents
+  * cross references
+  * columns 
+  * callouts
+  * margins
+  
+
+
