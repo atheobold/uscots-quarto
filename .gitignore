@@ -1,6 +1,14 @@
+library/
+local/
+cellar/
+lock/
+python/
+staging/
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 
 /.quarto/
+_site/
+site_libs/
