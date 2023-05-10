@@ -22,23 +22,30 @@ At the end of the tutorial, participants will be able to:
   - Communicate across languages (Julia, R, python)
 
 Intended audience and level:
-The tutorial is intended for any data scientist with experience in R and/or python who is interested in learning the attractive features of Julia for Data Science. No knowledge of Julia is required.
+
+This workshop is intended for individuals familiar with RMarkdown and RStudio who are interested in learning more about Quarto! While we will not be coding in R during the workshop, it could be useful for individuals to have some familiarity with programming in R. 
 
 # Schedule
 
 | Time          | Topic                                                                         | Presenter                    |
-|:-------------:|:-----------------------------------------------------------------------------:|:----------------------------:|
-| 11:00 - 11:30 | [Session 1: Get Started with Julia](session1-get-started.qmd)                 | Claudia Solis-Lemus          |
-| 11:30 - 12:30 | [Session 2a: Data Tables and Arrow files](session2a-tables-and-arrow.qmd)     | Douglas Bates                |
-| 12:30 - 1:00  | [Session 2b: Interval Overlap](session2b-interval-overlap.qmd)                | Douglas Bates                |
-| 1:00 - 2:00   | Lunch break                                                                   |                              |
-| 2:00 - 2:30   | [Session 3a: Linear Mixed-effects Models](session3a-linear-mixed-effects.qmd) | Douglas Bates                |
-| 2:20 - 3:00   | [Session 3b: Generalized Linear Mixed Models](session3b-glmm.qmd)             | Douglas Bates                |
-| 3:00 - 4:00   | [Session 4: Hands-on exercise](session4-exercise.qmd)                         | Sam Ozminkowski and Bella Wu |
-| 4:00 - 4:15   | Coffee break                                                                  |                              |
-| 4:15 - 5:00   | Presentation of selected participants' scripts and Q&A                        |                              |
-| 5:00 - 5:30   | [Session 5: Other important Data Science tools](session5-other-tools.qmd)     | Claudia Solis-Lemus          |
-| 5:30 - 6:00   | [Session 6: Conclusions and questions](session6-conclusions.qmd)              | Claudia Solis-Lemus          |
+|:-------------------:|:-----------------------------------------------------------------------------:|:----------------------------:|
+| 8:30 - 8:45 | Introductions, workshop outline, distribute materials                           |                   |
+| 8:45 - 9:00 | A brief refresher of RStudio                                                    |                   |
+| 9:00 - 9:30 | Hello Quarto                                                                    | Allison Theobold  |
+| 9:30 - 10:00 | Activity: Exploring YAML options                                               | You!              |
+| 10:00 - 10:30 | Snack break!                                                                  |                   |
+| 10:30 - 10:45 | Share what you discovered!                                                    | You!              |
+| 10:45 - 11:30 | Embellishing Quarto documents                                                 | Emily Robinson    |
+| 11:30 - 12:00 | Activity: Try it out!                                                         | You!              |
+| 12:00 - 1:00  | Lunch break!                                                                  |                   |
+| 1:00 - 1:30   | Quarto presentations                                                          | Allison Theobold  |
+| 1:30 - 1:45   | Activity: Make a simple presentation                                          | You!              |
+| 1:45 - 2:30   | Styling Quarto presentations                                                  | Emily Robinson    |
+| 2:30 - 3:00   | Snack break!                                                                  |                   |
+| 3:00 - 3:30   | Activity: Try it out!                                                         | You!              |
+| 3:30 - 3:45   | A brief introduction to version control                                       | Hunter Glanz      |
+| 3:45 - 4:00   | Publishing content with GitHub pages                                          | Emily Robinson    |
+| 4:00 - 4:30   | Quarto websites                                                               | Allison Theobold  |
 
 # In preparation for the workshop
 
