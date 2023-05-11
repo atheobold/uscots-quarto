@@ -6,23 +6,22 @@ subtitle: "USCOTS 2023"
 
 # Welcome
 
-  - Welcome to the Julia workshop for Data Science!
-  - The goal for the workshop is to highlight the main features that make Julia an attractive option for data science programmers
-  - The workshop is intended for any data scientist with experience in R and/or python who is interested in learning the attractive features of Julia for Data Science. No knowledge of Julia is required.
-  - Workshop materials in the github repository [julia-workshop](https://github.com/crsl4/julia-workshop)
+Welcome to the USCOTS workshop on Quarto! The goal for the workshop is to introduce statistics educators to Quarto. We will highlight how Quarto can be used educationally, both for students and instructors. 
 
-## Learning Objectives for Tutorial
+## Learning Objectives for Workshop
 
 At the end of the tutorial, participants will be able to:
 
-  - Identify the main features that make Julia an attractive language for Data Science
-  - Set up a Julia environment to run their data analysis
-  - Efficiently handle datasets (even across different languages) through Tables.jl and Arrow.jl
-  - Fit (generalized) linear mixed models with MixedModels.jl
-  - Communicate across languages (Julia, R, python)
+- create Quarto documents
+  * add embellishments to Quarto documents
+- create Quarto presentations
+  * add stylistic embellishments to Quarto documents
+  
 
-Intended audience and level:
-The tutorial is intended for any data scientist with experience in R and/or python who is interested in learning the attractive features of Julia for Data Science. No knowledge of Julia is required.
+## Intended Audience and Level
+
+The workshop is intended for any statistics educator with experience in R and / or Python who is interested in learning the attractive features of Quarto. No knowledge of Quarto is required.
+
 
 # Schedule
 
@@ -52,3 +51,7 @@ Participants are required to follow the next steps before the day of the worksho
 
   - Mac and Linux: `curl -fsSL https://install.julialang.org | sh`
   - Homebrew users: `brew install juliaup`
+  
+# Workshop Materials
+
+Workshop materials can be found in the github repository [quarto-workshop](https://github.com/atheobold/uscots-quarto)
