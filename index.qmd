@@ -51,15 +51,17 @@ This workshop is intended for individuals familiar with RMarkdown and RStudio wh
 
 Participants are required to follow the next steps before the day of the workshop:
 
-1.  
+1.  Install or Update RStudio to the most current version -- [2023.03.0+386 "Cherry Blossom"](https://posit.co/download/rstudio-desktop/)
 
-2.  
+2.  Install the most current version of Quarto -- [Quarto CLI 1.3.340](https://quarto.org/docs/get-started/)
 
--   Windows: 
+3. Install or Update R to the most current version: 4.3.0 (2023-04-21) -- Already Tomorrow
 
--   Mac and Linux: 
+- Windows: <https://cran.rstudio.com/bin/windows/>
 
--   Homebrew users: 
+- Mac: <https://cran.rstudio.com/bin/macosx/>
+
+- Linux: <https://cran.rstudio.com/bin/linux/>
 
 # Workshop Materials
 
