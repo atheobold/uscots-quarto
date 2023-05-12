@@ -14,7 +14,7 @@ project:
 
 website:
   title: "Reproducible documents, presentations, and websites with Quarto"
-  #site-url: https://crsl4.github.io/julia-workshop
+  site-url: https://atheobold.github.io/uscots-quarto/
   repo-url: https://github.com/atheobold/uscots-quarto
   repo-actions: [issue]
   navbar:
