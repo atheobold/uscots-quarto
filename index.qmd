@@ -19,33 +19,31 @@ At the end of the tutorial, participants will be able to:
 
 ## Intended Audience and Level
 
-The workshop is intended for any statistics educator with experience in R and / or Python who is interested in learning the attractive features of Quarto. No knowledge of Quarto is required.
+This workshop is intended for individuals familiar with RMarkdown and RStudio who are interested in learning more about Quarto! No knowledge of Quarto is required.
 
-Intended audience and level:
-
-This workshop is intended for individuals familiar with RMarkdown and RStudio who are interested in learning more about Quarto! While we will not be coding in R during the workshop, it could be useful for individuals to have some familiarity with programming in R.
+While we will not be coding in R during the workshop, it could be useful for individuals to have some familiarity with programming in R.
 
 # Schedule
 
-|     Time      |                         Topic                         |    Presenter     |
-|:--------------:|:----------------------------------------------------:|:----------------:|
-|  8:30 - 8:45  | Introductions, workshop outline, distribute materials |   Everyone       |
-|  8:45 - 9:00  |             A brief refresher of RStudio              |   Hunter         |
-|  9:00 - 9:30  |                     Hello Quarto                      | Allison          |
-| 9:30 - 10:00  |           Activity: Exploring YAML options            |       You!       |
-| 10:00 - 10:30 |                     Snack break!                      |                  |
-| 10:30 - 10:45 |              Share what you discovered!               |       You!       |
-| 10:45 - 11:30 |             Embellishing Quarto documents             |  Emily           |
-| 11:30 - 12:00 |                 Activity: Try it out!                 |       You!       |
-| 12:00 - 1:00  |                     Lunch break!                      |                  |
-|  1:00 - 1:30  |                 Quarto presentations                  | Hunter           |
-|  1:30 - 1:45  |         Activity: Make a simple presentation          |       You!       |
-|  1:45 - 2:30  |             Styling Quarto presentations              |  Emily & Allison |
-|  2:30 - 3:00  |                     Snack break!                      |                  |
-|  3:00 - 3:30  |                 Activity: Try it out!                 |       You!       |
-|  3:30 - 3:45  |        A brief introduction to version control        |   Hunter         |
-|  3:45 - 4:00  |         Publishing content with GitHub pages          |  Emily           |
-|  4:00 - 4:30  |                    Quarto websites                    | Allison          |
+|     Time      |                         Topic                         |    Presenter    |
+|:--------------:|:---------------------------------------:|:--------------:|
+|  8:30 - 8:45  | Introductions, workshop outline, distribute materials |    Everyone     |
+|  8:45 - 9:00  |             A brief refresher of RStudio              |     Hunter      |
+|  9:00 - 9:30  |                     Hello Quarto                      |     Allison     |
+| 9:30 - 10:00  |           Activity: Exploring YAML options            |      You!       |
+| 10:00 - 10:30 |                     Snack break!                      |                 |
+| 10:30 - 10:45 |              Share what you discovered!               |      You!       |
+| 10:45 - 11:30 |             Embellishing Quarto documents             |      Emily      |
+| 11:30 - 12:00 |                 Activity: Try it out!                 |      You!       |
+| 12:00 - 1:00  |                     Lunch break!                      |                 |
+|  1:00 - 1:30  |                 Quarto presentations                  |     Hunter      |
+|  1:30 - 1:45  |         Activity: Make a simple presentation          |      You!       |
+|  1:45 - 2:30  |             Styling Quarto presentations              | Emily & Allison |
+|  2:30 - 3:00  |                     Snack break!                      |                 |
+|  3:00 - 3:30  |                 Activity: Try it out!                 |      You!       |
+|  3:30 - 3:45  |        A brief introduction to version control        |     Hunter      |
+|  3:45 - 4:00  |         Publishing content with GitHub pages          |      Emily      |
+|  4:00 - 4:30  |                    Quarto websites                    |     Allison     |
 
 # In preparation for the workshop
 
@@ -55,14 +53,14 @@ Participants are required to follow the next steps before the day of the worksho
 
 2.  Install the most current version of Quarto -- [Quarto CLI 1.3.340](https://quarto.org/docs/get-started/)
 
-3. Install or Update R to the most current version: 4.3.0 (2023-04-21) -- Already Tomorrow
+3.  Install or Update R to the most current version: 4.3.0 (2023-04-21) -- Already Tomorrow
 
-- Windows: <https://cran.rstudio.com/bin/windows/>
+-   Windows: <https://cran.rstudio.com/bin/windows/>
 
-- Mac: <https://cran.rstudio.com/bin/macosx/>
+-   Mac: <https://cran.rstudio.com/bin/macosx/>
 
-- Linux: <https://cran.rstudio.com/bin/linux/>
+-   Linux: <https://cran.rstudio.com/bin/linux/>
 
 # Workshop Materials
 
-Workshop materials can be found in the github repository [quarto-workshop](https://github.com/atheobold/uscots-quarto)
+Workshop materials can be found in the github repository [quarto-workshop](https://github.com/atheobold/uscots-quarto)!
