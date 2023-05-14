@@ -33,7 +33,7 @@ website:
 
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2023, Allison Theobold"
+    left: "&copy; Copyright 2023, Allison Theobold, Emily Robinson & Hunter Glanz"
     background: "#D9E3E4"
     
   sidebar:
