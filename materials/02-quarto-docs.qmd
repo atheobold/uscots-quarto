@@ -1,18 +1,272 @@
 ---
-title: "Module 1: Introduction to Quarto Documents"
-format: revealjs
-editor: visual
+format: 
+  revealjs:
+    slide-number: false
+    width: 1920
+    height: 1080
+    logo: "images/cp_hex_logo.png"
+    footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
+    theme: night
+standalone: true
+embed-resources: true
+editor: source
 ---
+
+##  {background-image="images/hamlet.jpeg" background-position="left"}
+
+::: {style="font-size: 12em; color: #34605f;"}
+Hello Quarto
+:::
+
+```{r}
+library(tidyverse)
+```
+
+
+##
+
+[What is Quarto?]{style="font-size: 2em;"}
+
+> [Quarto® is an open-source scientific and technical publishing system built on Pandoc]{style="font-size:1.5em;"}
+
+. . .
+
+</br> 
+
+::: {style="font-size: 2em; color: #e28743;"}
+Quarto integrates what has been learned over the last 10-years from RMarkdown into **one** system for creating and publishing reproducible documents.
+:::
+
+
+# `r fontawesome::fa("laptop-code", "white")` Let's get started! {background-color="#447099" transition="slide-in"}
+
+- Open RStudio
+- Click on "File"
+- Select "New File"
+- Select "Quarto Document"
+  * Fill in the title and author
+  * Select HTML for the format option
+
+- Click "Create"!
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#447099",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+
+```
+
+<br>
+<br>
+
+```{R}
+#| echo: false
+countdown_timer(2)
+```
+
+## A Quarto Document
+
+::: columns
+::: {.column width="50%"}
+    ---
+    title: "ggplot2 demo"
+    author: "Norah Jones"
+    date: "May 22nd, 2021"
+    format: 
+      html:
+        code-fold: true
+    ---
+
+    ## Air Quality
+
+    @fig-airquality further explores the impact of temperature 
+      on ozone level.
+
+    ```{{r}}
+    #| label: fig-airquality
+    #| fig-cap: Temperature and ozone level.
+    #| warning: false
+
+    library(ggplot2)
+    ggplot(airquality, 
+           mapping = aes(x = Temp, y = Ozone)
+           ) + 
+
+      geom_point() + 
+      geom_smooth(method = "loess"
+    )
+    ```
+:::
+
+::: {.column width="40%"}
+![](https://quarto.org/images/hello-knitr.png)
+:::
+:::
 
 <!-- **Outline:** -->
 
-<!-- -   Introduction to Quarto documents -->
-
-<!--     -   Outline structure of document -->
 <!--     -   Compare Source versus Visual Editor -->
+
 <!--     -   Rendering documents -->
 
 <!-- -   Discuss common student pitfalls -->
 
 <!--     -   Executing in RStudio versus rendering -->
 
+## Anatomy of a Quarto document
+
+</br>
+
+[The [YAML](https://yaml.org/) metadata or header is:]{style="font-size: 1.25em;"}
+
+> processed in many stages of the rendering process and can influence the final document in many different ways. It is placed at the very beginning of the document and is read by each of Pandoc, Quarto and `knitr`. Along the way, the information that it contains can affect the code, content, and the rendering process.
+
+. . .
+
+- What editor should be the default for working in the document?
+
+``` yaml
+---
+editor: visual
+---
+```
+
+. . .
+
+* What format should the document render in?
+
+``` yaml
+---
+format: html
+---
+```
+ 
+. . .
+
+* Are there additional formatting options?
+
+``` yaml
+---
+format: 
+  html:
+    code-fold: true
+---
+```
+
+## Code
+
+</br>
+
+```{r}
+#| echo: fenced
+#| label: species-means
+#| tbl-cap: Mean body mass (g) of penguins on Palmer Archipelego
+#| warning: false
+
+library(palmerpenguins)
+
+penguins %>%
+  drop_na(body_mass_g) %>% 
+  group_by(species) %>% 
+  summarize(mean_weight = mean(body_mass_g)
+            )
+
+```
+
+. . .
+
+</br>
+
+```{r}
+
+```
+
+[`{r}`]{style="font-size: 1.25em;"} -- notates what language the code is written in
+
+. . .
+
+[`#|`]{style="font-size: 1.25em;"} -- defines code chunk options
+
+## Text
+
+> Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. [Markdown](https://daringfireball.net/projects/markdown/) is a plain text format that is designed to be easy to write, and, even more importantly, easy to read
+
+</br>
+
+``` markdown
+# Heading 1
+This is a sentence with some **bold text**, some *italic text* and an [image](image.png).
+```
+
+## Text Formatting
+
++-----------------------------------+-------------------------------+
+| Markdown Syntax                   | Output                        |
++===================================+===============================+
+|     *italics* and **bold**        | *italics* and **bold**        |
++-----------------------------------+-------------------------------+
+|     superscript^2^ / subscript~2~ | superscript^2^ / subscript~2~ |
++-----------------------------------+-------------------------------+
+|     ~~strikethrough~~             | ~~strikethrough~~             |
++-----------------------------------+-------------------------------+
+|     `verbatim code`               | `verbatim code`               |
++-----------------------------------+-------------------------------+
+
+## Headings
+
++---------------------+-----------------+
+| Markdown Syntax     | Output          |
++=====================+=================+
+|     # Header 1      | # Header 1      |
++---------------------+-----------------+
+|     ## Header 2     | ## Header 2     |
++---------------------+-----------------+
+|     ### Header 3    | ### Header 3    |
++---------------------+-----------------+
+|     #### Header 4   | #### Header 4   |
++---------------------+-----------------+
+|     ##### Header 5  | ##### Header 5  |
++---------------------+-----------------+
+|     ###### Header 6 | ###### Header 6 |
++---------------------+-----------------+
+
+# `r fontawesome::fa("laptop-code", "white")` Your turn! {background-color="#447099" transition="slide-in"}
+
+The exhaustive list of YAML options that can be used for HTML documents can be found here: <https://quarto.org/docs/reference/formats/html>.
+
+Using this resource add the following to your document:
+
+- code folding
+- center alignment of all figures
+- an execution option which suppresses messages output from R
+
+[Afterward, add at least one additional YAML option of your choosing!]{style="font-size: 1.25em; color: #e28743"}
+
+<br>
+<br>
+
+```{R}
+#| echo: false
+countdown_timer(2)
+```
