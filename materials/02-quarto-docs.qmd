@@ -49,6 +49,42 @@ Quarto integrates what has been learned over the last 10-years from RMarkdown in
 
 - Click "Create"!
 
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#447099",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+
+```
+
+<br>
+<br>
+
+```{R}
+#| echo: false
+countdown_timer(2)
+```
+
 ## A Quarto Document
 
 ::: columns
@@ -226,3 +262,14 @@ Using this resource add the following to your document:
 - an execution option which suppresses messages output from R
 
 [Afterward, add at least one additional YAML option of your choosing!]{style="font-size: 1.25em; color: #e28743"}
+
+<br>
+<br>
+<br>
+<br>
+
+
+```{R}
+#| echo: false
+countdown_timer(30)
+```
