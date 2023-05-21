@@ -1,7 +1,6 @@
 project:
   type: website
   title: "Quarto at USCOTS"
-  execute-dir: project
 
 website:
   title: "USCOTS 2023 Quarto Workshop"
@@ -96,7 +95,9 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - cosmo
+      - style.scss
     toc: true
 
 callout-appearance: simple
