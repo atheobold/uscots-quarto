@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Stat 313!"
 title-slide-attributes:
-    data-background-image: /images/background-bikeshare.png
+    data-background-image: /resources/images/background-bikeshare.png
     data-background-size: stretch
     data-background-opacity: "0.75"
 format: 
@@ -35,14 +35,6 @@ Why do you believe your discipline requires / expects you to take this course?
 ::: {style="font-size: 2em; color: #FFFFFF;"}
 About Me...
 :::
-
-```{r pictures}
-#| layout-nrow: 1
-knitr::include_graphics(c("images/wedding.png", 
-                          "images/skiing.JPG", 
-                          "images/bumi.JPG")
-                        )
-```
 
 ::: {style="font-size: 0.75em;"}
 Ph.D. in Statistics from Montana State University
