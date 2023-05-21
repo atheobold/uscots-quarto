@@ -96,9 +96,7 @@ website:
 
 format:
   html:
-    theme: 
-      - cosmo
-      - style.scss
+    theme: cosmo
     toc: true
 
 callout-appearance: simple
