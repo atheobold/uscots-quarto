@@ -22,26 +22,36 @@ website:
     background: primary
     search: true
     left:
-       - href: index.qmd
-         text: Home
        - href: bio.qmd
          text: Presenters
        - text: Morning
          menu:
-          - href: materials/module-1.qmd
+          - href: materials/01-rstudio-refresher.qmd
             text: "A Brief RStudio Refresher"
-          - href: materials/module-2.qmd
+          - href: materials/02-quarto-docs.qmd
             text: "Introduction to Quarto Documents"
-          - href: materials/module-3.qmd
+          - href: materials/03-styling-quarto-docs.qmd
             text: "Styling Quarto Documents"
        - text: Afternoon
          menu:
-          - href: materials/module-4.qmd
+          - href: materials/04-quarto-presentations.qmd
             text: "Introduction to Quarto Presentations"
-          - href: materials/module-5.qmd
+          - href: materials/05-styling-quarto-presentations.qmd
             text: "Styling Quarto Presentations"
-          - href: materials/module-6.qmd
+          - href: materials/06-version-control.qmd
+            text: "Introduction to Version Control"
+          - href: materials/07-publishing.qmd
             text: "Publishing Your Materials"
+       - text: Activities
+         menu: 
+          - href: materials/02-activity-quarto-yaml.qmd
+            text: "Exploring YAML Options in Quarto Docs"
+          - href: materials/03-activity-styling-quarto-docs.qmd
+            text: "Styling Your Quarto Doc"
+          - href: materials/04-activity-quarto-presentations.qmd
+            text: "Making a Quarto Presentation"
+          - href: materials/05-activity-styling-quarto-presentations.qmd
+            text: "Styling Your Presentation"
     right: 
       - href: "https://quarto.org/"
         text: "Quarto Docs"
@@ -61,25 +71,31 @@ website:
     style: "docked"
     background: light
     contents:
-      - section: "Day 1"
+      - section: "Morning"
         contents: 
-          - href: materials/module-1.qmd
+          - href: materials/01-rstudio-refresher.qmd
             text: "A Brief RStudio Refresher"
-          - href: materials/module-2.qmd
+          - href: materials/02-quarto-docs.qmd
             text: "Introduction to Quarto Documents"
-          - href: materials/module-3.qmd
-            text: "Styling Quarto Documents"
-          - href: materials/activity-1.qmd
+          - href: materials/02-activity-quarto-yaml.qmd
             text: "Your turn! Exploring YAML Options"
-      - section: "Day 2"
+          - href: materials/03-styling-quarto-docs.qmd
+            text: "Styling Quarto Documents"
+          - href: materials/03-activity-styling-quarto-docs.qmd
+            text: "Your turn! Styling Your Doc"
+      - section: "Afternoon"
         contents:
-          - href: materials/module-4.qmd
+          - href: materials/04-quarto-presentations.qmd
             text: "Introduction to Quarto Presentations"
-          - href: materials/module-5.qmd
+          - href: materials/04-activity-quarto-presentations.qmd
+            text: "Your turn! Making a Quarto Presentation"
+          - href: materials/05-styling-quarto-presentations.qmd
             text: "Styling Quarto Presentations"
-          - href: materials/activity-2.qmd
-            text: "Your turn!"
-          - href: materials/module-6.qmd
+          - href: materials/05-activity-styling-quarto-presentations.qmd
+            text: "Your turn! Styling Your Presentation"
+          - href: materials/06-version-control.qmd
+            text: "Introduction to Version Control"
+          - href: materials/07-publishing.qmd
             text: "Publishing Your Materials"
     
   page-navigation: true

@@ -1,0 +1,12 @@
+---
+title: "Introduction to Version Control"
+format: revealjs
+editor: visual
+---
+
+<!-- **Outline:** -->
+
+<!-- -   Introduction to version control -->
+<!--     -   What is version control? -->
+<!--     -   Why do we want to use version control? -->
+<!--     -   How can you use version control? -->

@@ -1,0 +1,16 @@
+---
+title: "Publishing Your Materials"
+format: revealjs
+editor: visual
+---
+
+<!-- Hacky method for creating website to link course materials -->
+
+<!-- GitHub pages -->
+
+<!-- Creating a Quarto website -->
+
+<!-- Layout -->
+
+<!-- Methods of publishing -->
+
