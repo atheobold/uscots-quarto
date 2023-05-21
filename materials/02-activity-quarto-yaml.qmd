@@ -1,9 +1,9 @@
 ---
 title: "Activity 1 -- Explore YAML Options"
 editor: visual
-format: html
-standalone: true
-embed-resources: true
+format: 
+  html:
+    embed-resources: true
 ---
 
 The exhaustive list of YAML options that can be used for HTML documents can be found here: <https://quarto.org/docs/reference/formats/html>.

@@ -2,25 +2,31 @@
 title: "Welcome to RStudio Cloud!"
 author: "Your Names Go Here!"
 date: "The Date Goes Here!"
-format: html
-standalone: true
-embed-resources: true
+format: 
+  html:
+    embed-resources: true
 editor: visual
 ---
 
 ## General information on Thursday labs
 
-Each Thursday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Canvas (one submission per group). The questions to be submitted on Canvas are bolded in the lab. As you work through the lab with your group have the Canvas lab assignment open so that you can answer those questions as you go. Today's activity is Lab 1 in Canvas for practice submitting as a group.
+Each Thursday you will complete a lab in class with your group.
+Questions are selected from each lab to be turned in on Canvas (one submission per group).
+The questions to be submitted on Canvas are bolded in the lab.
+As you work through the lab with your group have the Canvas lab assignment open so that you can answer those questions as you go.
+Today's activity is Lab 1 in Canvas for practice submitting as a group.
 
 ## What is this document?
 
-This is a Quarto document. Quarto is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents.
+This is a Quarto document.
+Quarto is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents.
 
 We will always be using the "Visual" version of our Quarto document, which has options that should feel familiar.
 
 ## R Code
 
-You can differentiate the R code within a Quarto document from the body of the document, because it is contained in a grey box. Here is an example of an R code chunk:
+You can differentiate the R code within a Quarto document from the body of the document, because it is contained in a grey box.
+Here is an example of an R code chunk:
 
 ```{r setup}
 #| include = FALSE
@@ -30,7 +36,10 @@ library(tidyverse)
 library(here)
 ```
 
-The Quarto document knows this code is R code because the first thing inside the curly braces (`{}`) is an `r`. The next word (`setup`) is the name of the code chunk. I like to name every code chunk with one word that represents what the code is doing. This also makes it easier to navigate between the different parts of your document!
+The Quarto document knows this code is R code because the first thing inside the curly braces (`{}`) is an `r`.
+The next word (`setup`) is the name of the code chunk.
+I like to name every code chunk with one word that represents what the code is doing.
+This also makes it easier to navigate between the different parts of your document!
 
 If you wanted to insert a new R code chunk, you click on the "Insert" button, then select "Code Chunk", and finally select R.
 
@@ -74,9 +83,15 @@ ggplot(data = mpg,
 
 ## Loading Data into `R`
 
-You can load data files into R using functions from different packages. You will learn that the function you use depends on what format the data are in. Today, we will work with data that are stored in a Comma Separated Values file (a CSV). For this format of data, we will use the `read_csv()` function to read in our data.
+You can load data files into R using functions from different packages.
+You will learn that the function you use depends on what format the data are in.
+Today, we will work with data that are stored in a Comma Separated Values file (a CSV).
+For this format of data, we will use the `read_csv()` function to read in our data.
 
-The data are located in the *data* folder of your project. To load in the data, we need to specify the "path" to the data, or where R needs to look for the data. I like to use the `here()` function from the **here** package to read in data, because I find the format intuitive. I'll walk you through what the code below is doing.
+The data are located in the *data* folder of your project.
+To load in the data, we need to specify the "path" to the data, or where R needs to look for the data.
+I like to use the `here()` function from the **here** package to read in data, because I find the format intuitive.
+I'll walk you through what the code below is doing.
 
 -   `broadway` is the name of the object we are storing the dataset into
 -   The `<-` "assigns" the output of the `read_csv()` function into the `broadway` object
@@ -101,7 +116,8 @@ Click on the `broadway` dataset in the upper righthand corner to open up a data 
 
 **Question 8: What are the variables in these data?**
 
-**Submitting Your Lab**: Once you are done answering every question in the lab, hit the "Render" button to create an HTML document with your answers. To submit your HTML on Canvas you need to do the following:
+**Submitting Your Lab**: Once you are done answering every question in the lab, hit the "Render" button to create an HTML document with your answers.
+To submit your HTML on Canvas you need to do the following:
 
 1.  Check the box next to lab1.html
 2.  Click on the "More" icon (with the gear by it)

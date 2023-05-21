@@ -7,8 +7,7 @@ format:
     logo: "images/cp_hex_logo.png"
     footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
     theme: night
-standalone: true
-embed-resources: true
+    embed-resources: true
 editor: source
 ---
 

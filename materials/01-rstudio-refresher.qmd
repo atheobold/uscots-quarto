@@ -4,7 +4,6 @@ format:
     logo: "images/cp_hex_logo.png"
     footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
     theme: simple
-    standalone: true
     embed-resources: true
 editor: source
 ---
@@ -31,7 +30,6 @@ library(quarto)
 library(gt)
 library(gtExtras)
 library(gtsummary)
-
 ```
 
 ## 
