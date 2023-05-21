@@ -1,0 +1,16 @@
+---
+title: "Styling Quarto presentations"
+editor: visual
+---
+
+
+
+colors
+
+incremental content (lists, body, columns)
+
+callouts
+
+tabsets
+
+output location

@@ -13,7 +13,8 @@ project:
       #- conclusion.qmd
 
 website:
-  title: "Reproducible documents, presentations, and websites with Quarto"
+  title: "USCOTS 2023 Quarto Workshop"
+  description: "USCOTS 2023 Workshop on Reproducible documents, presentations, and websites with Quarto"
   site-url: https://atheobold.github.io/uscots-quarto/
   repo-url: https://github.com/atheobold/uscots-quarto
   repo-actions: [issue]
@@ -21,16 +22,32 @@ website:
     background: primary
     search: true
     left:
-       - text: Home
-         file: index.qmd
-       - text: About
-         file: about.qmd
-       - text: Presenters
-         file: bio.qmd
+       - href: index.qmd
+         text: Home
+       - href: bio.qmd
+         text: Presenters
+       - text: Morning
+         menu:
+          - href: materials/module-1.qmd
+            text: "A Brief RStudio Refresher"
+          - href: materials/module-2.qmd
+            text: "Introduction to Quarto Documents"
+          - href: materials/module-3.qmd
+            text: "Styling Quarto Documents"
+       - text: Afternoon
+         menu:
+          - href: materials/module-4.qmd
+            text: "Introduction to Quarto Presentations"
+          - href: materials/module-5.qmd
+            text: "Styling Quarto Presentations"
+          - href: materials/module-6.qmd
+            text: "Publishing Your Materials"
     right: 
+      - href: "https://quarto.org/"
+        text: "Quarto Docs"
       - icon: github
-        href: https://github.com/atheobold/uscots-quarto
-
+        href: https://github.com/rstudio-conf-2022/get-started-quarto
+      
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2023, Allison Theobold, Emily Robinson & Hunter Glanz"
@@ -44,12 +61,26 @@ website:
     style: "docked"
     background: light
     contents:
-      - about.qmd
-      - module-0.qmd
-      - module-1.qmd
-      - module-2.qmd
-      - module-3.qmd
-      #- conclusion.qmd
+      - section: "Day 1"
+        contents: 
+          - href: materials/module-1.qmd
+            text: "A Brief RStudio Refresher"
+          - href: materials/module-2.qmd
+            text: "Introduction to Quarto Documents"
+          - href: materials/module-3.qmd
+            text: "Styling Quarto Documents"
+          - href: materials/activity-1.qmd
+            text: "Your turn! Exploring YAML Options"
+      - section: "Day 2"
+        contents:
+          - href: materials/module-4.qmd
+            text: "Introduction to Quarto Presentations"
+          - href: materials/module-5.qmd
+            text: "Styling Quarto Presentations"
+          - href: materials/activity-2.qmd
+            text: "Your turn!"
+          - href: materials/module-6.qmd
+            text: "Publishing Your Materials"
     
   page-navigation: true
 

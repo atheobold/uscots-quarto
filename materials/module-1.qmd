@@ -1,0 +1,16 @@
+---
+title: "Module 1: Authoring Quarto Documents"
+editor: visual
+---
+
+**Outline:**
+
+-   Introduction to Quarto documents
+
+    -   Outline structure of document
+    -   Compare Source versus Visual Editor
+    -   Rendering documents
+
+-   Discuss common student pitfalls
+
+    -   Executing in RStudio versus rendering

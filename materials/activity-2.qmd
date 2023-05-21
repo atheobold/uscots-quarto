@@ -1,0 +1,6 @@
+---
+title: "Untitled"
+editor: visual
+---
+
+Activity on styling quarto docs

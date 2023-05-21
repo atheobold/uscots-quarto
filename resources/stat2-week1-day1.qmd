@@ -38,7 +38,10 @@ About Me...
 
 ```{r pictures}
 #| layout-nrow: 1
-knitr::include_graphics(c("images/wedding.png", "images/skiing.JPG", "images/bumi.JPG"))
+knitr::include_graphics(c("images/wedding.png", 
+                          "images/skiing.JPG", 
+                          "images/bumi.JPG")
+                        )
 ```
 
 ::: {style="font-size: 0.75em;"}

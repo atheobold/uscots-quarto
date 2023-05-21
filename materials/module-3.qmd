@@ -1,0 +1,11 @@
+---
+title: "Module 2: Authorig Quarto Presentations"
+editor: visual
+---
+
+**Outline:**
+
+-   Outline structure of Quarto presentations
+    -   Structure
+    -   Slide separation
+    -   

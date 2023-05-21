@@ -1,12 +1,18 @@
 ---
-title: "Reproducible documents, presentations, and websites with Quarto"
-author: "Hunter Glanz, Emily Robinson & Allison Theobold"
-subtitle: "USCOTS 2023"
+title: "USCOTS 2023 Workshop"
 ---
 
-# Welcome
+## Reproducible documents, presentations, and websites with Quarto
 
-Welcome to the USCOTS workshop on Quarto! The goal for the workshop is to introduce statistics educators to Quarto. We will highlight how Quarto can be used educationally, both for students and instructors.
+by: Hunter Glanz, Emily Robinson & Allison Theobold
+
+# Welcome!
+
+Welcome to the [USCOTS workshop on Quarto](causeweb.org/cause/uscots/uscots23/w04-reproducible-documents-presentations-and-websites-quarto-room-106)! The goal for the workshop is to introduce statistics educators to Quarto. We will highlight how Quarto can be used educationally, both for students and instructors.
+
+## Workshop Description
+
+Quarto is the next generation of R Markdown for publishing, including dynamic and static documents and multi-lingual programming language support. With Quarto, you can create documents, books, presentations, websites, or other online resources. The workshop is comprised of three modules. Module 1 will introduce you to Quarto documents, for both student and instructor use. We will demonstrate how we use Quarto documents and RStudio's Visual Editor to introduce students to reproducible workflows. We will also demonstrate how Quarto documents can be used to create and distribute teaching resources. Modules 2 and 3 will extend the use of Quarto to create teaching resources, outlining how Quarto can be used to create course slides and course websites. We will conclude with tips on how to make your materials publicly available to share with students and other educators.
 
 ## Learning Objectives for Workshop
 
@@ -25,25 +31,25 @@ While we will not be coding in R during the workshop, it could be useful for ind
 
 # Schedule
 
-|     Time      |                         Topic                         |    Presenter    |
-|:--------------:|:---------------------------------------:|:--------------:|
-|  8:30 - 8:45  | Introductions, workshop outline, distribute materials |    Everyone     |
-|  8:45 - 9:00  |             A brief refresher of RStudio              |     Hunter      |
-|  9:00 - 9:30  |                     Hello Quarto                      |     Allison     |
-| 9:30 - 10:00  |           Activity: Exploring YAML options            |      You!       |
-| 10:00 - 10:30 |                     Snack break!                      |                 |
-| 10:30 - 10:45 |              Share what you discovered!               |      You!       |
-| 10:45 - 11:30 |             Embellishing Quarto documents             |      Emily      |
-| 11:30 - 12:00 |                 Activity: Try it out!                 |      You!       |
-| 12:00 - 1:00  |                     Lunch break!                      |                 |
-|  1:00 - 1:30  |                 Quarto presentations                  |     Hunter      |
-|  1:30 - 1:45  |         Activity: Make a simple presentation          |      You!       |
-|  1:45 - 2:30  |             Styling Quarto presentations              | Emily & Allison |
-|  2:30 - 3:00  |                     Snack break!                      |                 |
-|  3:00 - 3:30  |                 Activity: Try it out!                 |      You!       |
-|  3:30 - 3:45  |        A brief introduction to version control        |     Hunter      |
-|  3:45 - 4:00  |         Publishing content with GitHub pages          |      Emily      |
-|  4:00 - 4:30  |                    Quarto websites                    |     Allison     |
+|     Time      |                               Topic                                |    Presenter    |
+|:----------------:|:-----------------------------------:|:----------------:|
+|  8:30 - 8:45  |       Introductions, workshop outline, distribute materials        |    Everyone     |
+|  8:45 - 9:00  |      [A brief refresher of RStudio](/materials/module-0.qmd)       |     Hunter      |
+|  9:00 - 9:30  |              [Hello Quarto](/materials/module-1.qmd)               |     Allison     |
+| 9:30 - 10:00  |   [Activity: Exploring YAML options](/materials/activity-1.qmd)    |      You!       |
+| 10:00 - 10:30 |                            Snack break!                            |                 |
+| 10:30 - 10:45 |                     Share what you discovered!                     |      You!       |
+| 10:45 - 11:30 |      [Embellishing Quarto documents](/materials/module-2.qmd)      |      Emily      |
+| 11:30 - 12:00 |         [Activity: Try it out!](/materials/activity-2.qmd)         |      You!       |
+| 12:00 - 1:00  |                            Lunch break!                            |                 |
+|  1:00 - 1:30  |          [Quarto presentations](/materials/module-3.qmd)           |     Hunter      |
+|  1:30 - 1:45  | [Activity: Make a simple presentation](/materials/activity-3.qmd)  |      You!       |
+|  1:45 - 2:30  |      [Styling Quarto presentations](/materials/module-4.qmd)       | Emily & Allison |
+|  2:30 - 3:00  |                            Snack break!                            |                 |
+|  3:00 - 3:30  |         [Activity: Try it out!](/materials/activity-4.qmd)         |      You!       |
+|  3:30 - 3:45  | [A brief introduction to version control](/materials/module-5.qmd) |     Hunter      |
+|  3:45 - 4:00  |  [Publishing content with GitHub pages](/materials/module-6.qmd)   |      Emily      |
+|  4:00 - 4:30  |             [Quarto websites](/materials/module-6.qmd)             |     Allison     |
 
 # In preparation for the workshop
 
@@ -64,3 +70,9 @@ Participants are required to follow the next steps before the day of the worksho
 # Workshop Materials
 
 Workshop materials can be found in the github repository [quarto-workshop](https://github.com/atheobold/uscots-quarto)!
+
+---
+
+![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is
+licensed under a [Creative Commons Attribution 4.0 International
+License](https://creativecommons.org/licenses/by/4.0/).

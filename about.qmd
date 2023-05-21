@@ -1,5 +1,0 @@
----
-title: "About"
----
-
-Quarto is the next generation of R Markdown for publishing, including dynamic and static documents and multi-lingual programming language support. With Quarto, you can create documents, books, presentations, websites, or other online resources. The workshop is comprised of three modules. Module 1 will introduce you to Quarto documents, for both student and instructor use. We will demonstrate how we use Quarto documents and RStudio's Visual Editor to introduce students to reproducible workflows. We will also demonstrate how Quarto documents can be used to create and distribute teaching resources. Modules 2 and 3 will extend the use of Quarto to create teaching resources, outlining how Quarto can be used to create course slides and course websites. We will conclude with tips on how to make your materials publicly available to share with students and other educators.

@@ -3,6 +3,8 @@ title: "Welcome to RStudio Cloud!"
 author: "Your Names Go Here!"
 date: "The Date Goes Here!"
 format: html
+standalone: true
+embed-resources: true
 editor: visual
 ---
 
@@ -87,7 +89,9 @@ The data are located in the *data* folder of your project. To load in the data, 
 #| include = FALSE
 
 broadway <- read_csv(
-  here("data", "broadway.csv")
+  here("resources", 
+       "data", 
+       "broadway.csv")
                      )
 ```
 
