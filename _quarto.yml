@@ -98,7 +98,7 @@ format:
   html:
     theme: 
       - cosmo
-      - styles.scss
+      - style.scss
     toc: true
 
 callout-appearance: simple
