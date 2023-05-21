@@ -2,15 +2,6 @@ project:
   type: website
   title: "Quarto at USCOTS"
   execute-dir: project
-  render: 
-      - index.qmd
-      - blog.qmd
-      - bio.qmd
-      - module-0.qmd
-      - module-1.qmd
-      - module-2.qmd
-      - module-3.qmd
-      #- conclusion.qmd
 
 website:
   title: "USCOTS 2023 Quarto Workshop"
@@ -22,6 +13,8 @@ website:
     background: primary
     search: true
     left:
+       - href: index.qmd
+         text: Home
        - href: bio.qmd
          text: Presenters
        - text: Morning
@@ -47,11 +40,12 @@ website:
           - href: materials/02-activity-quarto-yaml.qmd
             text: "Exploring YAML Options in Quarto Docs"
           - href: materials/03-activity-styling-quarto-docs.qmd
-            text: "Styling Your Quarto Doc"
+            text: "Embellishing your Quarto doc"
           - href: materials/04-activity-quarto-presentations.qmd
-            text: "Making a Quarto Presentation"
+            text: "Your first (?) Quarto presentation"
           - href: materials/05-activity-styling-quarto-presentations.qmd
-            text: "Styling Your Presentation"
+            text: "Embellishing your Quarto presentation"
+
     right: 
       - href: "https://quarto.org/"
         text: "Quarto Docs"
