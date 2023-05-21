@@ -92,7 +92,7 @@ website:
           - href: materials/07-publishing.qmd
             text: "Publishing Your Materials"
     
-  page-navigation: true
+  page-navigation: false
 
 format:
   html:
