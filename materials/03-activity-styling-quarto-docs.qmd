@@ -1,6 +1,24 @@
 ---
-title: "Untitled"
+title: "Activity 2 -- Embellishing your Quarto doc!"
+reference-location: margin
 editor: visual
 ---
 
-Activity on styling quarto docs
+Common Quarto embellishments that can be used for HTML and PDF documents can be found here:
+
+-   [Cross-references](https://quarto.org/docs/authoring/cross-references.html)
+-   [Callouts](https://quarto.org/docs/authoring/callouts.html)
+-   [Tabsets](https://quarto.org/docs/interactive/layout.html#tabset-panel)
+-   [Citations and Footnotes](https://quarto.org/docs/authoring/footnotes-and-citations.html)
+-   [Article Layouts](https://quarto.org/docs/authoring/article-layout.html)
+-   [General formatting for HTML documents](https://quarto.org/docs/reference/formats/html.html)
+-   [General formatting for PDF documents](https://quarto.org/docs/reference/formats/pdf.html)
+
+Using these resources, craft your document into a draft course syllabus using:
+
+-   section headers
+-   cross-references
+-   callouts
+-   columns
+
+[Afterward, add at least two additional embellishments that fit your style!]{style="font-size: 1.25em; color: #e28743"}

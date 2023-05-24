@@ -4,13 +4,26 @@ format: revealjs
 editor: visual
 ---
 
+## GitHub Pages
+
 <!-- Hacky method for creating website to link course materials -->
 
-<!-- GitHub pages -->
+Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
+
+`Settings` > `Pages`
+
+![](images/github-pages-hacky.JPG)
+
+## "Hacky" URL: Can you spot the differences?
+
+You can follow the file structure from the "home base" in your GitHub repo.
+
+<https://github.com/earobinson95/stat365-calpoly/blob/master/00-course-info/stat365-syllabus-S2023.html>
+
+<https://earobinson95.github.io/stat365-calpoly/00-course-info/stat365-syllabus-S2023.html>
 
 <!-- Creating a Quarto website -->
 
 <!-- Layout -->
 
 <!-- Methods of publishing -->
-
