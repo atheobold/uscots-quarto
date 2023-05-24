@@ -13,7 +13,7 @@ editor: source
 
 ##  {background-image="images/hamlet.jpeg" background-position="left"}
 
-::: {style="font-size: 12em; color: #34605f;"}
+::: {style="font-size: 8em; color: #34605f;"}
 Hello Quarto
 :::
 
@@ -86,16 +86,6 @@ Quarto integrates what has been learned over the last 10-years from RMarkdown in
 ![](https://quarto.org/images/hello-knitr.png)
 :::
 :::
-
-<!-- **Outline:** -->
-
-<!--     -   Compare Source versus Visual Editor -->
-
-<!--     -   Rendering documents -->
-
-<!-- -   Discuss common student pitfalls -->
-
-<!--     -   Executing in RStudio versus rendering -->
 
 ## Anatomy of a Quarto document
 
@@ -221,6 +211,7 @@ The exhaustive list of YAML options that can be used for HTML documents can be f
 Using this resource add the following to your document:
 
 - code folding
+- is self-contained
 - center alignment of all figures
 - an execution option which suppresses messages output from R
 

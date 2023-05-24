@@ -10,8 +10,9 @@ The exhaustive list of YAML options that can be used for HTML documents can be f
 
 Using this resource add the following to your document:
 
--   code folding
--   center alignment of all figures
--   an execution option which suppresses messages output from R
+- code folding
+- is self-contained
+- center alignment of all figures
+- an execution option which suppresses messages output from R
 
 [Afterward, add at least one additional YAML option of your choosing!]{style="font-size: 1.25em; color: #e28743"}

@@ -109,7 +109,7 @@
     "href": "materials/02-activity-quarto-yaml.html",
     "title": "Activity 1 – Explore YAML Options",
     "section": "",
-    "text": "The exhaustive list of YAML options that can be used for HTML documents can be found here: https://quarto.org/docs/reference/formats/html.\nUsing this resource add the following to your document:\n\ncode folding\ncenter alignment of all figures\nan execution option which suppresses messages output from R\n\nAfterward, add at least one additional YAML option of your choosing!"
+    "text": "The exhaustive list of YAML options that can be used for HTML documents can be found here: https://quarto.org/docs/reference/formats/html.\nUsing this resource add the following to your document:\n\ncode folding\nis self-contained\ncenter alignment of all figures\nan execution option which suppresses messages output from R\n\nAfterward, add at least one additional YAML option of your choosing!"
   },
   {
     "objectID": "materials/03-activity-styling-quarto-docs.html",
@@ -453,5 +453,33 @@
     "title": "Workshop Presenters",
     "section": "",
     "text": "Hunter Glanz is an Assistant Professor of Statistics at Cal Poly in beautiful San Luis Obispo, California. Insert Hunter’s bio here!\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Insert Emily’s bio here!\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#section",
+    "href": "materials/05-styling-quarto-presentations.html#section",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "Styling Quarto Presentations"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#section-1",
+    "href": "materials/05-styling-quarto-presentations.html#section-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "colors\nincremental content (lists, body, columns)\ncallouts\ntabsets\noutput location\n\n\n\nUSCOTS Quarto Workshop"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#themes",
+    "href": "materials/05-styling-quarto-presentations.html#themes",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Themes!",
+    "text": "Themes!\n\n\nThere are 11 built-in themes provided for Reveal presentations! The default and dark themes use fairly classic typography and color schemes and are a good place to start.\n\nThe default theme is used automatically — use the theme option to switch to an alternate theme.\n\n\n\n\n\n---\ntitle: \"Presentation\"\nformat:\n  revealjs: \n    theme: dark\n---\n\n \nLink to default themes available"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html",
+    "href": "resources/stat2-week1-day1.html",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Warm-up\n. . ."
   }
 ]

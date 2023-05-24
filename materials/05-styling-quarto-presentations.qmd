@@ -1,8 +1,61 @@
 ---
-title: "Styling Quarto presentations"
-format: revealjs
-editor: visual
+format: 
+  revealjs:
+    slide-number: false
+    width: 1920
+    height: 1080
+    logo: "images/cp_hex_logo.png"
+    footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
+    theme: [dark, styles.scss]
+    embed-resources: true
+editor: source
 ---
+
+##  {background-image="images/style.png" background-position="center" background-size="contain"}
+
+::: {style="font-size: 6em; color: #FFFFFF;"}
+Styling Quarto Presentations
+:::
+
+## Themes!
+
+::: columns
+::: {.column width="40%"}
+[There are 11 built-in themes provided for Reveal presentations! The `default` and `dark` themes use fairly classic typography and color schemes and are a good place to start.]{.midi}
+
+</br>
+
+[The `default` theme is used automatically — use the theme option to switch to an alternate theme.]{.midi}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+
+::: fragment
+::: {.large}
+
+```yaml
+---
+title: "Presentation"
+format:
+  revealjs: 
+    theme: dark
+---
+```
+:::
+
+</br>
+</br>
+
+[Link to default themes available](https://quarto.org/docs/presentations/revealjs/themes.html#using-themes)
+:::
+:::
+:::
+
+
+##
 
 colors
 
