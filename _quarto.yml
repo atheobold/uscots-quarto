@@ -76,7 +76,7 @@ website:
           - href: materials/03-styling-quarto-docs.qmd
             text: "Styling Quarto Documents"
           - href: materials/03-activity-styling-quarto-docs.qmd
-            text: "Your turn! Styling Your Doc"
+            text: "Your turn! Embellishing your Quarto doc"
       - section: "Afternoon"
         contents:
           - href: materials/04-quarto-presentations.qmd
