@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>USCOTS 2023 Quarto Workshop - USCOTS 2023 Workshop</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">USCOTS 2023 Quarto Workshop</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./bio.html">
+ <span class="menu-text">Presenters</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-morning" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Morning</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-morning">    
+        <li>
+    <a class="dropdown-item" href="./materials/01-rstudio-refresher.html">
+ <span class="dropdown-text">A Brief RStudio Refresher</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./materials/02-quarto-docs.html">
+ <span class="dropdown-text">Introduction to Quarto Documents</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./materials/03-styling-quarto-docs.html">
+ <span class="dropdown-text">Styling Quarto Documents</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-afternoon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Afternoon</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-afternoon">    
+        <li>
+    <a class="dropdown-item" href="./materials/04-quarto-presentations.html">
+ <span class="dropdown-text">Introduction to Quarto Presentations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./materials/05-styling-quarto-presentations.html">
+ <span class="dropdown-text">Styling Quarto Presentations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./materials/06-version-control.html">
+ <span class="dropdown-text">Introduction to Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./materials/07-publishing.html">
+ <span class="dropdown-text">Publishing Your Materials</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Activities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
+        <li>
+    <a class="dropdown-item" href="./materials/02-activity-quarto-yaml.html">
+ <span class="dropdown-text">Exploring YAML Options in Quarto Docs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./materials/03-activity-styling-quarto-docs.html">
+ <span class="dropdown-text">Embellishing your Quarto doc</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./materials/04-activity-quarto-presentations.html">
+ <span class="dropdown-text">Your first (?) Quarto presentation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./materials/05-activity-styling-quarto-presentations.html">
+ <span class="dropdown-text">Embellishing your Quarto presentation</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://quarto.org/">
+ <span class="menu-text">Quarto Docs</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rstudio-conf-2022/get-started-quarto"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">USCOTS 2023 Workshop</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/quarto_icon.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Morning</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/01-rstudio-refresher.html" class="sidebar-item-text sidebar-link">A Brief RStudio Refresher</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/02-quarto-docs.html" class="sidebar-item-text sidebar-link">Introduction to Quarto Documents</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/02-activity-quarto-yaml.html" class="sidebar-item-text sidebar-link">Your turn! Exploring YAML Options</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/03-styling-quarto-docs.html" class="sidebar-item-text sidebar-link">Styling Quarto Documents</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/03-activity-styling-quarto-docs.html" class="sidebar-item-text sidebar-link">Your turn! Styling Your Doc</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Afternoon</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/04-quarto-presentations.html" class="sidebar-item-text sidebar-link">Introduction to Quarto Presentations</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/04-activity-quarto-presentations.html" class="sidebar-item-text sidebar-link">Your turn! Making a Quarto Presentation</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/05-styling-quarto-presentations.html" class="sidebar-item-text sidebar-link">Styling Quarto Presentations</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/05-activity-styling-quarto-presentations.html" class="sidebar-item-text sidebar-link">Your turn! Styling Your Presentation</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/06-version-control.html" class="sidebar-item-text sidebar-link">Introduction to Version Control</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials/07-publishing.html" class="sidebar-item-text sidebar-link">Publishing Your Materials</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#reproducible-documents-presentations-and-websites-with-quarto" id="toc-reproducible-documents-presentations-and-websites-with-quarto" class="nav-link active" data-scroll-target="#reproducible-documents-presentations-and-websites-with-quarto">Reproducible documents, presentations, and websites with Quarto</a></li>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link" data-scroll-target="#welcome">Welcome!</a>
+  <ul class="collapse">
+  <li><a href="#workshop-description" id="toc-workshop-description" class="nav-link" data-scroll-target="#workshop-description">Workshop Description</a></li>
+  <li><a href="#learning-objectives-for-workshop" id="toc-learning-objectives-for-workshop" class="nav-link" data-scroll-target="#learning-objectives-for-workshop">Learning Objectives for Workshop</a></li>
+  <li><a href="#intended-audience-and-level" id="toc-intended-audience-and-level" class="nav-link" data-scroll-target="#intended-audience-and-level">Intended Audience and Level</a></li>
+  </ul></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
+  <li><a href="#in-preparation-for-the-workshop" id="toc-in-preparation-for-the-workshop" class="nav-link" data-scroll-target="#in-preparation-for-the-workshop">In preparation for the workshop</a></li>
+  <li><a href="#workshop-materials" id="toc-workshop-materials" class="nav-link" data-scroll-target="#workshop-materials">Workshop Materials</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/atheobold/uscots-quarto/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">USCOTS 2023 Workshop</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="reproducible-documents-presentations-and-websites-with-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="reproducible-documents-presentations-and-websites-with-quarto">Reproducible documents, presentations, and websites with Quarto</h2>
+<p>by: Hunter Glanz, Emily Robinson &amp; Allison Theobold</p>
+</section>
+<section id="welcome" class="level1">
+<h1>Welcome!</h1>
+<p>Welcome to the <a href="causeweb.org/cause/uscots/uscots23/w04-reproducible-documents-presentations-and-websites-quarto-room-106">USCOTS workshop on Quarto</a>! The goal for the workshop is to introduce statistics educators to Quarto. We will highlight how Quarto can be used educationally, both for students and instructors.</p>
+<section id="workshop-description" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-description">Workshop Description</h2>
+<p>Quarto is the next generation of R Markdown for publishing, including dynamic and static documents and multi-lingual programming language support. With Quarto, you can create documents, books, presentations, websites, or other online resources. The workshop is comprised of three modules. Module 1 will introduce you to Quarto documents, for both student and instructor use. We will demonstrate how we use Quarto documents and RStudio’s Visual Editor to introduce students to reproducible workflows. We will also demonstrate how Quarto documents can be used to create and distribute teaching resources. Modules 2 and 3 will extend the use of Quarto to create teaching resources, outlining how Quarto can be used to create course slides and course websites. We will conclude with tips on how to make your materials publicly available to share with students and other educators.</p>
+</section>
+<section id="learning-objectives-for-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives-for-workshop">Learning Objectives for Workshop</h2>
+<p>At the end of the tutorial, participants will be able to:</p>
+<ul>
+<li>create Quarto documents
+<ul>
+<li>add embellishments to Quarto documents</li>
+</ul></li>
+<li>create Quarto presentations
+<ul>
+<li>add stylistic embellishments to Quarto documents</li>
+</ul></li>
+</ul>
+</section>
+<section id="intended-audience-and-level" class="level2">
+<h2 class="anchored" data-anchor-id="intended-audience-and-level">Intended Audience and Level</h2>
+<p>This workshop is intended for individuals familiar with RMarkdown and RStudio who are interested in learning more about Quarto! No knowledge of Quarto is required.</p>
+<p>While we will not be coding in R during the workshop, it could be useful for individuals to have some familiarity with programming in R.</p>
+</section>
+</section>
+<section id="schedule" class="level1">
+<h1>Schedule</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">Topic</th>
+<th style="text-align: center;">Presenter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">8:30 - 8:45</td>
+<td style="text-align: center;">Introductions, workshop outline, distribute materials</td>
+<td style="text-align: center;">Everyone</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8:45 - 9:00</td>
+<td style="text-align: center;"><a href="./materials/01-rstudio-refresher.html">A brief refresher of RStudio</a></td>
+<td style="text-align: center;">Hunter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">9:00 - 9:30</td>
+<td style="text-align: center;"><a href="./materials/02-quarto-docs.html">Introduction to Quarto Documents</a></td>
+<td style="text-align: center;">Allison</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">9:30 - 10:00</td>
+<td style="text-align: center;"><a href="./materials/02-activity-quarto-yaml.html">Activity: Exploring YAML options</a></td>
+<td style="text-align: center;">You!</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10:00 - 10:30</td>
+<td style="text-align: center;">Snack break!</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10:30 - 10:45</td>
+<td style="text-align: center;">Share what you discovered!</td>
+<td style="text-align: center;">You!</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10:45 - 11:30</td>
+<td style="text-align: center;"><a href="./materials/03-styling-quarto-docs.html">Embellishing Quarto documents</a></td>
+<td style="text-align: center;">Emily</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">11:30 - 12:00</td>
+<td style="text-align: center;"><a href="./materials/03-activity-styling-quarto-docs.html">Activity: Try it out!</a></td>
+<td style="text-align: center;">You!</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">12:00 - 1:00</td>
+<td style="text-align: center;">Lunch break!</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1:00 - 1:30</td>
+<td style="text-align: center;"><a href="./materials/04-quarto-presentations.html">Quarto presentations</a></td>
+<td style="text-align: center;">Hunter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1:30 - 1:45</td>
+<td style="text-align: center;"><a href="./materials/04-activity-quarto-presentations.html">Activity: Make a simple presentation</a></td>
+<td style="text-align: center;">You!</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1:45 - 2:30</td>
+<td style="text-align: center;"><a href="./materials/05-styling-quarto-presentations.html">Styling Quarto presentations</a></td>
+<td style="text-align: center;">Emily &amp; Allison</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2:30 - 3:00</td>
+<td style="text-align: center;">Snack break!</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3:00 - 3:30</td>
+<td style="text-align: center;"><a href="./materials/05-activity-styling-quarto-presentations.html">Activity: Try it out!</a></td>
+<td style="text-align: center;">You!</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3:30 - 3:45</td>
+<td style="text-align: center;"><a href="./materials/06-version-control.html">A brief introduction to version control</a></td>
+<td style="text-align: center;">Hunter</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3:45 - 4:00</td>
+<td style="text-align: center;"><a href="./materials/07-publishing.html">Publishing content with GitHub pages</a></td>
+<td style="text-align: center;">Emily</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4:00 - 4:30</td>
+<td style="text-align: center;"><a href="./materials/07-publishing.html">Quarto websites</a></td>
+<td style="text-align: center;">Allison</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="in-preparation-for-the-workshop" class="level1">
+<h1>In preparation for the workshop</h1>
+<p>Participants are required to follow the next steps before the day of the workshop:</p>
+<ol type="1">
+<li><p>Install or Update RStudio to the most current version – <a href="https://posit.co/download/rstudio-desktop/">2023.03.0+386 “Cherry Blossom”</a></p></li>
+<li><p>Install the most current version of Quarto – <a href="https://quarto.org/docs/get-started/">Quarto CLI 1.3.340</a></p></li>
+<li><p>Install or Update R to the most current version: 4.3.0 (2023-04-21) – Already Tomorrow</p></li>
+</ol>
+<ul>
+<li><p>Windows: <a href="https://cran.rstudio.com/bin/windows/" class="uri">https://cran.rstudio.com/bin/windows/</a></p></li>
+<li><p>Mac: <a href="https://cran.rstudio.com/bin/macosx/" class="uri">https://cran.rstudio.com/bin/macosx/</a></p></li>
+<li><p>Linux: <a href="https://cran.rstudio.com/bin/linux/" class="uri">https://cran.rstudio.com/bin/linux/</a></p></li>
+</ul>
+</section>
+<section id="workshop-materials" class="level1">
+<h1>Workshop Materials</h1>
+<p>Workshop materials can be found in the github repository <a href="https://github.com/atheobold/uscots-quarto">quarto-workshop</a>!</p>
+<hr>
+<p><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" class="img-fluid"> This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© Copyright 2023, Allison Theobold, Emily Robinson &amp; Hunter Glanz</div>   
+    <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

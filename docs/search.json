@@ -1,0 +1,457 @@
+[
+  {
+    "objectID": "materials/01-rstudio-refresher.html#section",
+    "href": "materials/01-rstudio-refresher.html#section",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "WiFi\n\nUsername: fill in!\nPassword: fill in!\n\nMaterials\nTo access the workshop materials use the following link:\n\nhttps://atheobold.github.io/uscots-quarto/"
+  },
+  {
+    "objectID": "materials/01-rstudio-refresher.html#section-1",
+    "href": "materials/01-rstudio-refresher.html#section-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "We are assuming\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
+  },
+  {
+    "objectID": "materials/01-rstudio-refresher.html#your-workshop-leaders",
+    "href": "materials/01-rstudio-refresher.html#your-workshop-leaders",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Your Workshop Leaders",
+    "text": "Your Workshop Leaders\n\n\n\nHunter Glanz\n\n\n\nEmily Robinson\n\n\n\nAllison Theobold"
+  },
+  {
+    "objectID": "materials/01-rstudio-refresher.html#workshop-prep",
+    "href": "materials/01-rstudio-refresher.html#workshop-prep",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Workshop Prep",
+    "text": "Workshop Prep\n\nAre you on the latest version of RStudio i.e. v2023.03.0+386 or later?\nAre you on the latest version of Quarto i.e. v1.3.340 or later?\nAre you on the latest version of R i.e. v4.3.0 or later?\n\n\nGreat, let’s get started!"
+  },
+  {
+    "objectID": "materials/01-rstudio-refresher.html#structure-of-the-workshop",
+    "href": "materials/01-rstudio-refresher.html#structure-of-the-workshop",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Structure of the workshop",
+    "text": "Structure of the workshop\n\nLecture - 🤠\n“Your turn” or “Our Turn” - 💻\nBreaks - ☕\n\n\nIn-session:\n\n = I’m stuck or I’m running into a code error\n = I have completed the activity\n\n\n\n\nUSCOTS Quarto Workshop"
+  },
+  {
+    "objectID": "materials/05-activity-styling-quarto-presentations.html",
+    "href": "materials/05-activity-styling-quarto-presentations.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "activity on styling quarto presentation"
+  },
+  {
+    "objectID": "materials/04-activity-quarto-presentations.html",
+    "href": "materials/04-activity-quarto-presentations.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "Activity on making a simple quarto presentation"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#section",
+    "href": "materials/02-quarto-docs.html#section",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "Hello Quarto"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#section-1",
+    "href": "materials/02-quarto-docs.html#section-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc\n\n\n\n\nQuarto integrates what has been learned over the last 10-years from RMarkdown into one system for creating and publishing reproducible documents."
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#a-quarto-document",
+    "href": "materials/02-quarto-docs.html#a-quarto-document",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "A Quarto Document",
+    "text": "A Quarto Document\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"May 22nd, 2021\"\nformat: \n  html:\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature \n  on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: Temperature and ozone level.\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, \n       mapping = aes(x = Temp, y = Ozone)\n       ) + \n\n  geom_point() + \n  geom_smooth(method = \"loess\"\n)\n```"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#anatomy-of-a-quarto-document",
+    "href": "materials/02-quarto-docs.html#anatomy-of-a-quarto-document",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\n\nThe YAML metadata or header is:\n\nprocessed in many stages of the rendering process and can influence the final document in many different ways. It is placed at the very beginning of the document and is read by each of Pandoc, Quarto and knitr. Along the way, the information that it contains can affect the code, content, and the rendering process.\n\n\n\nWhat editor should be the default for working in the document?\n\n---\neditor: visual\n---\n\n\n\nWhat format should the document render in?\n\n---\nformat: html\n---\n\n\n\nAre there additional formatting options?\n\n---\nformat: \n  html:\n    code-fold: true\n---"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#code",
+    "href": "materials/02-quarto-docs.html#code",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Code",
+    "text": "Code\n\n\n```{r}\n#| label: species-means\n#| tbl-cap: Mean body mass (g) of penguins on Palmer Archipelego\n#| warning: false\n\nlibrary(palmerpenguins)\n\npenguins %>%\n  drop_na(body_mass_g) %>% \n  group_by(species) %>% \n  summarize(mean_weight = mean(body_mass_g)\n            )\n```\n\n# A tibble: 3 × 2\n  species   mean_weight\n  <fct>           <dbl>\n1 Adelie          3701.\n2 Chinstrap       3733.\n3 Gentoo          5076.\n\n\n\n\n\n\n\n{r} – notates what language the code is written in\n\n\n#| – defines code chunk options"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#text",
+    "href": "materials/02-quarto-docs.html#text",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Text",
+    "text": "Text\n\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Markdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read\n\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an [image](image.png)."
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#text-formatting",
+    "href": "materials/02-quarto-docs.html#text-formatting",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Text Formatting",
+    "text": "Text Formatting\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#headings",
+    "href": "materials/02-quarto-docs.html#headings",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Headings",
+    "text": "Headings\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+  },
+  {
+    "objectID": "materials/02-activity-quarto-yaml.html",
+    "href": "materials/02-activity-quarto-yaml.html",
+    "title": "Activity 1 – Explore YAML Options",
+    "section": "",
+    "text": "The exhaustive list of YAML options that can be used for HTML documents can be found here: https://quarto.org/docs/reference/formats/html.\nUsing this resource add the following to your document:\n\ncode folding\ncenter alignment of all figures\nan execution option which suppresses messages output from R\n\nAfterward, add at least one additional YAML option of your choosing!"
+  },
+  {
+    "objectID": "materials/03-activity-styling-quarto-docs.html",
+    "href": "materials/03-activity-styling-quarto-docs.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "Activity on styling quarto docs"
+  },
+  {
+    "objectID": "resources/stat2-lab-1.html",
+    "href": "resources/stat2-lab-1.html",
+    "title": "Welcome to Posit Cloud!",
+    "section": "",
+    "text": "This is a Quarto document!\nQuarto is a software that allows you to interweave text and R code to create HTML, PDF, and Microsoft Word documents\nThere are two ways to view a Quarto document, (1) as the “Source” file, or (2) as the “Visual” file. We will only use the Visual option in this class, as it allows you to interact with Quarto similar to how you interact with Word.\n\n\nSimilar to a Word Doc, there are a variety of ways you can spice up a Quarto document! Let’s explore a few.\nQuestion 1: Using the formatting options, make a numbered list of your top three favorite animals.\nQuestion 2: Using the formatting options, insert an image of your favorite animal.\nQuestion 3: Now, change the “Formatting your Document” section name to the name of your favorite animal. Make sure your header is a level 1 – use the Header 1 formatting option!\n\n\n\nYou can differentiate the R code within a Quarto file from the body of the document, based on the gray boxes that start with an {r}.\nHere is an example of an R code chunk:\nNotice that after the {r} there is a name (packages), that is the name of the code chunk. It is good practice to name your code chunks based on the action they perform. It makes it easier to navigate to them in the navigation pane.\nThis code chunk has three things we want to pay attention to:\n\nThe #| include: false option at the beginning of the code chunk. We use these options to control how the code output looks in our final rendered document.\nThe library(tidyverse) code loads in an R package called the “tidyverse”. This is code you will have in every lab assignment for this class!\nCode comments which are denoted by a ## symbol. Code comments are a way for you (and me) to write what the code is doing, without R thinking what we are writing is code it should execute.\n\n\n\n\nWhen you click the Render button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.\nQuestion 4: Do you see the above code chunk when you knit the document? Why do you think this is the case?\n\n\n\nYou can include code output in your knitted document:\n\nglimpse(mpg)\n\nRows: 234\nColumns: 11\n$ manufacturer <chr> \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"…\n$ model        <chr> \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4 quattro\", \"…\n$ displ        <dbl> 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2.0, 2.…\n$ year         <int> 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 1999, 200…\n$ cyl          <int> 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, …\n$ trans        <chr> \"auto(l5)\", \"manual(m5)\", \"manual(m6)\", \"auto(av)\", \"auto…\n$ drv          <chr> \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"4\", \"4\", \"4\", \"4\", \"4…\n$ cty          <int> 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17, 17, 1…\n$ hwy          <int> 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25, 25, 2…\n$ fl           <chr> \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p…\n$ class        <chr> \"compact\", \"compact\", \"compact\", \"compact\", \"compact\", \"c…\n\n\nQuestion 5: What do you think the above code does? What type of output does it give you?\nHint: You have saw this type of output earlier today!\n\n\n\n\nYou can also embed plots in the rendered document.\nHere is an example of a plot.\n\n\n\n\n\nQuestion 6: What do you think the echo: false option does in the above code chunk?\nQuestion 7: What do you think the mapping = aes(y = manufacturer, x = hwy)) code does?\nQuestion 8: What do you think the labs(x = \"Highway Miles Per Gallon\", y = \"Car Manufacturer\") code does?"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section",
+    "href": "resources/stat2-week1-day1.html#section",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "About Me…\n\n\nPh.D. in Statistics from Montana State University\nB.S. in Mathematics & B.B.A. in Economics\nfrom Colorado Mesa University"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-1",
+    "href": "resources/stat2-week1-day1.html#section-1",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "What is Statistics?\n\n\n\nScientists seek to answer questions using rigorous methods and careful observations. These observations – collected from the likes of field notes, surveys, and experiments – form the backbone of a statistical investigation and are called data.\n\n\nStatistics is the study of how best to collect, analyze, and draw conclusions from data.\n\n\nIntroduction to Modern Statistics"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-2",
+    "href": "resources/stat2-week1-day1.html#section-2",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "What Statistics Is To Me\n\n \n\n\n\n\nThe data science cycle – Wickham & Grolemund"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-3",
+    "href": "resources/stat2-week1-day1.html#section-3",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "What you can expect in STAT 313\n\nThis course will teach you the fundamentals of linear models—simple linear regression, multiple linear regression, and analysis of variance—and experimental design. You will extend the concepts covered in your Stat I course, to:\n\n\nwork with data in a reproducible way (using R)\nvisualize and summarize a variety of datasets (in R)\ncritically evaluate the use of Statistics\nperform statistical analyses to answer research questions (using R)"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-4",
+    "href": "resources/stat2-week1-day1.html#section-4",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Coding 🙀\n\n\nCoding is a huge part of how doing statistics in the wild looks.\n\n\n\nEveryone is coming from a different background\nDifferent aspects of the course will be difficult to different people\nYou will be given coding resources each week\nUse your peers to support your learning"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-5",
+    "href": "resources/stat2-week1-day1.html#section-5",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Course Components\n\n\n\n\nBefore Class\n\n\nReading Guides\nConcept Quizzes\nR Tutorials\n\n\n\n\n\nDuring Class\n\n\nGroup Discussion\nHands-on Activities\nLab Assignments\n\n\n\n\n\nOutside of Class\n\n\nStatistical Critiques\nMidterm Project\nFinal Project"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-6",
+    "href": "resources/stat2-week1-day1.html#section-6",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Specifications Based Grading\n\n\n\n\nEveryone is capable of earning an A!"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-7",
+    "href": "resources/stat2-week1-day1.html#section-7",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "How Smart are You?\n\n\n\n(1 minute)\n\nWrite two criteria would you use to rank yourself compared to everyone else in this class\n\n\n\n\n(3 minutes)\n\nTalk with the person on your right about the criteria you proposed\n\n\n\n\n(3 minutes)\n\nShare out\nPerson with most vowels in name should be prepared to share!"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-8",
+    "href": "resources/stat2-week1-day1.html#section-8",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Cooperative Learning\n\nis a structured form of small-group learning\n\n\n\n\nRoles relate to how the work should be done\n\nRoles are not about breaking up the work intellectually\n\nRoles allow each person to contribute to the group in significant ways\n\nEach person’s participation is necessary to complete the task"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-9",
+    "href": "resources/stat2-week1-day1.html#section-9",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Group Norms\n\n\n\n\nZero tolerance for: racism, sexism, homophobia, transphobia, ageism, ableism\nRespect one another\nIntent and impact both matter\n\n\n\n\n\nNon-judgmental\nTake space, make space – Share the air (page)\nEmbrace discomfort\nMake decisions by consensus"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-10",
+    "href": "resources/stat2-week1-day1.html#section-10",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "How We Learn Together\n\n\n\n\n\nNo one is done until everyone is done\nYou have the right to ask anyone in your group for help\nYou have the duty to help anyone in your group who asks for help\n\n\n\n\n\n\n\nHelping someone means explaining your thinking not giving answers or doing the work for them\nProvide a justification when you make a statement\nThink and work together – don’t divide up the work"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-11",
+    "href": "resources/stat2-week1-day1.html#section-11",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Break"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-12",
+    "href": "resources/stat2-week1-day1.html#section-12",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Warm-up\n\n\nSketch out what you recall the scientific method / process looking like.\n\n\n\nWhere does statistics happen?"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-13",
+    "href": "resources/stat2-week1-day1.html#section-13",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Why?"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-14",
+    "href": "resources/stat2-week1-day1.html#section-14",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "For a scientific study, what is the purpose of a statistical analysis?\n\n\n\n\nWhat does it mean for an analysis to be “objective”?"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-15",
+    "href": "resources/stat2-week1-day1.html#section-15",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "Dichotomous thinking\n\n\n(90 seconds)\nWhat is an example of a dichotomous choice?\n\n \n(90 seconds)\nHow is dichotomous thinking used in Statistics?"
+  },
+  {
+    "objectID": "resources/stat2-week1-day1.html#section-16",
+    "href": "resources/stat2-week1-day1.html#section-16",
+    "title": "Welcome to Stat 313!",
+    "section": "",
+    "text": "The S-word\n\n\n(60 seconds)\nWhat are 2-3 synonyms of “significant” that come to your mind?\n\n(90 seconds)\nWhat is one issue you see with using the term “significant” to denote “small” p-values?"
+  },
+  {
+    "objectID": "resources/stat1-lab-1.html",
+    "href": "resources/stat1-lab-1.html",
+    "title": "Welcome to RStudio Cloud!",
+    "section": "",
+    "text": "Each Thursday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Canvas (one submission per group). The questions to be submitted on Canvas are bolded in the lab. As you work through the lab with your group have the Canvas lab assignment open so that you can answer those questions as you go. Today’s activity is Lab 1 in Canvas for practice submitting as a group."
+  },
+  {
+    "objectID": "resources/stat1-lab-1.html#what-is-this-document",
+    "href": "resources/stat1-lab-1.html#what-is-this-document",
+    "title": "Welcome to RStudio Cloud!",
+    "section": "What is this document?",
+    "text": "What is this document?\nThis is a Quarto document. Quarto is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents.\nWe will always be using the “Visual” version of our Quarto document, which has options that should feel familiar."
+  },
+  {
+    "objectID": "resources/stat1-lab-1.html#r-code",
+    "href": "resources/stat1-lab-1.html#r-code",
+    "title": "Welcome to RStudio Cloud!",
+    "section": "R Code",
+    "text": "R Code\nYou can differentiate the R code within a Quarto document from the body of the document, because it is contained in a grey box. Here is an example of an R code chunk:\nThe Quarto document knows this code is R code because the first thing inside the curly braces ({}) is an r. The next word (setup) is the name of the code chunk. I like to name every code chunk with one word that represents what the code is doing. This also makes it easier to navigate between the different parts of your document!\nIf you wanted to insert a new R code chunk, you click on the “Insert” button, then select “Code Chunk”, and finally select R.\nQuestion 1: What do you think the library() function in the above code does?\nQuestion 2: What do you think the tidyverse is?"
+  },
+  {
+    "objectID": "resources/stat1-lab-1.html#rendering",
+    "href": "resources/stat1-lab-1.html#rendering",
+    "title": "Welcome to RStudio Cloud!",
+    "section": "Rendering",
+    "text": "Rendering\nWhen you click the Render button a document will be generated that includes both content as well as the output of any R code chunks you included within the document.\nQuestion 3: Why do you think you do not see the above code chunk (named setup) when you knit the document?"
+  },
+  {
+    "objectID": "resources/stat1-lab-1.html#including-code-output",
+    "href": "resources/stat1-lab-1.html#including-code-output",
+    "title": "Welcome to RStudio Cloud!",
+    "section": "Including Code Output",
+    "text": "Including Code Output\nYou can include code output in your knitted document:\n\nglimpse(mpg)\n\nRows: 234\nColumns: 11\n$ manufacturer <chr> \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"…\n$ model        <chr> \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4 quattro\", \"…\n$ displ        <dbl> 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2.0, 2.…\n$ year         <int> 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 1999, 200…\n$ cyl          <int> 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, …\n$ trans        <chr> \"auto(l5)\", \"manual(m5)\", \"manual(m6)\", \"auto(av)\", \"auto…\n$ drv          <chr> \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"4\", \"4\", \"4\", \"4\", \"4…\n$ cty          <int> 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17, 17, 1…\n$ hwy          <int> 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25, 25, 2…\n$ fl           <chr> \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p…\n$ class        <chr> \"compact\", \"compact\", \"compact\", \"compact\", \"compact\", \"c…\n\n\nQuestion 4: What do you think the glimpse() function does? Hint: What type of output does it give you?"
+  },
+  {
+    "objectID": "resources/stat1-lab-1.html#including-plots",
+    "href": "resources/stat1-lab-1.html#including-plots",
+    "title": "Welcome to RStudio Cloud!",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots in the knitted document.\nHere is an example of a plot.\n\n\n\n\n\nQuestion 5: What do you think the echo: false option does in the above code chunk?"
+  },
+  {
+    "objectID": "resources/stat1-lab-1.html#loading-data-into-r",
+    "href": "resources/stat1-lab-1.html#loading-data-into-r",
+    "title": "Welcome to RStudio Cloud!",
+    "section": "Loading Data into R",
+    "text": "Loading Data into R\nYou can load data files into R using functions from different packages. You will learn that the function you use depends on what format the data are in. Today, we will work with data that are stored in a Comma Separated Values file (a CSV). For this format of data, we will use the read_csv() function to read in our data.\nThe data are located in the data folder of your project. To load in the data, we need to specify the “path” to the data, or where R needs to look for the data. I like to use the here() function from the here package to read in data, because I find the format intuitive. I’ll walk you through what the code below is doing.\n\nbroadway is the name of the object we are storing the dataset into\nThe <- “assigns” the output of the read_csv() function into the broadway object\nread_csv() is a function that reads in our csv data file\nhere() is a function that specifies where the data live\n“data” is the name of the folder the data live in\n“broadway.csv” is the name of the dataset\n\nClick on the broadway dataset in the upper righthand corner to open up a data viewer for you to look over the dataset.\nQuestion 7: Based on your inspection of the data, what are the observations / cases in these data?\nQuestion 8: What are the variables in these data?\nSubmitting Your Lab: Once you are done answering every question in the lab, hit the “Render” button to create an HTML document with your answers. To submit your HTML on Canvas you need to do the following:\n\nCheck the box next to lab1.html\nClick on the “More” icon (with the gear by it)\nSelect “Export…”\nYou will be given an option to change the name of your document. I don’t. So, bypass this and click “Download”.\nUpload your downloaded Lab 1 file to the Lab 1 Canvas assignment"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#section",
+    "href": "resources/intro-R-ggplot-import.html#section",
+    "title": "ggplot & Importing data review",
+    "section": "",
+    "text": "What are the aesthetics in this plot?\nWhat geometric object is being plotted?"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#section-1",
+    "href": "resources/intro-R-ggplot-import.html#section-1",
+    "title": "ggplot & Importing data review",
+    "section": "",
+    "text": "Univariate (One Variable) Visualizations – For Numerical Data\n\n\n\n\nHistogram\nBoxplot\nDensity Plot"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#histogram",
+    "href": "resources/intro-R-ggplot-import.html#histogram",
+    "title": "ggplot & Importing data review",
+    "section": "Histogram",
+    "text": "Histogram\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm)) + \n  geom_histogram() +\n  labs(x = \"Bill Length (mm)\")\n\n\n\n\n\n\n\n\n\n\n\nIs this aesthetic global or local?"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#boxplot",
+    "href": "resources/intro-R-ggplot-import.html#boxplot",
+    "title": "ggplot & Importing data review",
+    "section": "Boxplot",
+    "text": "Boxplot\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_boxplot() + \n  labs(x = \"Bill Length (mm)\")\n\n\n\n\n\n\nWhat calculations are necessary to create a boxplot?\nWhat are strengths of a boxplot?\nWhat are weaknesses of a boxplot?"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#section-2",
+    "href": "resources/intro-R-ggplot-import.html#section-2",
+    "title": "ggplot & Importing data review",
+    "section": "",
+    "text": "Image by Allison Horst"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#density-plot",
+    "href": "resources/intro-R-ggplot-import.html#density-plot",
+    "title": "ggplot & Importing data review",
+    "section": "Density Plot",
+    "text": "Density Plot\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_density() + \n  labs(x = \"Bill Length (mm)\")\n\n\n\n\n\n\nA smooth approximation to a variable’s distribution\nPlots density (as a proportion) on the y-axis"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#section-3",
+    "href": "resources/intro-R-ggplot-import.html#section-3",
+    "title": "ggplot & Importing data review",
+    "section": "",
+    "text": "Bivariate (Two Variables) Visualizations – For Numerical Data\n\n\n\n\nSide-by-Side Boxplots\nSide-by-Side Density Plots (Ridge Plots)\nScatterplots\nFaceted Histograms"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#side-by-side-boxplots",
+    "href": "resources/intro-R-ggplot-import.html#side-by-side-boxplots",
+    "title": "ggplot & Importing data review",
+    "section": "Side-by-Side Boxplots",
+    "text": "Side-by-Side Boxplots\n\n\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = species)) +\n  geom_boxplot() + \n  labs(x = \"Penguin Species\", \n       y = \"Bill Length (mm)\")\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm,\n                     y = species)) +\n  geom_boxplot() + \n  labs(y = \"Penguin Species\", \n      x  = \"Bill Length (mm)\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhich do you prefer?"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#faceted-histograms",
+    "href": "resources/intro-R-ggplot-import.html#faceted-histograms",
+    "title": "ggplot & Importing data review",
+    "section": "Faceted Histograms",
+    "text": "Faceted Histograms\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram(binwidth = 3) +\n  facet_wrap(~ species) +\n  labs(x = \"Bill Length (mm)\", \n       title = \"Frequency of Captured Penguins by Species\", \n       y = \"\")"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#scatterplots",
+    "href": "resources/intro-R-ggplot-import.html#scatterplots",
+    "title": "ggplot & Importing data review",
+    "section": "Scatterplots",
+    "text": "Scatterplots\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm, x = bill_depth_mm)) +\n  geom_point() +\n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\")"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#section-4",
+    "href": "resources/intro-R-ggplot-import.html#section-4",
+    "title": "ggplot & Importing data review",
+    "section": "",
+    "text": "Multivariate Plots\n\n\nThere are two main methods for adding a third (or fourth) variable into a data visualization:\n\n\nColors\n\ncreates colors for every level of a categorical variable\ncreates a gradient for different values of a quantitative variable\n\n\nFacets\n\ncreates subplots for every level of a variable\nlabels each sub-plot with the value of the variable"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#colors-in-scatterplots",
+    "href": "resources/intro-R-ggplot-import.html#colors-in-scatterplots",
+    "title": "ggplot & Importing data review",
+    "section": "Colors in Scatterplots",
+    "text": "Colors in Scatterplots\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = bill_depth_mm,\n                     color = species)\n       ) +\n  geom_point() +\n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       color = \"Penguin Species\")"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#colors-in-boxplots",
+    "href": "resources/intro-R-ggplot-import.html#colors-in-boxplots",
+    "title": "ggplot & Importing data review",
+    "section": "Colors in Boxplots",
+    "text": "Colors in Boxplots\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = species,\n                     color = sex)\n       ) +\n  geom_boxplot() +\n  labs(x = \"Penguin Species\", \n       y = \"Bill Length (mm)\", \n       color = \"Sex\")"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#facets-in-scatterplots",
+    "href": "resources/intro-R-ggplot-import.html#facets-in-scatterplots",
+    "title": "ggplot & Importing data review",
+    "section": "Facets in Scatterplots",
+    "text": "Facets in Scatterplots\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = bill_depth_mm,\n                     color = sex)) +\n  geom_point() +\n  facet_wrap(~ species) + \n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       color = \"Sex\")"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#facets-in-boxplots",
+    "href": "resources/intro-R-ggplot-import.html#facets-in-boxplots",
+    "title": "ggplot & Importing data review",
+    "section": "Facets in Boxplots",
+    "text": "Facets in Boxplots\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm,\n                     y = species,\n                     fill = sex)) +\n  geom_boxplot(alpha = 0.3) +\n  facet_wrap(~ island) + \n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       fill = \"Sex\")"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#r-projects",
+    "href": "resources/intro-R-ggplot-import.html#r-projects",
+    "title": "ggplot & Importing data review",
+    "section": "R Projects!",
+    "text": "R Projects!\n\n\n\n\n\nArtwork by @allison_horst\n\n\n\n\n\nSelf contained\nFlag where R should look for files\nAllow for us to easily use here() to find files\nShould be how you work in RStudio every time"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#why-use-here-to-read-in-your-data",
+    "href": "resources/intro-R-ggplot-import.html#why-use-here-to-read-in-your-data",
+    "title": "ggplot & Importing data review",
+    "section": "Why use here() to read in your data?",
+    "text": "Why use here() to read in your data?\n\n\n\n\n\nArtwork by @allison_horst\n\n\n\n\n\nNever set a relative / full path or change your working directory!!!\n\n\nsetwd(\"/Users/atheobol/Documents/Teaching/Stat 331/stat-331-allison\")`\n\n\nWorking in R? Rendering a document? here() uses the same path to load in data!"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#your-turn",
+    "href": "resources/intro-R-ggplot-import.html#your-turn",
+    "title": "ggplot & Importing data review",
+    "section": "Your turn!",
+    "text": "Your turn!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "USCOTS 2023 Workshop",
+    "section": "",
+    "text": "by: Hunter Glanz, Emily Robinson & Allison Theobold"
+  },
+  {
+    "objectID": "index.html#workshop-description",
+    "href": "index.html#workshop-description",
+    "title": "USCOTS 2023 Workshop",
+    "section": "Workshop Description",
+    "text": "Workshop Description\nQuarto is the next generation of R Markdown for publishing, including dynamic and static documents and multi-lingual programming language support. With Quarto, you can create documents, books, presentations, websites, or other online resources. The workshop is comprised of three modules. Module 1 will introduce you to Quarto documents, for both student and instructor use. We will demonstrate how we use Quarto documents and RStudio’s Visual Editor to introduce students to reproducible workflows. We will also demonstrate how Quarto documents can be used to create and distribute teaching resources. Modules 2 and 3 will extend the use of Quarto to create teaching resources, outlining how Quarto can be used to create course slides and course websites. We will conclude with tips on how to make your materials publicly available to share with students and other educators."
+  },
+  {
+    "objectID": "index.html#learning-objectives-for-workshop",
+    "href": "index.html#learning-objectives-for-workshop",
+    "title": "USCOTS 2023 Workshop",
+    "section": "Learning Objectives for Workshop",
+    "text": "Learning Objectives for Workshop\nAt the end of the tutorial, participants will be able to:\n\ncreate Quarto documents\n\nadd embellishments to Quarto documents\n\ncreate Quarto presentations\n\nadd stylistic embellishments to Quarto documents"
+  },
+  {
+    "objectID": "index.html#intended-audience-and-level",
+    "href": "index.html#intended-audience-and-level",
+    "title": "USCOTS 2023 Workshop",
+    "section": "Intended Audience and Level",
+    "text": "Intended Audience and Level\nThis workshop is intended for individuals familiar with RMarkdown and RStudio who are interested in learning more about Quarto! No knowledge of Quarto is required.\nWhile we will not be coding in R during the workshop, it could be useful for individuals to have some familiarity with programming in R."
+  },
+  {
+    "objectID": "bio.html",
+    "href": "bio.html",
+    "title": "Workshop Presenters",
+    "section": "",
+    "text": "Hunter Glanz is an Assistant Professor of Statistics at Cal Poly in beautiful San Luis Obispo, California. Insert Hunter’s bio here!\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Insert Emily’s bio here!\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
+  }
+]
