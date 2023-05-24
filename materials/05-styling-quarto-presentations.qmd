@@ -2,8 +2,8 @@
 format: 
   revealjs:
     slide-number: false
-    width: 1920
-    height: 1080
+    height: 900
+    width: 1600
     logo: "images/cp_hex_logo.png"
     footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
     theme: [dark, styles.scss]
@@ -11,11 +11,18 @@ format:
 editor: source
 ---
 
-##  {background-image="images/style.png" background-position="center" background-size="contain"}
+##  {background-image="images/05-style-crop.png" background-position="center" background-size="cover"}
 
 ::: {style="font-size: 6em; color: #FFFFFF;"}
 Styling Quarto Presentations
 :::
+
+```{r}
+#| label: set-up
+
+library(tidyverse)
+```
+
 
 ## Themes!
 
@@ -55,14 +62,236 @@ format:
 :::
 
 
-##
+# Incrementing
 
-colors
+## Lists
 
-incremental content (lists, body, columns)
+::: columns
+::: {.column width="45%"}
 
-callouts
+[**Locally**]{style="font-size: 1.25em; color: #ed8402;"}
 
-tabsets
+```markdown
+::: {.incremental}
 
-output location
+- item 1
+- item 2
+- item 3
+
+:::
+```
+
+</br>
+
+::: {.incremental}
+
+- item 1
+- item 2
+- item 3
+
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+::: fragment
+[**Globally**]{style="font-size: 1.25em; color: #ed8402;"}
+
+```yaml
+format:
+  revealjs:
+    incremental: true  
+```
+:::
+:::
+:::
+
+## Pauses
+
+If you don't have a list of things, but you want to increment components of your slide...
+
+</br>
+
+::: {style="font-size: 1.5em;"}
+
+```markdown
+content before the pause
+
+. . .
+
+content after the pause
+```
+:::
+
+</br>
+
+. . .
+
+content before the pause
+
+. . .
+
+content after the pause
+
+## Fragments
+
+If you have columns and you would like to increment when and how columns appear...
+
+</br>
+
+::: columns
+::: {.column width="30%"}
+::: {.fragment .fade-in-then-out}
+Fade out
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.fragment .fade-in}
+::: {.fragment .grow}
+::: {.fragment .semi-fade-out}
+Fade in then GROW then fade semi out
+:::
+:::
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+:::
+:::
+
+
+## Implementation
+
+::: {style="font-size: 1.5em;"}
+
+```markdown
+::: columns
+::: {.column width="30%"}
+::: {.fragment .fade-in-then-out}
+Fade out
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.fragment .fade-in}
+::: {.fragment .grow}
+::: {.fragment .semi-fade-out}
+Fade in then GROW then fade semi out
+:::
+:::
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+:::
+:::
+```
+:::
+
+</br>
+
+[Learn more about fragments here!](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments)
+
+## Callouts 
+
+If you want to remind your audience of something important...
+
+</br> 
+
+::: {style="font-size: 1.5em;"}
+::: {.callout-tip}
+# Same format!
+
+Remember, you can use the same format to get a callout in a presentation!
+
+```markdown
+::: {.callout-tip}
+
+:::
+```
+:::
+:::
+
+## Tabsets 
+
+are quite useful for displaying content side-by-side...
+
+</br>
+
+::: panel-tabset
+### `str_to_lower()`
+
+converts all letters in the strings to lowercase
+
+<br>
+
+::: {style="font-size: 1.5em;"}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+my_vector <- c("Hello,", "my name is", "Bond", "James Bond")
+str_to_lower(my_vector)
+```
+:::
+
+### `str_to_upper()`
+
+converts all letters in the strings to uppercase
+
+</br>
+
+::: {style="font-size: 1.5em;"}
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+str_to_upper(my_vector)
+```
+:::
+
+### `str_to_title()`
+
+converts the first letter of the strings to uppercase
+
+</br>
+
+::: {style="font-size: 1.5em;"}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+str_to_title(my_vector)
+```
+:::
+:::
+
+. . .
+
+</br>
+
+[Learn more about tabsets here!](https://quarto.org/docs/presentations/revealjs/#tabsets)
+
+## Code Output
+
+[Learn more about code output locations here!](https://quarto.org/docs/presentations/revealjs/#output-location)

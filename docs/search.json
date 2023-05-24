@@ -635,5 +635,68 @@
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Quarto makes moving between formats straightforward",
     "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\nWhat did spark my interest was how how straightforward it is with Quarto to move between output formats.\nAs an educator, two things are of utmost importance to me about the tools I use to create my materials: reproducibility and ease of transition between output formats, like documents to slides to websites to books.\nOver the last year of using Quarto for pretty much everything, I’ve felt like I’ve finally found the tool that lets me go from one output type to the other with minimal, if any, futzing around with my source code beyond the yaml. For example, here are common things I produce\n–> a lesson in document form  –> the same content in presentation form  –> the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml. Nothing in the content part of my document. No slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#lists",
+    "href": "materials/05-styling-quarto-presentations.html#lists",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Lists",
+    "text": "Lists\n\n\nLocally\n::: {.incremental}\n\n- item 1\n- item 2\n- item 3\n\n:::\n\n\n\nitem 1\nitem 2\nitem 3\n\n\n\n\n\n\nGlobally\nformat:\n  revealjs:\n    incremental: true"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#body",
+    "href": "materials/05-styling-quarto-presentations.html#body",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Body",
+    "text": "Body"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#columns",
+    "href": "materials/05-styling-quarto-presentations.html#columns",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Columns",
+    "text": "Columns"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#callouts",
+    "href": "materials/05-styling-quarto-presentations.html#callouts",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Callouts",
+    "text": "Callouts\nIf you want to remind your audience of something important…\n\n\n\n\n\n\n\n\nSame format!\n\n\nRemember, you can use the same format to get a callout in a presentation!\n::: {.callout-tip}\n\n:::"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#tabsets",
+    "href": "materials/05-styling-quarto-presentations.html#tabsets",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Tabsets",
+    "text": "Tabsets\nare quite useful for displaying content side-by-side…\n\n\nstr_to_lower()str_to_upper()str_to_title()\n\n\nconverts all letters in the strings to lowercase\n\n\n\nmy_vector <- c(\"Hello,\", \"my name is\", \"Bond\", \"James Bond\")\nstr_to_lower(my_vector)\n\n[1] \"hello,\"     \"my name is\" \"bond\"       \"james bond\"\n\n\n\n\n\nconverts all letters in the strings to uppercase\n\n\n\nstr_to_upper(my_vector)\n\n[1] \"HELLO,\"     \"MY NAME IS\" \"BOND\"       \"JAMES BOND\"\n\n\n\n\n\nconverts the first letter of the strings to uppercase\n\n\n\nstr_to_title(my_vector)\n\n[1] \"Hello,\"     \"My Name Is\" \"Bond\"       \"James Bond\"\n\n\n\n\n\n\n\n\nLearn more about tabsets here!"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#code-output",
+    "href": "materials/05-styling-quarto-presentations.html#code-output",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Code Output",
+    "text": "Code Output\nLearn more about code output locations here!\n\n\n\nUSCOTS Quarto Workshop"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#pauses",
+    "href": "materials/05-styling-quarto-presentations.html#pauses",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Pauses",
+    "text": "Pauses\nIf you don’t have a list of things, but you want to increment components of your slide…\n\n\ncontent before the pause\n\n. . .\n\ncontent after the pause\n\n\n\ncontent before the pause\n\n\ncontent after the pause"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#fragments",
+    "href": "materials/05-styling-quarto-presentations.html#fragments",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Fragments",
+    "text": "Fragments\nIf you have columns and you would like to increment when and how columns appear…\n\n\n\n\nFade out\n\n\n\n\n\n\n\nFade in then GROW then fade semi out\n\n\n\n\n\n\n\nSlide up while fading in"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#implementation",
+    "href": "materials/05-styling-quarto-presentations.html#implementation",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Implementation",
+    "text": "Implementation\n\n::: columns\n::: {.column width=\"30%\"}\n::: {.fragment .fade-in-then-out}\nFade out\n:::\n:::\n\n::: {.column width=\"3%\"}\n:::\n\n::: {.column width=\"30%\"}\n::: {.fragment .fade-in}\n::: {.fragment .grow}\n::: {.fragment .semi-fade-out}\nFade in then GROW then fade semi out\n:::\n:::\n:::\n:::\n\n::: {.column width=\"3%\"}\n:::\n\n::: {.column width=\"30%\"}\n::: {.fragment .fade-up}\nSlide up while fading in\n:::\n:::\n:::\n\n\nLearn more about fragments here!"
   }
 ]
