@@ -1,0 +1,52 @@
+---
+title: "Classroom Resources"
+editor: visual
+---
+
+We've compiled a set of examples of Quarto documents and presentations we have
+used in our courses. We hope these examples show a variety of contexts for how 
+you can use Quarto in your courses!
+
+# Quarto Documents
+
+## Introductory Statistics
+
+**Week 1 Lab Assignment**
+
+Rendered Doc: [Lab 1 - Introduction to Quarto (and R)](stat1-lab-1.qmd)
+
+Source file: [stat-1-lab-1.qmd](https://github.com/atheobold/uscots-quarto/blob/main/resources/stat1-lab-1.qmd)
+
+**Week ___ Lab Assignment**
+
+
+**Midterm Project**
+
+
+
+## Intermediate Statistics
+
+### Week 1 Lab Assignment
+
+Rendered Doc: [Lab 1 - Introduction to Quarto (and R)](stat2-lab-1.qmd)
+
+Source file: [stat2-lab-1.qmd](https://github.com/atheobold/uscots-quarto/blob/main/resources/stat2-lab-1.qmd)
+
+### Prompt for Midterm Project
+
+
+# Quarto Slides
+
+## Introductory Statistics
+
+## Intermediate Statistics
+
+Rendered Slides: [Data Visualization with `ggplot2` and Importing Data with `here`](stat2-week1-day1.qmd)
+
+Source file: [stat2-week1-day1.qmd](https://github.com/atheobold/uscots-quarto/blob/main/resources/stat2-week1-day1.qmd)
+
+## Intro Data Science
+
+Rendered Slides: [Data Visualization with `ggplot2` and Importing Data with `here`](intro-R-ggplot-import.qmd)
+
+Source file: [intro-R-ggplot-import.qmd](https://github.com/atheobold/uscots-quarto/blob/main/resources/intro-R-ggplot-import.qmd)

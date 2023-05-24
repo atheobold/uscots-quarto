@@ -68,24 +68,16 @@ Options for publishing your content
 ::: {layout-ncol="3"}
 ### Hunter Glanz
 
-![](images/hunter_glanz.jpg){style="height: 300px;"}
+![](images/01-hunter_glanz.jpg){style="height: 300px;"}
 
 ### Emily Robinson
 
-![](images/emily-robinson.jpg){style="height: 300px;"}
+![](images/01-emily-robinson.jpg){style="height: 300px;"}
 
 ### Allison Theobold
 
-![](images/allison_headshot.jpg){style="height: 300px;"}
+![](images/01-allison_headshot.jpg){style="height: 300px;"}
 :::
-
-<!-- **Outline:** -->
-
-<!-- -   Introduction to RStudio IDE -->
-
-<!-- -   What is an RStudio Project? -->
-
-<!-- -   What is the difference between using RStudio on Posit Cloud and locally installing RStudio? -->
 
 ## Workshop Prep
 

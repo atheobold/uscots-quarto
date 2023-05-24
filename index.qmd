@@ -71,6 +71,10 @@ Participants are required to follow the next steps before the day of the worksho
 
 Workshop materials can be found in the github repository [quarto-workshop](https://github.com/atheobold/uscots-quarto)!
 
+# After the Workshop
+
+Feel free to parooze the [list of Quarto docs and presentations](resources/resource-list.qmd) we have used in our statisics courses. Many of these documents are from the first week of classes, so they could give you an idea of how you might want to introduce your students to Quarto! 
+
 ------------------------------------------------------------------------
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
