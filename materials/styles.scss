@@ -1,6 +1,32 @@
 /*-- scss:defaults --*/
 
+/*-- scss:rules --*/
+
+.reveal .takeaway {
+  background-color: #e1ecf7;
+  text-align: center;
+}
+
+.reveal .slide .bulletbox {
+  padding: 0.5em;
+  height: 300px;
+}
+
+.reveal .borderbox img {
+  border: 5px solid #ececec;
+}
+
+/* alignment */
+
+.reveal .centered {
+  text-align: center;
+}
+
 /* font sizes */
+
+.reveal .huge {
+  font-size: 8em;
+}
 
 .reveal .larger {
   font-size: 3em;
@@ -10,10 +36,29 @@
   font-size: 2em;
 }
 
-.reveal .slide .midi {
+.reveal .midi {
   font-size: 1.25em;
 }
 
 .reveal .small {
   font-size: 0.75em;
 }
+
+/* font colors */
+
+.reveal .poppy {
+  color: #ed8402;
+}
+
+.reveal .teal {
+  color: #76b5c5;
+}
+
+.reveal .bayberry {
+  color: #34605f;
+}
+
+.reveal .gray {
+  color: #D4D4D4;
+}
+

@@ -74,28 +74,28 @@
     "href": "materials/02-quarto-docs.html#anatomy-of-a-quarto-document",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\n\nThe YAML metadata or header is:\n\nprocessed in many stages of the rendering process and can influence the final document in many different ways. It is placed at the very beginning of the document and is read by each of Pandoc, Quarto and knitr. Along the way, the information that it contains can affect the code, content, and the rendering process.\n\n\n\nWhat editor should be the default for working in the document?\n\n---\neditor: visual\n---\n\n\n\nWhat format should the document render in?\n\n---\nformat: html\n---\n\n\n\nAre there additional formatting options?\n\n---\nformat: \n  html:\n    code-fold: true\n---"
+    "text": "Anatomy of a Quarto document\n\nThe YAML metadata or header is:\n\nprocessed in many stages of the rendering process and can influence the final document in many different ways. It is placed at the very beginning of the document and is read by each of Pandoc, Quarto and knitr. Along the way, the information that it contains can affect the code, content, and the rendering process."
   },
   {
     "objectID": "materials/02-quarto-docs.html#code",
     "href": "materials/02-quarto-docs.html#code",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Code",
-    "text": "Code\n\n\n```{r}\n#| label: species-means\n#| tbl-cap: Mean body mass (g) of penguins on Palmer Archipelego\n#| warning: false\n\nlibrary(palmerpenguins)\n\npenguins %>%\n  drop_na(body_mass_g) %>% \n  group_by(species) %>% \n  summarize(mean_weight = mean(body_mass_g)\n            )\n```\n\n# A tibble: 3 × 2\n  species   mean_weight\n  <fct>           <dbl>\n1 Adelie          3701.\n2 Chinstrap       3733.\n3 Gentoo          5076.\n\n\n\n\n\n\n\n{r} – notates what language the code is written in\n\n\n#| – defines code chunk options"
+    "text": "Code\n\n\n\n```{r}\n#| output-location: column-fragment\n#| label: species-means\n#| tbl-cap: Mean body mass (g) of penguins on Palmer Archipelego\n#| warning: false\n\nlibrary(palmerpenguins)\n\npenguins %>%\n  drop_na(body_mass_g) %>% \n  group_by(species) %>% \n  summarize(mean_weight = mean(body_mass_g)\n            )\n```\n\n\n# A tibble: 3 × 2\n  species   mean_weight\n  <fct>           <dbl>\n1 Adelie          3701.\n2 Chinstrap       3733.\n3 Gentoo          5076.\n\n\n\n\n\n{r} – notates what language the code is written in\n\n\n#| – defines code chunk options"
   },
   {
     "objectID": "materials/02-quarto-docs.html#text",
     "href": "materials/02-quarto-docs.html#text",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Text",
-    "text": "Text\n\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Markdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read\n\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an [image](image.png)."
+    "text": "Text\n\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Markdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read\n\n\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an [image](image.png)."
   },
   {
     "objectID": "materials/02-quarto-docs.html#text-formatting",
     "href": "materials/02-quarto-docs.html#text-formatting",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Text Formatting",
-    "text": "Text Formatting\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+    "text": "Text Formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
   },
   {
     "objectID": "materials/02-quarto-docs.html#headings",
@@ -114,9 +114,9 @@
   {
     "objectID": "materials/03-activity-styling-quarto-docs.html",
     "href": "materials/03-activity-styling-quarto-docs.html",
-    "title": "Untitled",
+    "title": "Activity 2 – Embellishing your Quarto doc!",
     "section": "",
-    "text": "Activity on styling quarto docs"
+    "text": "Common Quarto embellishments that can be used for HTML and PDF documents can be found here:\n\nCross-references\nCallouts\nTabsets\nCitations and Footnotes\nArticle Layouts\nGeneral formatting for HTML documents\nGeneral formatting for PDF documents\n\nUsing these resources, craft your document into a draft course syllabus using:\n\nsection headers\ncross-references\ncallouts\ncolumns\n\nAfterward, add at least two additional embellishments that fit your style!"
   },
   {
     "objectID": "resources/stat2-lab-1.html",
@@ -481,5 +481,159 @@
     "title": "Welcome to Stat 313!",
     "section": "",
     "text": "Warm-up\n. . ."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html",
+    "href": "materials/03-styling-quarto-docs.html",
+    "title": "Styling Quarto Documents",
+    "section": "",
+    "text": "Use # to define your section headers and sub-headers.\nThe more ## you have, the next level of sub-headers it will be assigned to.\n\n\n# First level\n\n## Second level\n\n## Third level\n\nTo number your sections\n---\nformat: \n  html/pdf:\n    number-sections: true\n---"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#toc-slide",
+    "href": "materials/03-styling-quarto-docs.html#toc-slide",
+    "title": "Styling Quarto Documents",
+    "section": "Table of Contents",
+    "text": "Table of Contents\nIf you want to include a table of contents based on your section headers…\n\n\n---\nformat: \n  html/pdf:\n    toc: true\n---\n\n\n\n\n\nYou can customize with\n---\ntoc-depth:\ntoc-location:\ntoc-title:\n---"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#cross-references",
+    "href": "materials/03-styling-quarto-docs.html#cross-references",
+    "title": "Styling Quarto Documents",
+    "section": "Cross references",
+    "text": "Cross references\nYou might want to link to a section or subsection within the same Quarto document.\n\nAssign a section ID to the header\n# First level {#section-1}\n\nand cross reference link to the section\nVisit [First level](#section-1) for instructions.\n\n\nThe document will then show a hyperlink to the cross-referenced section."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#columns",
+    "href": "materials/03-styling-quarto-docs.html#columns",
+    "title": "Styling Quarto Documents",
+    "section": "Columns",
+    "text": "Columns\nIt can be useful to display content in columns.\n:::: columns\n::: column\n\nContent for first column.\n\n:::\n::: column\n\nContent for second column.\n\n:::\n::::\n\n\nContent for first column.\n\nContent for second column."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#you-might-want-uneven-columns",
+    "href": "materials/03-styling-quarto-docs.html#you-might-want-uneven-columns",
+    "title": "Styling Quarto Documents",
+    "section": "You might want uneven columns",
+    "text": "You might want uneven columns\n:::: {.columns}\n::: {.column width=25%}\n\n+ item 1\n+ item 2\n\n:::\n::: {.column width=75%}\n\n![](link-to-image.png)\n\n:::\n::::\n\n\n\nitem 1\nitem 2"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#or-more-than-two-columns",
+    "href": "materials/03-styling-quarto-docs.html#or-more-than-two-columns",
+    "title": "Styling Quarto Documents",
+    "section": "or more than two columns",
+    "text": "or more than two columns\n:::: {.columns}\n::: {.column width=33%}\nColumn 1\n:::\n::: {.column width=33%}\nColumn 2\n:::\n::: {.column width=33%}\nColumn 3\n:::\n::::\n\n\nColumn 1\n\nColumn 2\n\nColumn 3"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#callouts",
+    "href": "materials/03-styling-quarto-docs.html#callouts",
+    "title": "Styling Quarto Documents",
+    "section": "Callouts",
+    "text": "Callouts\nUsing callouts can draw attention to certain text or indicate supplemental content.\n::: callout-note\nThere are five types of callouts: note, tip, warning, caution, and important.\n:::\n\n\n\n\n\n\nThere are five types of callouts: note, warning, important, tip, and caution."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#callout-titles",
+    "href": "materials/03-styling-quarto-docs.html#callout-titles",
+    "title": "Styling Quarto Documents",
+    "section": "Callout titles",
+    "text": "Callout titles\n::: callout-tip\n## Tip with Title\n\nThis is an example of a callout with a title.\n:::\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#and-collapse-them1",
+    "href": "materials/03-styling-quarto-docs.html#and-collapse-them1",
+    "title": "Styling Quarto Documents",
+    "section": "And collapse them!1",
+    "text": "And collapse them!1\n::: {.callout-caution collapse=\"true\"}\n## Expand To Learn About Collapse\n\nThis is an example of a 'folded' caution callout that can be expanded by the user.\n:::\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\n\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user.\n\n\n\n\nMany more callout customization can be explored here."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#tabsets",
+    "href": "materials/03-styling-quarto-docs.html#tabsets",
+    "title": "Styling Quarto Documents",
+    "section": "Tabsets",
+    "text": "Tabsets\nYou might want readers to toggle between content.\n::: panel-tabset\n\n## Tab 1\n\nContent for the first tab.\n\n## Tab 2\n\nContent for the second tab.\n\n:::\n\nTab 1Tab 2\n\n\nContent for the first tab.\n\n\nContent for the second tab."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#footnotes",
+    "href": "materials/03-styling-quarto-docs.html#footnotes",
+    "title": "Styling Quarto Documents",
+    "section": "Footnotes",
+    "text": "Footnotes\nFootnotes can be useful for providing additional information without taking away from the existing content\nHere is a footnote reference[^1]\n\n[^1]: Here is the footnote.\nHere is a footnote reference2\n\nAlternatively,\nAnd another^[Here is the other footnote.]\nAnd another3"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#citations",
+    "href": "materials/03-styling-quarto-docs.html#citations",
+    "title": "Styling Quarto Documents",
+    "section": "Citations",
+    "text": "Citations\n---\ntitle: \"My Document\"\nbibliography: references.bib\n---\n\nBlah Blah [@uscots2023]\n\nOne of the reasons I would use the visual editor!"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#margins4",
+    "href": "materials/03-styling-quarto-docs.html#margins4",
+    "title": "Styling Quarto Documents",
+    "section": "Margins4",
+    "text": "Margins4\nYou might have information you want to put in the margins of a document.\n::: column-margin\nContent for the margin.\n:::"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#you-can-place-output-in-the-margins",
+    "href": "materials/03-styling-quarto-docs.html#you-can-place-output-in-the-margins",
+    "title": "Styling Quarto Documents",
+    "section": "You can place output in the margins",
+    "text": "You can place output in the margins\n\n\n```{r}\n#| column: margin\n\nmtcars[1:6, 1:3]\n```\n\n                   mpg cyl disp\nMazda RX4         21.0   6  160\nMazda RX4 Wag     21.0   6  160\nDatsun 710        22.8   4  108\nHornet 4 Drive    21.4   6  258\nHornet Sportabout 18.7   8  360\nValiant           18.1   6  225"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#or-your-footnotes-and-citations",
+    "href": "materials/03-styling-quarto-docs.html#or-your-footnotes-and-citations",
+    "title": "Styling Quarto Documents",
+    "section": "Or your footnotes and citations",
+    "text": "Or your footnotes and citations\n---\nreference-location: margin\ncitation-location: margin\n---\n\n\nAnd so much more on article layouts."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#some-of-my-favorite-embellishments",
+    "href": "materials/03-styling-quarto-docs.html#some-of-my-favorite-embellishments",
+    "title": "Styling Quarto Documents",
+    "section": "Some of my favorite embellishments",
+    "text": "Some of my favorite embellishments\n---\nembed-resources: true\ncode-tools: true\n---\n\n\n\n\n\n\nProviding students with notes or tips separate from the regular content.\n\n\n\n\nAndAllTheTabsets!"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#the-r-markdown-ecosystem",
+    "href": "materials/02-quarto-docs.html#the-r-markdown-ecosystem",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "The R Markdown ecosystem",
+    "text": "The R Markdown ecosystem\n\n\nThink of all the packages from the R Markdown universe that you’ve come to love and rely on over the years. Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc."
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto-next-generation-r-markdown",
+    "href": "materials/02-quarto-docs.html#quarto-next-generation-r-markdown",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto: Next generation R Markdown",
+    "text": "Quarto: Next generation R Markdown\n\n\nQuarto unifies the functionality from these packages,\nbuilding on Pandoc on the technical side and on the human side – over a decade of experience developing, maintaining, and tweaking these packages as well as community feedback R Markdown extension packages.\nSuch a unification effort presents a fantastic opportunity to identify and address gaps functionality and inefficiencies in user experience, and the process of building Quarto has been no different."
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto-highlights",
+    "href": "materials/02-quarto-docs.html#quarto-highlights",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto highlights",
+    "text": "Quarto highlights\n\n\n\n\n\n\n Consistent implementation of attractive and handy features across outputs\n\n\n\n\n\n\n\n More accessible defaults as well as better support for accessibility\n\n\n\n\n\n\n\n\n\n\n\n\n Guardrails, particularly helpful for new learners: YAML completion, code option completion\n\n\n\n\n\n\n\n Support for other languages like Python, Julia, and more\n\n\n\n\n\n\n\nSome highlights of these improvements include\n–> consistent implementation of attractive and handy features across all outputs, like tabsets, code-folding, and syntax highlighting,\n–> more accessible defaults as well as better support for creating accessible documents,\n–> guardrails that are particularly helpful for new learners, like YAML completion and informative syntax errors,\n–> and perhaps most excitingly for those who are not coming from the R ecosystem, Quarto offers support for other languages like Python, Julia, and more via the Jupyter engine for executable code chunks. And it’s designed to be expandable to more engines and languages, even those that might not exist today.\n[pause] So by now I’m assuming many of you have already started playing with Quarto, or you’re waiting for me to do that. So, let’s dive in and see what all the Quarto fuss is about!"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#required-inputs",
+    "href": "materials/02-quarto-docs.html#required-inputs",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Required Inputs",
+    "text": "Required Inputs\n\n\nWhat editor should be the default for working in the document?\n\n---\neditor: visual\n---\n\n\n\n\nWhat format should the document render in?\n\n---\nformat: html\n---"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#additional-yaml-options",
+    "href": "materials/02-quarto-docs.html#additional-yaml-options",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Additional YAML Options",
+    "text": "Additional YAML Options\n\n---\nformat: \n  html:\n    code-fold: true\n---\n\nNotice!\n\nhtml: is now on a new line\nthis line is below format: and indented\nthe HTML formatting options are on their own line\nthese lines are below html: and indented"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto-makes-moving-between-formats-straightforward",
+    "href": "materials/02-quarto-docs.html#quarto-makes-moving-between-formats-straightforward",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto makes moving between formats straightforward",
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\nWhat did spark my interest was how how straightforward it is with Quarto to move between output formats.\nAs an educator, two things are of utmost importance to me about the tools I use to create my materials: reproducibility and ease of transition between output formats, like documents to slides to websites to books.\nOver the last year of using Quarto for pretty much everything, I’ve felt like I’ve finally found the tool that lets me go from one output type to the other with minimal, if any, futzing around with my source code beyond the yaml. For example, here are common things I produce\n–> a lesson in document form  –> the same content in presentation form  –> the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml. Nothing in the content part of my document. No slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
   }
 ]
