@@ -459,6 +459,20 @@
     "href": "materials/03-styling-quarto-docs.html#section-headers",
     "title": "Module 3: Styling Quarto Documents",
     "section": "Section Headers",
-    "text": "Section Headers\nUse # to define your section headers and sub-headers.\nThe more ## you have, the next level of sub-headers it will be assigned to."
+    "text": "Section Headers\n\nUse # to define your section headers and sub-headers.\nThe more ## you have, the next level of sub-headers it will be assigned to.\n# First level section header\n\n## Second level section sub-header\n\n## Third level section sub-header"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#second-leve",
+    "href": "materials/03-styling-quarto-docs.html#second-leve",
+    "title": "Module 3: Styling Quarto Documents",
+    "section": "Second leve",
+    "text": "Second leve\nThird level"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html",
+    "href": "materials/03-styling-quarto-docs.html",
+    "title": "Module 3: Styling Quarto Documents",
+    "section": "",
+    "text": "Use # to define your section headers and sub-headers.\nThe more ## you have, the next level of sub-headers it will be assigned to.\n# First level section header\n\n## Second level section sub-header\n\n## Third level section sub-header"
   }
 ]

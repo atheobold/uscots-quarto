@@ -4,14 +4,21 @@ format: revealjs
 editor: visual
 ---
 
-<!-- -   Using Quarto documents for teaching resources -->
+## Section Headers
 
 <!--     -   sections -->
-## Section Headers
 
 Use `#` to define your section headers and sub-headers.
 
 The more `##` you have, the next level of sub-headers it will be assigned to.
+
+``` markdown
+# First level section header
+
+## Second level section sub-header
+
+## Third level section sub-header
+```
 
 # This is the first section
 
