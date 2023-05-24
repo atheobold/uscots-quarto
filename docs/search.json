@@ -453,5 +453,12 @@
     "title": "Workshop Presenters",
     "section": "",
     "text": "Hunter Glanz is an Assistant Professor of Statistics at Cal Poly in beautiful San Luis Obispo, California. Insert Hunter’s bio here!\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Insert Emily’s bio here!\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#section-headers",
+    "href": "materials/03-styling-quarto-docs.html#section-headers",
+    "title": "Module 3: Styling Quarto Documents",
+    "section": "Section Headers",
+    "text": "Section Headers\nUse # to define your section headers and sub-headers.\nThe more ## you have, the next level of sub-headers it will be assigned to."
   }
 ]
