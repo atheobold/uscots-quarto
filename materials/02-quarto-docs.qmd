@@ -19,6 +19,7 @@ Hello Quarto
 :::
 
 ```{r}
+#| include: false
 library(tidyverse)
 ```
 

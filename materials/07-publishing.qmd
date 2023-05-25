@@ -1,6 +1,8 @@
 ---
 title: "Publishing Your Materials"
-format: revealjs
+format: 
+  revealjs:
+    standalone: true
 editor: visual
 ---
 
