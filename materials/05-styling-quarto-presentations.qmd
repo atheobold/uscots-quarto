@@ -19,7 +19,6 @@ Styling Quarto Presentations
 
 ```{r}
 #| label: set-up
-
 library(tidyverse)
 ```
 
@@ -28,11 +27,11 @@ library(tidyverse)
 
 ::: columns
 ::: {.column width="40%"}
-[There are 11 built-in themes provided for Reveal presentations! The `default` and `dark` themes use fairly classic typography and color schemes and are a good place to start.]{.midi}
+There are 11 built-in themes provided for Reveal presentations! The `default`, `dark`, and `simple` themes use fairly classic typography and color schemes and are a good place to start.
 
 </br>
 
-[The `default` theme is used automatically — use the theme option to switch to an alternate theme.]{.midi}
+The `default` theme is used automatically — use the theme option to switch to an alternate theme.
 :::
 
 ::: {.column width="5%"}
@@ -56,7 +55,11 @@ format:
 </br>
 </br>
 
+<center>
+
 [Link to default themes available](https://quarto.org/docs/presentations/revealjs/themes.html#using-themes)
+</center>
+
 :::
 :::
 :::
@@ -250,8 +253,8 @@ converts all letters in the strings to lowercase
 ```{r}
 #| echo: true
 #| code-line-numbers: false
-my_vector <- c("Hello,", "my name is", "Bond", "James Bond")
-str_to_lower(my_vector)
+my_vector_of_strings <- c("Hello,", "my name is", "Bond", "James Bond")
+str_to_lower(my_vector_of_strings)
 ```
 :::
 
@@ -267,7 +270,7 @@ converts all letters in the strings to uppercase
 #| echo: true
 #| code-line-numbers: false
 
-str_to_upper(my_vector)
+str_to_upper(my_vector_of_strings)
 ```
 :::
 
@@ -281,7 +284,7 @@ converts the first letter of the strings to uppercase
 ```{r}
 #| echo: true
 #| code-line-numbers: false
-str_to_title(my_vector)
+str_to_title(my_vector_of_strings)
 ```
 :::
 :::
@@ -293,5 +296,112 @@ str_to_title(my_vector)
 [Learn more about tabsets here!](https://quarto.org/docs/presentations/revealjs/#tabsets)
 
 ## Code Output
+
+When you are interested in outputting **both** your code **and** its output in
+your presentation, you can control where the output goes!
+
+. . .
+
+```{r}
+#| label: starwars-heights-default-output
+#| echo: fenced
+
+starwars %>% 
+  group_by(homeworld) %>% 
+  summarize(max_height = max(height), 
+            min_height = min(height)
+            ) %>% 
+  slice_max(order_by = max_height, n = 5) %>% 
+  gt::gt() %>% 
+  gt::cols_label(homeworld = "Homeworld", 
+             max_height = "Maximum Height", 
+             min_height = "Minimum Height")
+
+```
+
+## Fragment!
+
+```{r}
+#| label: starwars-heights-fragment-output
+#| echo: fenced
+#| output-location: fragment
+
+starwars %>% 
+  group_by(homeworld) %>% 
+  summarize(max_height = max(height), 
+            min_height = min(height)
+            ) %>% 
+  slice_max(order_by = max_height, n = 5) %>% 
+  gt::gt() %>% 
+  gt::cols_label(homeworld = "Homeworld", 
+             max_height = "Maximum Height", 
+             min_height = "Minimum Height")
+
+```
+
+
+## Column!
+
+```{r}
+#| label: starwars-heights-column-output
+#| echo: fenced
+#| output-location: column
+
+starwars %>% 
+  group_by(homeworld) %>% 
+  summarize(max_height = max(height), 
+            min_height = min(height)
+            ) %>% 
+  slice_max(order_by = max_height, n = 5) %>% 
+  gt::gt() %>% 
+  gt::cols_label(homeworld = "Homeworld", 
+             max_height = "Maximum Height", 
+             min_height = "Minimum Height")
+
+```
+
+
+## Column fragment! 
+
+```{r}
+#| label: starwars-heights-column-fragment-output
+#| echo: fenced
+#| output-location: column-fragment
+
+starwars %>% 
+  group_by(homeworld) %>% 
+  summarize(max_height = max(height), 
+            min_height = min(height)
+            ) %>% 
+  slice_max(order_by = max_height, n = 5) %>% 
+  gt::gt() %>% 
+  gt::cols_label(homeworld = "Homeworld", 
+             max_height = "Maximum Height", 
+             min_height = "Minimum Height")
+
+```
+
+## Slide! 
+
+```{r}
+#| label: starwars-heights-column-slide-output
+#| echo: fenced
+#| output-location: slide
+
+starwars %>% 
+  group_by(homeworld) %>% 
+  summarize(max_height = max(height), 
+            min_height = min(height)
+            ) %>% 
+  slice_max(order_by = max_height, n = 5) %>% 
+  gt::gt() %>% 
+  gt::cols_label(homeworld = "Homeworld", 
+             max_height = "Maximum Height", 
+             min_height = "Minimum Height")
+
+```
+
+</br>
+</br>
 
 [Learn more about code output locations here!](https://quarto.org/docs/presentations/revealjs/#output-location)

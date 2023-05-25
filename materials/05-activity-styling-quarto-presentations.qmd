@@ -1,6 +1,26 @@
 ---
-title: "Untitled"
+title: "Activity 4 -- Embellishing your Quarto presentation!"
 editor: visual
 ---
 
-activity on styling quarto presentation
+We covered the following "common" Quarto embellishments for presentations:
+
+- [Themes](https://quarto.org/docs/presentations/revealjs/themes.html#using-themes)
+- [Callouts](https://quarto.org/docs/authoring/callouts.html)
+- [Tabsets](https://quarto.org/docs/presentations/revealjs/#tabsets)
+- [Code output locations](https://quarto.org/docs/presentations/revealjs/#output-location)
+- [Fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments)
+
+You find more extensive lists of **all** possible embellishments at:
+
+- [Overview for revealjs presentations](https://quarto.org/docs/presentations/revealjs/)
+- [Advanced revealjs](https://quarto.org/docs/presentations/revealjs/advanced.html)
+
+
+Using these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall:
+
+-   a theme
+-   callouts and / or tabsets
+-   fragments
+
+[Afterward, add at least two additional embellishments that fit your style!]{style="font-size: 1.25em; color: #e28743"}
