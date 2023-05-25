@@ -389,7 +389,7 @@
     "href": "resources/intro-R-ggplot-import.html#section",
     "title": "ggplot & Importing data review",
     "section": "",
-    "text": ". . .\nWhat are the aesthetics in this plot?\nWhat geometric object is being plotted?"
+    "text": "What are the aesthetics in this plot?\nWhat geometric object is being plotted?"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#section-1",
@@ -402,92 +402,92 @@
     "objectID": "resources/intro-R-ggplot-import.html#histogram",
     "href": "resources/intro-R-ggplot-import.html#histogram",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins, mapping = aes(x = bill_length_mm)) + \n  geom_histogram() +\n  labs(x = \"Bill Length (mm)\")\n\n\n\n\n\n\n\n\n. . .\n\n\nIs this aesthetic global or local?\n\n\n\n\n\n\n\n\nEasy to inspect\nHigher bars represent where data are relatively more common\nInspect shape of a distribution (skewed or symmetric)\nIdentify modes\n\n\n\n\n\n\nDo not plot raw data, plot summaries (counts) of the data!\nSensitive to binwidth"
+    "section": "Histogram",
+    "text": "Histogram\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm)) + \n  geom_histogram() +\n  labs(x = \"Bill Length (mm)\")"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#boxplot",
     "href": "resources/intro-R-ggplot-import.html#boxplot",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_boxplot() + \n  labs(x = \"Bill Length (mm)\")\n\n\n\n\n\n\nWhat calculations are necessary to create a boxplot?\nWhat are strengths of a boxplot?\nWhat are weaknesses of a boxplot?"
+    "section": "Boxplot",
+    "text": "Boxplot\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_boxplot() + \n  labs(x = \"Bill Length (mm)\")\n\n\n\n\n\n\n\nWhat calculations are necessary to create a boxplot?\nWhat are strengths of a boxplot?\nWhat are weaknesses of a boxplot?"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#section-2",
     "href": "resources/intro-R-ggplot-import.html#section-2",
     "title": "ggplot & Importing data review",
     "section": "",
-    "text": "Image by Allison Horst"
+    "text": "Pros\n\nEasy to inspect\nHigher bars represent where data are relatively more common\nInspect shape of a distribution (skewed or symmetric)\nIdentify modes\n\n\nCons\n\nDo not plot raw data, plot summaries (counts) of the data!\nSensitive to binwidth"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#density-plot",
     "href": "resources/intro-R-ggplot-import.html#density-plot",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_density() + \n  labs(x = \"Bill Length (mm)\")\n\n\n\n\n\n\nA smooth approximation to a variable’s distribution\nPlots density (as a proportion) on the y-axis"
+    "section": "Density Plot",
+    "text": "Density Plot\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_density() + \n  labs(x = \"Bill Length (mm)\")\n\n\n\n\n\n\nA smooth approximation to a variable’s distribution\nPlots density (as a proportion) on the y-axis"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#section-3",
     "href": "resources/intro-R-ggplot-import.html#section-3",
     "title": "ggplot & Importing data review",
     "section": "",
-    "text": "Bivariate (Two Variables) Visualizations – For Numerical Data\n\n\n\n\nSide-by-Side Boxplots\nSide-by-Side Density Plots (Ridge Plots)\nScatterplots\nFaceted Histograms"
+    "text": "Image by Allison Horst"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#side-by-side-boxplots",
     "href": "resources/intro-R-ggplot-import.html#side-by-side-boxplots",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = species)) +\n  geom_boxplot() + \n  labs(x = \"Penguin Species\", \n       y = \"Bill Length (mm)\")\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm,\n                     y = species)) +\n  geom_boxplot() + \n  labs(y = \"Penguin Species\", \n      x  = \"Bill Length (mm)\")\n\n\n\n\n\n\n\n\n\n\n. . .\n\n\nWhich do you prefer?"
+    "section": "Side-by-Side Boxplots",
+    "text": "Side-by-Side Boxplots\n\n\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = species)) +\n  geom_boxplot() + \n  labs(x = \"Penguin Species\", \n       y = \"Bill Length (mm)\")\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm,\n                     y = species)) +\n  geom_boxplot() + \n  labs(y = \"Penguin Species\", \n      x  = \"Bill Length (mm)\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhich do you prefer?"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#faceted-histograms",
     "href": "resources/intro-R-ggplot-import.html#faceted-histograms",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram(binwidth = 3) +\n  facet_wrap(~ species) +\n  labs(x = \"Bill Length (mm)\", \n       title = \"Frequency of Captured Penguins by Species\", \n       y = \"\")"
+    "section": "Faceted Histograms",
+    "text": "Faceted Histograms\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram(binwidth = 3) +\n  facet_wrap(~ species) +\n  labs(x = \"Bill Length (mm)\", \n       title = \"Frequency of Captured Penguins by Species\", \n       y = \"\")"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#scatterplots",
     "href": "resources/intro-R-ggplot-import.html#scatterplots",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(y = bill_length_mm, x = bill_depth_mm)) +\n  geom_point() +\n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\")"
+    "section": "Scatterplots",
+    "text": "Scatterplots\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm, x = bill_depth_mm)) +\n  geom_point() +\n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\")"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#section-4",
     "href": "resources/intro-R-ggplot-import.html#section-4",
     "title": "ggplot & Importing data review",
     "section": "",
-    "text": "Multivariate Plots\n\n\nThere are two main methods for adding a third (or fourth) variable into a data visualization:\n\n\nColors\n\ncreates colors for every level of a categorical variable\ncreates a gradient for different values of a quantitative variable\n\n\nFacets\n\ncreates subplots for every level of a variable\nlabels each sub-plot with the value of the variable"
+    "text": "Bivariate (Two Variables) Visualizations – For Numerical Data\n\n\n\n\nSide-by-Side Boxplots\nSide-by-Side Density Plots (Ridge Plots)\nScatterplots\nFaceted Histograms"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#colors-in-scatterplots",
     "href": "resources/intro-R-ggplot-import.html#colors-in-scatterplots",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = bill_depth_mm,\n                     color = species)\n       ) +\n  geom_point() +\n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       color = \"Penguin Species\")"
+    "section": "Colors in Scatterplots",
+    "text": "Colors in Scatterplots\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = bill_depth_mm,\n                     color = species)\n       ) +\n  geom_point() +\n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       color = \"Penguin Species\")"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#colors-in-boxplots",
     "href": "resources/intro-R-ggplot-import.html#colors-in-boxplots",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = species,\n                     color = sex)\n       ) +\n  geom_boxplot() +\n  labs(x = \"Penguin Species\", \n       y = \"Bill Length (mm)\", \n       color = \"Sex\")"
+    "section": "Colors in Boxplots",
+    "text": "Colors in Boxplots\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = species,\n                     color = sex)\n       ) +\n  geom_boxplot() +\n  labs(x = \"Penguin Species\", \n       y = \"Bill Length (mm)\", \n       color = \"Sex\")"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#facets-in-scatterplots",
     "href": "resources/intro-R-ggplot-import.html#facets-in-scatterplots",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = bill_depth_mm,\n                     color = sex)) +\n  geom_point() +\n  facet_wrap(~ species) + \n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       color = \"Sex\")"
+    "section": "Facets in Scatterplots",
+    "text": "Facets in Scatterplots\n\nggplot(data = penguins,\n       mapping = aes(y = bill_length_mm,\n                     x = bill_depth_mm,\n                     color = sex)) +\n  geom_point() +\n  facet_wrap(~ species) + \n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       color = \"Sex\")"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#facets-in-boxplots",
     "href": "resources/intro-R-ggplot-import.html#facets-in-boxplots",
     "title": "ggplot & Importing data review",
-    "section": "",
-    "text": "ggplot(data = penguins,\n       mapping = aes(x = bill_length_mm,\n                     y = species,\n                     fill = sex)) +\n  geom_boxplot(alpha = 0.3) +\n  facet_wrap(~ island) + \n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       fill = \"Sex\")"
+    "section": "Facets in Boxplots",
+    "text": "Facets in Boxplots\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm,\n                     y = species,\n                     fill = sex)) +\n  geom_boxplot(alpha = 0.3) +\n  facet_wrap(~ island) + \n  labs(x = \"Bill Depth (mm)\", \n       y = \"Bill Length (mm)\", \n       fill = \"Sex\")"
   },
   {
     "objectID": "resources/intro-R-ggplot-import.html#r-projects",
@@ -866,5 +866,54 @@
     "title": "USCOTS 2023 Workshop",
     "section": "",
     "text": "by: Hunter Glanz, Emily Robinson & Allison Theobold"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#section-5",
+    "href": "resources/intro-R-ggplot-import.html#section-5",
+    "title": "ggplot & Importing data review",
+    "section": "",
+    "text": "Multivariate Plots\n\n\nThere are two main methods for adding a third (or fourth) variable into a data visualization:\n\n\nColors\n\ncreates colors for every level of a categorical variable\ncreates a gradient for different values of a quantitative variable\n\n\nFacets\n\ncreates subplots for every level of a variable\nlabels each sub-plot with the value of the variable"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#faceted-histograms-output",
+    "href": "resources/intro-R-ggplot-import.html#faceted-histograms-output",
+    "title": "ggplot & Importing data review",
+    "section": "Faceted Histograms",
+    "text": "Faceted Histograms"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#scatterplots-output",
+    "href": "resources/intro-R-ggplot-import.html#scatterplots-output",
+    "title": "ggplot & Importing data review",
+    "section": "Scatterplots",
+    "text": "Scatterplots"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#colors-in-scatterplots-output",
+    "href": "resources/intro-R-ggplot-import.html#colors-in-scatterplots-output",
+    "title": "ggplot & Importing data review",
+    "section": "Colors in Scatterplots",
+    "text": "Colors in Scatterplots"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#colors-in-boxplots-output",
+    "href": "resources/intro-R-ggplot-import.html#colors-in-boxplots-output",
+    "title": "ggplot & Importing data review",
+    "section": "Colors in Boxplots",
+    "text": "Colors in Boxplots"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#facets-in-scatterplots-output",
+    "href": "resources/intro-R-ggplot-import.html#facets-in-scatterplots-output",
+    "title": "ggplot & Importing data review",
+    "section": "Facets in Scatterplots",
+    "text": "Facets in Scatterplots"
+  },
+  {
+    "objectID": "resources/intro-R-ggplot-import.html#facets-in-boxplots-output",
+    "href": "resources/intro-R-ggplot-import.html#facets-in-boxplots-output",
+    "title": "ggplot & Importing data review",
+    "section": "Facets in Boxplots",
+    "text": "Facets in Boxplots"
   }
 ]
