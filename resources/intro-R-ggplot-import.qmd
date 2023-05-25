@@ -6,7 +6,7 @@ format:
     logo: images/ggplot2.png
     theme: night
     auto-stretch: false
-    embed-resources: true
+    standalone: true
 editor: visual
 execute: 
   warning: false
@@ -73,8 +73,7 @@ ggplot(data = penguins, mapping = aes(x = bill_length_mm)) +
   labs(x = "Bill Length (mm)")
 ```
 
-
-##
+## 
 
 ::: columns
 ::: {.column width="50"}
