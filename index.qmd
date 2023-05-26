@@ -33,23 +33,22 @@ While we will not be coding in R during the workshop, it could be useful for ind
 
 |     Time      |                                          Topic                                          |    Presenter    |
 |:-----------------:|:---------------------------------:|:-----------------:|
-|  8:30 - 8:45  |                  Introductions, workshop outline, distribute materials                  |    Everyone     |
+|  8:30 - 8:45  |                  [Introductions, workshop outline, distribute materials](/materials/00-introductions.qmd) |    Everyone     |
 |  8:45 - 9:00  |           [A brief refresher of RStudio](/materials/01-rstudio-refresher.qmd)           |     Hunter      |
-|  9:00 - 9:30  |            [Introduction to Quarto Documents](/materials/02-quarto-docs.qmd)            |     Allison     |
+|  9:00 - 9:30  |            [Introduction to Quarto documents](/materials/02-quarto-docs.qmd)            |     Allison     |
 | 9:30 - 10:00  |       [Activity: Exploring YAML options](/materials/02-activity-quarto-yaml.qmd)        |      You!       |
 | 10:00 - 10:30 |                                      Snack break!                                       |                 |
 | 10:30 - 10:45 |                               Share what you discovered!                                |      You!       |
 | 10:45 - 11:30 |         [Styling Quarto documents](/materials/03-styling-quarto-docs.qmd)          |      Emily      |
-| 11:30 - 12:00 |         [Activity: Embellishing your Quarto doc!](/materials/03-activity-styling-quarto-docs.qmd)         |      You!       |
+| 11:30 - 12:00 |         [Activity: Making your course syllabus!](/materials/03-activity-styling-quarto-docs.qmd)         |      You!       |
 | 12:00 - 1:00  |                                      Lunch break!                                       |                 |
 |  1:00 - 1:30  |             [Quarto presentations](/materials/04-quarto-presentations.qmd)              |     Hunter      |
 |  1:30 - 1:45  | [Activity: Make a simple presentation](/materials/04-activity-quarto-presentations.qmd) |      You!       |
-|  1:45 - 2:30  |     [Styling Quarto presentations](/materials/05-styling-quarto-presentations.qmd)      | Emily & Allison |
+|  1:45 - 2:00  |     [Styling Quarto presentations](/materials/05-styling-quarto-presentations.qmd)      | Emily & Allison |
+|  2:00 - 2:30  |    [Activity: Style your Day 1 slides!](/materials/05-activity-styling-quarto-presentations.qmd)     |      You!       |
 |  2:30 - 3:00  |                                      Snack break!                                       |                 |
-|  3:00 - 3:30  |    [Activity: Try it out!](/materials/05-activity-styling-quarto-presentations.qmd)     |      You!       |
-|  3:30 - 3:45  |      [A brief introduction to version control](/materials/06-version-control.qmd)       |     Hunter      |
-|  3:45 - 4:00  |          [Publishing content with GitHub pages](/materials/07-publishing.qmd)           |      Emily      |
-|  4:00 - 4:30  |                     [Quarto websites](/materials/07-publishing.qmd)                     |     Allison     |
+|  3:00 - 4:00  |      [A brief introduction to version control](/materials/06-version-control.qmd)       |     Hunter      |
+|  4:00 - 4:30  |                     [Making your materials public](/materials/07-publishing.qmd)        |     Emily & Allison |
 
 # In preparation for the workshop
 

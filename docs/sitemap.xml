@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://atheobold.github.io/uscots-quarto/materials/01-rstudio-refresher.html</loc>
-    <lastmod>2023-05-26T00:47:32.457Z</lastmod>
+    <lastmod>2023-05-26T00:59:31.006Z</lastmod>
   </url>
   <url>
     <loc>https://atheobold.github.io/uscots-quarto/materials/04-quarto-presentations.html</loc>
@@ -66,10 +66,14 @@
   </url>
   <url>
     <loc>https://atheobold.github.io/uscots-quarto/index.html</loc>
-    <lastmod>2023-05-26T00:47:56.788Z</lastmod>
+    <lastmod>2023-05-26T01:01:23.373Z</lastmod>
   </url>
   <url>
     <loc>https://atheobold.github.io/uscots-quarto/bio.html</loc>
     <lastmod>2023-05-26T00:47:57.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/00-introductions.html</loc>
+    <lastmod>2023-05-26T01:01:32.504Z</lastmod>
   </url>
 </urlset>
