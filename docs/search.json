@@ -39,7 +39,7 @@
     "href": "materials/05-activity-styling-quarto-presentations.html",
     "title": "Activity 4 – Embellishing your Quarto presentation!",
     "section": "",
-    "text": "We covered the following “common” Quarto embellishments for presentations:\n\nThemes\nCallouts\nTabsets\nCode output locations\nFragments\n\nYou find more extensive lists of all possible embellishments at:\n\nOverview for revealjs presentations\nAdvanced revealjs\n\nUsing these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall:\n\na theme\ncallouts and / or tabsets\nfragments\n\nAfterward, add at least two additional embellishments that fit your style!"
+    "text": "We covered the following “common” Quarto embellishments for presentations:\n\nThemes\nCallouts\nTabsets\nCode output locations\nFragments\n\nYou find more extensive lists of all possible embellishments at:\n\nOverview for revealjs presentations\nAdvanced revealjs\n\nUsing these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall!\nWe encourage you to start simple! Try incorporating a theme and possibly some callouts and / or tabsets. After you’ve made some simple changes, maybe try out some more embellishments that fit your style!"
   },
   {
     "objectID": "materials/04-activity-quarto-presentations.html",

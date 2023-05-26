@@ -17,10 +17,9 @@ You find more extensive lists of **all** possible embellishments at:
 - [Advanced revealjs](https://quarto.org/docs/presentations/revealjs/advanced.html)
 
 
-Using these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall:
+Using these resources, craft your presentation into a slide deck you can use for
+Day 1 of your course this fall! 
 
--   a theme
--   callouts and / or tabsets
--   fragments
-
-[Afterward, add at least two additional embellishments that fit your style!]{style="font-size: 1.25em; color: #e28743"}
+We encourage you to **start simple**! Try incorporating a theme and possibly 
+some callouts and / or tabsets. After you've made some simple changes, maybe 
+try out some more embellishments that fit your style!
