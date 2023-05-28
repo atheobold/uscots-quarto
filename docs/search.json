@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "materials/01-rstudio-refresher.html#section",
+    "href": "materials/01-rstudio-refresher.html#section",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "Hello RStudio (the IDE)"
+  },
+  {
+    "objectID": "materials/01-rstudio-refresher.html#section-1",
+    "href": "materials/01-rstudio-refresher.html#section-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "What is RStudio?\n\nRStudio was an integrated development environment for R\n\n\n\n\nToday, RStudio is an IDE integrating multiple languages (e.g. R, Python, SQL) and tools (e.g. Quarto, TeX, JavaScript) for doing accessible and reproducible data science."
+  },
+  {
+    "objectID": "materials/01-rstudio-refresher.html#section-2",
+    "href": "materials/01-rstudio-refresher.html#section-2",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "A Brief Refresher\n\nRStudio Cheatsheet\n\n\n\n\nLet’s live demo some RStudio functionality!\n\n\n\n\nUSCOTS Quarto Workshop"
+  },
+  {
+    "objectID": "materials/04-quarto-presentations.html#section",
+    "href": "materials/04-quarto-presentations.html#section",
+    "title": "Introduction to Quarto Presentations",
+    "section": "",
+    "text": "Hello Quarto Presentations"
+  },
+  {
+    "objectID": "materials/04-quarto-presentations.html#section-1",
+    "href": "materials/04-quarto-presentations.html#section-1",
+    "title": "Introduction to Quarto Presentations",
+    "section": "",
+    "text": "What is a Quarto Presentation?\n\nMostly a Quarto Document, but with a different output format and a few other small differences\n\n\n\n\n\nrevealjs: reveal.js (HTML or PDF)\npptx: PowerPoint (MS Office)\nbeamer: Beamer (LaTeX/PDF)"
+  },
+  {
+    "objectID": "materials/04-quarto-presentations.html#creating-slides",
+    "href": "materials/04-quarto-presentations.html#creating-slides",
+    "title": "Introduction to Quarto Presentations",
+    "section": "Creating Slides",
+    "text": "Creating Slides\nSlides are delineated using headings (markdown headings indicated by # characters)\n\n\nYou might use a single # (level 1 header) for title slides\n\n\n\n\nYou might use a ## (level 2 header) for traditional slides"
+  },
+  {
+    "objectID": "materials/04-quarto-presentations.html#section-2",
+    "href": "materials/04-quarto-presentations.html#section-2",
+    "title": "Introduction to Quarto Presentations",
+    "section": "",
+    "text": "USCOTS Quarto Workshop"
+  },
+  {
     "objectID": "materials/05-activity-styling-quarto-presentations.html",
     "href": "materials/05-activity-styling-quarto-presentations.html",
     "title": "Activity 4 – Embellishing your Quarto presentation!",
@@ -44,9 +93,9 @@
   {
     "objectID": "materials/04-activity-quarto-presentations.html",
     "href": "materials/04-activity-quarto-presentations.html",
-    "title": "Untitled",
+    "title": "Activity 3 – Make a simple Quarto presentation!",
     "section": "",
-    "text": "Activity on making a simple quarto presentation"
+    "text": "We covered\nYou find more extensive lists of all possible embellishments at:\n\nOverview for revealjs presentations\nAdvanced revealjs\n\nUsing these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall!\nWe encourage you to start simple! Try incorporating a theme and possibly some callouts and / or tabsets. After you’ve made some simple changes, maybe try out some more embellishments that fit your style!"
   },
   {
     "objectID": "materials/02-quarto-docs.html#section",
@@ -271,6 +320,97 @@
     "title": "Activity 2 – Embellishing your Quarto doc!",
     "section": "",
     "text": "Common Quarto embellishments that can be used for HTML and PDF documents can be found here:\n\nCross-references\nCallouts\nTabsets\nCitations and Footnotes\nArticle Layouts\nGeneral formatting for HTML documents\nGeneral formatting for PDF documents\n\nUsing these resources, craft your document into a draft course syllabus using:\n\nsection headers\ncross-references\ncallouts\ncolumns\n\nAfterward, add at least two additional embellishments that fit your style!"
+  },
+  {
+    "objectID": "materials/06-version-control.html#section",
+    "href": "materials/06-version-control.html#section",
+    "title": "Introduction to Version Control",
+    "section": "",
+    "text": "What is Version Control?\n\nThe practice of tracking and managing changes to software code\n\n\n\n\n\n\nGrown to include more than just software code (e.g. documents)!\nVersion control systems are software tools that help teams manage changes to materials over time."
+  },
+  {
+    "objectID": "materials/06-version-control.html#some-benefits-of-version-control",
+    "href": "materials/06-version-control.html#some-benefits-of-version-control",
+    "title": "Introduction to Version Control",
+    "section": "Some benefits of version control",
+    "text": "Some benefits of version control\n\n\nEnhances the project development speed by providing efficient collaboration\nLeverages the productivity, expedites product delivery, and skills of people through better communication and assistance\nReduce possibilities of errors and conflicts\nHelps in recovery in case of any disaster or contingent situation\nInforms us about who, what, when, why changes have been made"
+  },
+  {
+    "objectID": "materials/06-version-control.html#version-control-is-better-than",
+    "href": "materials/06-version-control.html#version-control-is-better-than",
+    "title": "Introduction to Version Control",
+    "section": "Version control is better than…",
+    "text": "Version control is better than…\n\n\nIncluding the date in a file name\nIncluding contributor initials in a file name\nSharing and working on multiple versions of a file (e.g. via email)"
+  },
+  {
+    "objectID": "materials/06-version-control.html#ways-youre-already-using-version-control",
+    "href": "materials/06-version-control.html#ways-youre-already-using-version-control",
+    "title": "Introduction to Version Control",
+    "section": "Ways you’re already using version control",
+    "text": "Ways you’re already using version control\n\n\nSuite of online Google products: google docs, google sheets, etc.\nDropbox, OneDrive, etc."
+  },
+  {
+    "objectID": "materials/06-version-control.html#version-control-for-our-workshop",
+    "href": "materials/06-version-control.html#version-control-for-our-workshop",
+    "title": "Introduction to Version Control",
+    "section": "Version control for our workshop",
+    "text": "Version control for our workshop\n\nThere are many different version control systems out there!\n\n\n\nWe will focus on Git and GitHub as our version control system of choice!"
+  },
+  {
+    "objectID": "materials/06-version-control.html#git-and-github",
+    "href": "materials/06-version-control.html#git-and-github",
+    "title": "Introduction to Version Control",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\nGit:\n\nFree and open-source distributed version control system\nStrong support for non-linear development\nDistributed development\n\n\nGitHub:\n\nAn online platform where we can share our code, materials, etc. online hassle-free"
+  },
+  {
+    "objectID": "materials/06-version-control.html#getting-started-with-git",
+    "href": "materials/06-version-control.html#getting-started-with-git",
+    "title": "Introduction to Version Control",
+    "section": "Getting started with Git",
+    "text": "Getting started with Git\nFollow the instructions here, for your operating system, to install Git: https://happygitwithr.com/install-git.html"
+  },
+  {
+    "objectID": "materials/06-version-control.html#getting-started-with-github",
+    "href": "materials/06-version-control.html#getting-started-with-github",
+    "title": "Introduction to Version Control",
+    "section": "Getting started with GitHub",
+    "text": "Getting started with GitHub\n\n\nCreate an account on GitHub (https://github.com) – this is free\nLog in on the GitHub website\nLet’s talk about some of the key details and functionality here, namely what a repository is!"
+  },
+  {
+    "objectID": "materials/06-version-control.html#connect-rstudio-to-git-and-github",
+    "href": "materials/06-version-control.html#connect-rstudio-to-git-and-github",
+    "title": "Introduction to Version Control",
+    "section": "Connect RStudio to Git and GitHub",
+    "text": "Connect RStudio to Git and GitHub\nWe’re following the directions here: https://happygitwithr.com/rstudio-git-github.html\n\nMake a repository (repo) on GitHub\nClone the test GitHub repository to your computer via RStudio\nIn RStudio, start a new Project\n\n\nFile &gt; New Project &gt; Version Control &gt; Git\n\n\nIn “Repository URL”, paste the URL of your new GitHub repository"
+  },
+  {
+    "objectID": "materials/06-version-control.html#basic-git-commands-commit",
+    "href": "materials/06-version-control.html#basic-git-commands-commit",
+    "title": "Introduction to Version Control",
+    "section": "Basic Git Commands: Commit",
+    "text": "Basic Git Commands: Commit\nIn RStudio, open the README.md file and add the line “This is a line from RStudio”. Save your changes\nCommit these changes to your local repo from RStudio:\n\nClick the “Git” tab in the upper right pane\nCheck the “Staged” box for README.md\nClick “Commit”\nType a message in “Commit message”, such as “Commit from RStudio”\nClick “Commit”"
+  },
+  {
+    "objectID": "materials/06-version-control.html#basic-git-commands-push",
+    "href": "materials/06-version-control.html#basic-git-commands-push",
+    "title": "Introduction to Version Control",
+    "section": "Basic Git Commands: Push",
+    "text": "Basic Git Commands: Push\nClick the green “Push” button to send your local changes to your GitHub repo!"
+  },
+  {
+    "objectID": "materials/06-version-control.html#basic-git-commands-pull",
+    "href": "materials/06-version-control.html#basic-git-commands-pull",
+    "title": "Introduction to Version Control",
+    "section": "Basic Git Commands: Pull",
+    "text": "Basic Git Commands: Pull\n\nGit Pull (or Pull) is a command used to update the local version of a repo from a remote repo.\n\nThis can be a very important first step in your workflow when working in a repo with multiple people!"
+  },
+  {
+    "objectID": "materials/06-version-control.html#other-gitgithub-implementations",
+    "href": "materials/06-version-control.html#other-gitgithub-implementations",
+    "title": "Introduction to Version Control",
+    "section": "Other Git/GitHub implementations",
+    "text": "Other Git/GitHub implementations\n\n\nEverything we just did through RStudio can be done from the command line (ew?)\nGitHub Desktop is a wonderful and lightweight application for all of our Git/GitHub-related needs that works independent of any other application\n\n\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/03-styling-quarto-docs.html#section-headers",
@@ -865,6 +1005,6 @@
     "href": "bio.html",
     "title": "Workshop Presenters",
     "section": "",
-    "text": "Hunter Glanz is an Assistant Professor of Statistics at Cal Poly in beautiful San Luis Obispo, California. Insert Hunter’s bio here!\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Emily’s involves graphical testing and evaluating the perceptual and cognitive implications of design choices in data visualization in order to more effectively communicate data and science to a variety of audiences. Emily is also interested in exploring how to bring visuals into the classroom.\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
+    "text": "Hunter Glanz is an Associate Professor of Statistics at Cal Poly. He maintains a passion for machine learning, statistical computing, and data science, and enjoys advancing education efforts in these areas. In particular, Cal Poly’s courses in R, SAS, and Python give him the opportunity to connect students with exciting data science topics amid a firm grounding in communication of statistical ideas. Hunter serves on numerous committees and organizations dedicated to delivering cutting edge statistical and data science content to students and professionals alike.\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Emily’s involves graphical testing and evaluating the perceptual and cognitive implications of design choices in data visualization in order to more effectively communicate data and science to a variety of audiences. Emily is also interested in exploring how to bring visuals into the classroom.\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
   }
 ]

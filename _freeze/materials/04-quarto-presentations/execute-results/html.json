@@ -1,10 +1,8 @@
 {
-  "hash": "c6e8df8b90d1f1855615af5e00efedf3",
+  "hash": "89b6eda2d3472b6622f7137152987331",
   "result": {
-    "markdown": "---\nformat: \n  revealjs:\n    slide-number: false\n    transition: fade\n    height: 900\n    width: 1600\n    logo: \"images/cp_hex_logo.png\"\n    footer: \"[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)\"\n    theme: night\n    embed-resources: true\neditor: source\n---\n\n\n## \n\n::: {style=\"font-size: 8em; color: #34605f;\"}\nHello RStudio (the IDE)\n:::\n\n\n\n\n\n## \n\n[What is RStudio?]{.large}\n\n> [RStudio was an integrated development environment for R]{.midi}\n\n. . .\n\n</br>\n\n::: {.large .gray}\nToday, RStudio is an IDE integrating multiple languages (e.g. R, Python, SQL) and tools (e.g. Quarto, TeX, JavaScript) for doing accessible and reproducible data science.\n:::\n\n## \n\n[A Brief Refresher]{.large}\n\n-   [RStudio Cheatsheet](/resources/rstudio-ide-1.pdf)\n\n. . .\n\n</br>\n\n::: {.large .gray}\nLet's live demo some RStudio functionality!\n:::\n",
-    "supporting": [
-      "01-rstudio-refresher_files"
-    ],
+    "markdown": "---\ntitle: \"Introduction to Quarto Presentations\"\nformat: \n  revealjs:\n    slide-number: false\n    transition: fade\n    height: 900\n    width: 1600\n    logo: \"images/cp_hex_logo.png\"\n    footer: \"[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)\"\n    theme: night\n    embed-resources: true\neditor: visual\n---\n\n\n<!-- **Outline:** -->\n\n<!-- -   Outline structure of Quarto presentations -->\n\n<!--     -   Structure -->\n\n<!--     -   Slide separation -->\n\n<!--     -    -->\n\n## \n\n::: {style=\"font-size: 8em; color: #34605f;\"}\nHello Quarto Presentations\n:::\n\n\n\n\n\n## \n\n[What is a Quarto Presentation?]{.large}\n\n> Mostly a Quarto Document, but with a different output format and a few other small differences\n\n. . .\n\n</br>\n\n::: {.large .gray}\n-   revealjs: reveal.js (HTML or PDF)\n-   pptx: PowerPoint (MS Office)\n-   beamer: Beamer (LaTeX/PDF)\n:::\n\n\n## Creating Slides\n\nSlides are delineated using headings (markdown headings indicated by `#` characters)\n\n. . .\n\n- You might use a single `#` (level 1 header) for title slides\n\n. . . \n\n- You might use a `##` (level 2 header) for traditional slides\n\n## ",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
