@@ -1,12 +1,154 @@
 ---
 title: "Introduction to Version Control"
-format: revealjs
+format: 
+  revealjs:
+    slide-number: false
+    transition: fade
+    height: 900
+    width: 1600
+    logo: "images/cp_hex_logo.png"
+    footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
+    theme: night
+    embed-resources: true
 editor: visual
 ---
 
 <!-- **Outline:** -->
 
 <!-- -   Introduction to version control -->
+
 <!--     -   What is version control? -->
+
 <!--     -   Why do we want to use version control? -->
+
 <!--     -   How can you use version control? -->
+
+# What is version control
+
+## 
+
+[What is Version Control?]{.large}
+
+> [The practice of tracking and managing changes to software code]{.midi}
+
+. . .
+
+</br>
+
+::: {.large .gray}
+::: incremental
+-   Grown to include more than just software code (e.g. documents)!
+-   Version control systems are software tools that help teams manage changes to materials over time.
+:::
+:::
+
+# Why do we want to use version control?
+
+## Some benefits of version control
+
+::: incremental
+- Enhances the project development speed by providing efficient collaboration
+- Leverages the productivity, expedites product delivery, and skills of people through better communication and assistance
+- Reduce possibilities of errors and conflicts
+- Helps in recovery in case of any disaster or contingent situation
+- Informs us about who, what, when, why changes have been made
+:::
+
+## Version control is better than...
+
+::: incremental
+- Including the date in a file name
+- Including contributor initials in a file name
+- Sharing and working on multiple versions of a file (e.g. via email)
+:::
+
+## Ways you're already using version control
+
+::: incremental
+- Suite of online Google products: google docs, google sheets, etc.
+- Dropbox, OneDrive, etc.
+:::
+
+# Using RStudio with version control?
+
+## Version control for our workshop
+
+- There are many different version control systems out there!
+
+. . .
+
+> [We will focus on Git and GitHub as our version control system of choice!]{.midi}
+
+## Git and GitHub
+
+Git: 
+
+- Free and open-source distributed version control system
+- Strong support for non-linear development
+- Distributed development
+
+. . .
+
+GitHub:
+
+- An online platform where we can share our code, materials, etc. online hassle-free
+
+## Getting started with Git
+
+Follow the instructions here, for your operating system, to install Git: [https://happygitwithr.com/install-git.html](https://happygitwithr.com/install-git.html)
+
+## Getting started with GitHub
+
+::: incremental
+- Create an account on GitHub ([https://github.com](https://github.com)) -- this is free
+
+- Log in on the GitHub website
+
+- Let's talk about some of the key details and functionality here, namely what a **repository** is!
+:::
+
+## Connect RStudio to Git and GitHub
+
+We're following the directions here: [https://happygitwithr.com/rstudio-git-github.html](https://happygitwithr.com/rstudio-git-github.html)
+
+- Make a repository (repo) on GitHub
+
+- Clone the test GitHub repository to your computer via RStudio
+
+- In RStudio, start a new Project
+
+> [File > New Project > Version Control > Git]{.midi}
+
+- In "Repository URL", paste the URL of your new GitHub repository
+
+## Basic Git Commands: Commit
+
+In RStudio, open the `README.md` file and add the line "This is a line from RStudio". **Save your changes**
+
+Commit these changes to your local repo from RStudio:
+
+- Click the "Git" tab in the upper right pane
+- Check the "Staged" box for `README.md`
+- Click "Commit"
+- Type a message in "Commit message", such as "Commit from RStudio"
+- Click "Commit"
+
+## Basic Git Commands: Push
+
+Click the green "Push" button to send your local changes to your GitHub repo!
+
+## Basic Git Commands: Pull
+
+> [Git Pull (or Pull) is a command used to update the local version of a repo from a remote repo.]{.midi}
+
+This can be a very important first step in your workflow when working in a repo with multiple people!
+
+# Another version control process
+
+## Other Git/GitHub implementations
+
+::: incremental
+- Everything we just did through RStudio can be done from the command line (ew?)
+
+- [GitHub Desktop](https://desktop.github.com/) is a wonderful and lightweight application for all of our Git/GitHub-related needs that works independent of any other application
+:::

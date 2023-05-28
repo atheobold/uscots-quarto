@@ -1,10 +1,52 @@
 ---
 format: 
   revealjs:
+    slide-number: false
+    transition: fade
+    height: 900
+    width: 1600
     logo: "images/cp_hex_logo.png"
     footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
-    theme: simple
+    theme: night
     embed-resources: true
 editor: source
 ---
 
+## 
+
+::: {style="font-size: 8em; color: #34605f;"}
+Hello RStudio (the IDE)
+:::
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+## 
+
+[What is RStudio?]{.large}
+
+> [RStudio was an integrated development environment for R]{.midi}
+
+. . .
+
+</br>
+
+::: {.large .gray}
+Today, RStudio is an IDE integrating multiple languages (e.g. R, Python, SQL) and tools (e.g. Quarto, TeX, JavaScript) for doing accessible and reproducible data science.
+:::
+
+## 
+
+[A Brief Refresher]{.large}
+
+-   [RStudio Cheatsheet](/resources/rstudio-ide-1.pdf)
+
+. . .
+
+</br>
+
+::: {.large .gray}
+Let's live demo some RStudio functionality!
+:::

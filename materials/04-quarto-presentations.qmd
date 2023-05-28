@@ -1,12 +1,66 @@
 ---
 title: "Introduction to Quarto Presentations"
-format: revealjs
+format: 
+  revealjs:
+    slide-number: false
+    transition: fade
+    height: 900
+    width: 1600
+    logo: "images/cp_hex_logo.png"
+    footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
+    theme: night
+    embed-resources: true
 editor: visual
 ---
 
 <!-- **Outline:** -->
 
 <!-- -   Outline structure of Quarto presentations -->
+
 <!--     -   Structure -->
+
 <!--     -   Slide separation -->
+
 <!--     -    -->
+
+## 
+
+::: {style="font-size: 8em; color: #34605f;"}
+Hello Quarto Presentations
+:::
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+## 
+
+[What is a Quarto Presentation?]{.large}
+
+> Mostly a Quarto Document, but with a different output format and a few other small differences
+
+. . .
+
+</br>
+
+::: {.large .gray}
+-   revealjs: reveal.js (HTML or PDF)
+-   pptx: PowerPoint (MS Office)
+-   beamer: Beamer (LaTeX/PDF)
+:::
+
+
+## Creating Slides
+
+Slides are delineated using headings (markdown headings indicated by `#` characters)
+
+. . .
+
+- You might use a single `#` (level 1 header) for title slides
+
+. . . 
+
+- You might use a `##` (level 2 header) for traditional slides
+
+## 

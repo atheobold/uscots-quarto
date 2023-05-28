@@ -1,6 +1,15 @@
 ---
-title: "Untitled"
+title: "Activity 3 -- Make a simple Quarto presentation!"
 editor: visual
 ---
 
-Activity on making a simple quarto presentation
+We covered 
+
+You find more extensive lists of **all** possible embellishments at:
+
+-   [Overview for revealjs presentations](https://quarto.org/docs/presentations/revealjs/)
+-   [Advanced revealjs](https://quarto.org/docs/presentations/revealjs/advanced.html)
+
+Using these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall!
+
+We encourage you to **start simple**! Try incorporating a theme and possibly some callouts and / or tabsets. After you've made some simple changes, maybe try out some more embellishments that fit your style!
