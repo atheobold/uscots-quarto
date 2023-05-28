@@ -2,78 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://atheobold.github.io/uscots-quarto/materials/01-rstudio-refresher.html</loc>
-    <lastmod>2023-05-26T00:59:31.006Z</lastmod>
+    <lastmod>2023-05-28T17:24:42.867Z</lastmod>
   </url>
   <url>
     <loc>https://atheobold.github.io/uscots-quarto/materials/04-quarto-presentations.html</loc>
-    <lastmod>2023-05-26T00:47:32.821Z</lastmod>
+    <lastmod>2023-05-28T17:24:44.252Z</lastmod>
   </url>
   <url>
     <loc>https://atheobold.github.io/uscots-quarto/materials/05-activity-styling-quarto-presentations.html</loc>
-    <lastmod>2023-05-26T00:54:07.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/materials/04-activity-quarto-presentations.html</loc>
-    <lastmod>2023-05-26T00:47:33.522Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/materials/02-quarto-docs.html</loc>
-    <lastmod>2023-05-26T00:47:39.041Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/materials/05-styling-quarto-presentations.html</loc>
-    <lastmod>2023-05-26T00:47:41.543Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/materials/02-activity-quarto-yaml.html</loc>
-    <lastmod>2023-05-26T00:47:43.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/materials/07-publishing.html</loc>
-    <lastmod>2023-05-26T00:47:44.891Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/materials/03-activity-styling-quarto-docs.html</loc>
-    <lastmod>2023-05-26T00:47:45.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/materials/06-version-control.html</loc>
-    <lastmod>2023-05-26T00:47:45.477Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/materials/03-styling-quarto-docs.html</loc>
-    <lastmod>2023-05-26T00:47:47.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/resources/stat2-lab-1.html</loc>
-    <lastmod>2023-05-26T00:47:49.702Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/resources/stat2-week1-day1.html</loc>
-    <lastmod>2023-05-26T00:47:53.159Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/resources/resource-list.html</loc>
-    <lastmod>2023-05-26T00:47:53.500Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/resources/stat1-lab-1.html</loc>
-    <lastmod>2023-05-26T00:47:55.754Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/resources/intro-R-ggplot-import.html</loc>
-    <lastmod>2023-05-26T00:47:56.345Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/index.html</loc>
-    <lastmod>2023-05-26T01:01:23.373Z</lastmod>
-  </url>
-  <url>
-    <loc>https://atheobold.github.io/uscots-quarto/bio.html</loc>
-    <lastmod>2023-05-26T00:47:57.138Z</lastmod>
+    <lastmod>2023-05-28T17:24:45.076Z</lastmod>
   </url>
   <url>
     <loc>https://atheobold.github.io/uscots-quarto/materials/00-introductions.html</loc>
-    <lastmod>2023-05-26T01:01:32.504Z</lastmod>
+    <lastmod>2023-05-28T17:24:50.378Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/04-activity-quarto-presentations.html</loc>
+    <lastmod>2023-05-28T17:24:50.701Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/02-quarto-docs.html</loc>
+    <lastmod>2023-05-28T17:24:55.653Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/05-styling-quarto-presentations.html</loc>
+    <lastmod>2023-05-28T17:24:58.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/02-activity-quarto-yaml.html</loc>
+    <lastmod>2023-05-28T17:25:00.086Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/07-publishing.html</loc>
+    <lastmod>2023-05-28T17:25:00.449Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/03-activity-styling-quarto-docs.html</loc>
+    <lastmod>2023-05-28T17:25:00.761Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/06-version-control.html</loc>
+    <lastmod>2023-05-28T17:25:00.985Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/materials/03-styling-quarto-docs.html</loc>
+    <lastmod>2023-05-28T17:25:02.908Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/resources/stat2-lab-1.html</loc>
+    <lastmod>2023-05-28T17:25:05.102Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/resources/stat2-week1-day1.html</loc>
+    <lastmod>2023-05-28T17:25:08.561Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/resources/resource-list.html</loc>
+    <lastmod>2023-05-28T17:25:08.899Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/resources/stat1-lab-1.html</loc>
+    <lastmod>2023-05-28T17:25:11.148Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/resources/intro-R-ggplot-import.html</loc>
+    <lastmod>2023-05-28T17:25:11.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/index.html</loc>
+    <lastmod>2023-05-28T17:25:12.193Z</lastmod>
+  </url>
+  <url>
+    <loc>https://atheobold.github.io/uscots-quarto/bio.html</loc>
+    <lastmod>2023-05-28T17:25:12.542Z</lastmod>
   </url>
 </urlset>

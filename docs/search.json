@@ -1,45 +1,45 @@
 [
   {
-    "objectID": "materials/01-rstudio-refresher.html#section",
-    "href": "materials/01-rstudio-refresher.html#section",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "WiFi\n\nUsername: fill in!\nPassword: fill in!\n\nMaterials\nTo access the workshop materials use the following link:\n\nhttps://atheobold.github.io/uscots-quarto/"
-  },
-  {
-    "objectID": "materials/01-rstudio-refresher.html#section-1",
-    "href": "materials/01-rstudio-refresher.html#section-1",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "We are assuming\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
-  },
-  {
-    "objectID": "materials/01-rstudio-refresher.html#your-workshop-leaders",
-    "href": "materials/01-rstudio-refresher.html#your-workshop-leaders",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "Your Workshop Leaders",
-    "text": "Your Workshop Leaders\n\n\n\nHunter Glanz\n\n\n\nEmily Robinson\n\n\n\nAllison Theobold"
-  },
-  {
-    "objectID": "materials/01-rstudio-refresher.html#workshop-prep",
-    "href": "materials/01-rstudio-refresher.html#workshop-prep",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "Workshop Prep",
-    "text": "Workshop Prep\n\nAre you on the latest version of RStudio i.e. v2023.03.0+386 or later?\nAre you on the latest version of Quarto i.e. v1.3.340 or later?\nAre you on the latest version of R i.e. v4.3.0 or later?\n\n\nGreat, let’s get started!"
-  },
-  {
-    "objectID": "materials/01-rstudio-refresher.html#structure-of-the-workshop",
-    "href": "materials/01-rstudio-refresher.html#structure-of-the-workshop",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "Structure of the workshop",
-    "text": "Structure of the workshop\n\nLecture - 🤠\n“Your turn” or “Our Turn” - 💻\nBreaks - ☕\n\n\nIn-session:\n\n = I’m stuck or I’m running into a code error\n = I have completed the activity\n\n\n\n\nUSCOTS Quarto Workshop"
-  },
-  {
     "objectID": "materials/05-activity-styling-quarto-presentations.html",
     "href": "materials/05-activity-styling-quarto-presentations.html",
     "title": "Activity 4 – Embellishing your Quarto presentation!",
     "section": "",
     "text": "We covered the following “common” Quarto embellishments for presentations:\n\nThemes\nCallouts\nTabsets\nCode output locations\nFragments\n\nYou find more extensive lists of all possible embellishments at:\n\nOverview for revealjs presentations\nAdvanced revealjs\n\nUsing these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall!\nWe encourage you to start simple! Try incorporating a theme and possibly some callouts and / or tabsets. After you’ve made some simple changes, maybe try out some more embellishments that fit your style!"
+  },
+  {
+    "objectID": "materials/00-introductions.html#welcome",
+    "href": "materials/00-introductions.html#welcome",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Welcome!",
+    "text": "Welcome!\n WiFi\n\nUsername: fill in!\nPassword: fill in!\n\nMaterials\nTo access the workshop materials use the following link:\n\nhttps://atheobold.github.io/uscots-quarto/"
+  },
+  {
+    "objectID": "materials/00-introductions.html#section",
+    "href": "materials/00-introductions.html#section",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "We are assuming\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
+  },
+  {
+    "objectID": "materials/00-introductions.html#your-workshop-leaders",
+    "href": "materials/00-introductions.html#your-workshop-leaders",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Your Workshop Leaders",
+    "text": "Your Workshop Leaders\n\n\n\nHunter Glanz\n\n\n\nEmily Robinson\n\n\n\nAllison Theobold"
+  },
+  {
+    "objectID": "materials/00-introductions.html#workshop-prep",
+    "href": "materials/00-introductions.html#workshop-prep",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Workshop Prep",
+    "text": "Workshop Prep\n\nAre you on the latest version of RStudio i.e. v2023.03.0+386 or later?\nAre you on the latest version of Quarto i.e. v1.3.340 or later?\nAre you on the latest version of R i.e. v4.3.0 or later?\n\n\nGreat, let’s get started!"
+  },
+  {
+    "objectID": "materials/00-introductions.html#structure-of-the-workshop",
+    "href": "materials/00-introductions.html#structure-of-the-workshop",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Structure of the workshop",
+    "text": "Structure of the workshop\n\nLecture - 🤠\n“Your turn” or “Our Turn” - 💻\nBreaks - ☕\n\n\nIn-session:\n\n = I’m stuck or I’m running into a code error\n = I have completed the activity\n\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/04-activity-quarto-presentations.html",
@@ -866,47 +866,5 @@
     "title": "Workshop Presenters",
     "section": "",
     "text": "Hunter Glanz is an Assistant Professor of Statistics at Cal Poly in beautiful San Luis Obispo, California. Insert Hunter’s bio here!\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Emily’s involves graphical testing and evaluating the perceptual and cognitive implications of design choices in data visualization in order to more effectively communicate data and science to a variety of audiences. Emily is also interested in exploring how to bring visuals into the classroom.\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
-  },
-  {
-    "objectID": "materials/00-introductions.html",
-    "href": "materials/00-introductions.html",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "Username: fill in!\nPassword: fill in!\n\n\n\n\nTo access the workshop materials use the following link:\n\nhttps://atheobold.github.io/uscots-quarto/\n\n\nlibrary(fontawesome)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(quarto)\nlibrary(gt)\nlibrary(gtExtras)\nlibrary(gtsummary)"
-  },
-  {
-    "objectID": "materials/00-introductions.html#welcome",
-    "href": "materials/00-introductions.html#welcome",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "Welcome!",
-    "text": "Welcome!\n WiFi\n\nUsername: fill in!\nPassword: fill in!\n\nMaterials\nTo access the workshop materials use the following link:\n\nhttps://atheobold.github.io/uscots-quarto/"
-  },
-  {
-    "objectID": "materials/00-introductions.html#section",
-    "href": "materials/00-introductions.html#section",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "We are assuming\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
-  },
-  {
-    "objectID": "materials/00-introductions.html#your-workshop-leaders",
-    "href": "materials/00-introductions.html#your-workshop-leaders",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "Your Workshop Leaders",
-    "text": "Your Workshop Leaders\n\n\n\nHunter Glanz\n\n\n\nEmily Robinson\n\n\n\nAllison Theobold"
-  },
-  {
-    "objectID": "materials/00-introductions.html#workshop-prep",
-    "href": "materials/00-introductions.html#workshop-prep",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "Workshop Prep",
-    "text": "Workshop Prep\n\nAre you on the latest version of RStudio i.e. v2023.03.0+386 or later?\nAre you on the latest version of Quarto i.e. v1.3.340 or later?\nAre you on the latest version of R i.e. v4.3.0 or later?\n\n\nGreat, let’s get started!"
-  },
-  {
-    "objectID": "materials/00-introductions.html#structure-of-the-workshop",
-    "href": "materials/00-introductions.html#structure-of-the-workshop",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "Structure of the workshop",
-    "text": "Structure of the workshop\n\nLecture - 🤠\n“Your turn” or “Our Turn” - 💻\nBreaks - ☕\n\n\nIn-session:\n\n = I’m stuck or I’m running into a code error\n = I have completed the activity\n\n\n\n\nUSCOTS Quarto Workshop"
   }
 ]

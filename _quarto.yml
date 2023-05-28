@@ -50,7 +50,7 @@ website:
       - href: "https://quarto.org/"
         text: "Quarto Docs"
       - icon: github
-        href: https://github.com/rstudio-conf-2022/get-started-quarto
+        href: https://github.com/atheobold/uscots-quarto
       
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
