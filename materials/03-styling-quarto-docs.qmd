@@ -205,6 +205,30 @@ There are five types of callouts: note, tip, warning, caution, and important.
 There are five types of callouts: `note`, `warning`, `important`, `tip`, and `caution`.
 :::
 
+## More callouts
+
+::: callout-note
+Here is a reminder note.
+:::
+
+::: callout-warning
+Callouts provide a simple way to attract attention, for example, to this warning.
+:::
+
+::: callout-important
+Danger, callouts will really improve your writing.
+:::
+
+::: callout-tip
+## Caption
+
+Tip with caption.
+:::
+
+::: callout-caution
+Here is something under construction.
+:::
+
 ## Callout titles
 
 ``` markdown
@@ -308,7 +332,7 @@ bibliography: references.bib
 
 <br>
 
-```markdown
+``` markdown
 Blah Blah [@uscots2023]
 ```
 
@@ -318,7 +342,7 @@ One of the reasons I would use the visual editor!
 
 ## Margins[^4]
 
-[^4]: Margins are also not supported by presentations.
+[^4]: Margins are not supported by presentations.
 
 You might have information you want to put in the margins of a document.
 
@@ -339,14 +363,14 @@ mtcars[1:6, 1:3]
 
 ## Or your footnotes and citations
 
-```yaml
+``` yaml
 ---
 reference-location: margin
 citation-location: margin
 ---
 ```
-. . .
 
+. . .
 
 <br>
 
@@ -354,7 +378,7 @@ And so much more on [article layouts](https://quarto.org/docs/authoring/article-
 
 ## Some of my favorite embellishments
 
-```yaml
+``` yaml
 ---
 embed-resources: true
 code-tools: true

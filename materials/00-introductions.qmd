@@ -32,6 +32,44 @@ library(gtExtras)
 library(gtsummary)
 ```
 
+## Code of Conduct {.smaller}
+
+> The American Statistical Association (ASA) is committed to providing an atmosphere in which personal respect and intellectual growth are valued and the free expression and exchange of ideas are encouraged. Consistent with this commitment, it is the policy of the ASA that all participants in ASA activities enjoy a welcoming environment free from unlawful discrimination, harassment, and retaliation. We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to, members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
+
+::: aside
+[ASA Code of Conduct](https://www.amstat.org/meetings/code-of-conduct)
+:::
+
+## Expected Behavior {.smaller}
+
+> -   Model and support the norms of respect necessary to promote the conditions for healthy exchange of scientific ideas.
+>
+> -   In speech or conduct, do not insult or disparage other participants.
+>
+> -   Be conscious of hierarchical structures, specifically the existence of stark power differentials between students, early career statisticians and established career statisticians---noting that fear of retaliation from more established statisticians can make it difficult for students and early career statisticians to express discomfort, rebuff unwelcome advances, and report violations of the conduct policy.
+>
+> -   Be sensitive to indications that may suggest that individuals are feeling unwelcome.
+
+::: aside
+[ASA Code of Conduct](https://www.amstat.org/meetings/code-of-conduct)
+:::
+
+## Your Workshop Leaders
+
+::: {layout-ncol="3"}
+### Hunter Glanz
+
+![](images/01-hunter_glanz.jpg){style="height: 300px;"}
+
+### Emily Robinson
+
+![](images/01-emily-robinson.jpg){style="height: 300px;"}
+
+### Allison Theobold
+
+![](images/01-allison_headshot.jpg){style="height: 300px;"}
+:::
+
 ## 
 
 ::: columns
@@ -63,21 +101,23 @@ Options for publishing your content
 :::
 :::
 
-## Your Workshop Leaders
+## Workshop structure
 
-::: {layout-ncol="3"}
-### Hunter Glanz
+-   **My turn:** Lecture segments + live coding
 
-![](images/01-hunter_glanz.jpg){style="height: 300px;"}
+-   **Our turn:** Live coding + follow along
 
-### Emily Robinson
+-   **Your turn:** Exercises
 
-![](images/01-emily-robinson.jpg){style="height: 300px;"}
+## Getting help
 
-### Allison Theobold
+-   During **my turn** and **our turn** segments -- raise your hand
 
-![](images/01-allison_headshot.jpg){style="height: 300px;"}
-:::
+-   During **your turn** segments -- also feel free to raise your hand for questions but use the stickies to signal:
+
+    - `r fa("square", "pink")` = I'm stuck or I'm running into a code error
+  
+    - `r fa("square", "green")` = I have completed the activity
 
 ## Workshop Prep
 
@@ -88,17 +128,3 @@ Options for publishing your content
 . . .
 
 [Great, let's get started!]{.r-fit-text}
-
-## Structure of the workshop
-
--   Lecture - 🤠
--   "Your turn" or "Our Turn" - 💻
--   Breaks - ☕
-
-. . .
-
-In-session:
-
--   `r fa("square", "yellow")` = I'm stuck or I'm running into a code error
-
--   `r fa("square", "purple")` = I have completed the activity

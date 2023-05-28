@@ -81,7 +81,7 @@
     "href": "materials/00-introductions.html#workshop-prep",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Workshop Prep",
-    "text": "Workshop Prep\n\nAre you on the latest version of RStudio i.e. v2023.03.0+386 or later?\nAre you on the latest version of Quarto i.e. v1.3.340 or later?\nAre you on the latest version of R i.e. v4.3.0 or later?\n\n\nGreat, let’s get started!"
+    "text": "Workshop Prep\n\nAre you on the latest version of RStudio i.e. v2023.03.0+386 or later?\nAre you on the latest version of Quarto i.e. v1.3.340 or later?\nAre you on the latest version of R i.e. v4.3.0 or later?\n\n\nGreat, let’s get started!\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/00-introductions.html#structure-of-the-workshop",
@@ -109,14 +109,14 @@
     "href": "materials/02-quarto-docs.html#section-1",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "",
-    "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc\n\n\n\n\nQuarto integrates what has been learned over the last 10-years from RMarkdown into one system for creating and publishing reproducible documents."
+    "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc\n\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "materials/02-quarto-docs.html#the-r-markdown-ecosystem",
     "href": "materials/02-quarto-docs.html#the-r-markdown-ecosystem",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "The R Markdown ecosystem",
-    "text": "The R Markdown ecosystem\n\n\nThink of all the packages from the R Markdown universe that you’ve come to love and rely on over the years. Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc."
+    "text": "The R Markdown ecosystem\n\nQuarto integrates what has been learned over the last 10-years from RMarkdown into one system for creating and publishing reproducible documents.\nThink of all the packages from the R Markdown universe that you’ve come to love and rely on over the years. Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc."
   },
   {
     "objectID": "materials/02-quarto-docs.html#quarto-next-generation-r-markdown",
@@ -137,7 +137,7 @@
     "href": "materials/02-quarto-docs.html#quarto-makes-moving-between-formats-straightforward",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Quarto makes moving between formats straightforward",
-    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\nWhat did spark my interest was how how straightforward it is with Quarto to move between output formats.\nAs an educator, two things are of utmost importance to me about the tools I use to create my materials: reproducibility and ease of transition between output formats, like documents to slides to websites to books.\nOver the last year of using Quarto for pretty much everything, I’ve felt like I’ve finally found the tool that lets me go from one output type to the other with minimal, if any, futzing around with my source code beyond the yaml. For example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml. Nothing in the content part of my document. No slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd"
   },
   {
     "objectID": "materials/02-quarto-docs.html#a-quarto-document",
@@ -165,7 +165,7 @@
     "href": "materials/02-quarto-docs.html#code",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Code",
-    "text": "Code\n\n\n\n```{r}\n#| output-location: column-fragment\n#| label: species-means\n#| tbl-cap: Mean body mass (g) of penguins on Palmer Archipelego\n#| warning: false\n\nlibrary(palmerpenguins)\n\npenguins %&gt;%\n  drop_na(body_mass_g) %&gt;% \n  group_by(species) %&gt;% \n  summarize(mean_weight = mean(body_mass_g)\n            )\n```\n\n\n# A tibble: 3 × 2\n  species   mean_weight\n  &lt;fct&gt;           &lt;dbl&gt;\n1 Adelie          3701.\n2 Chinstrap       3733.\n3 Gentoo          5076.\n\n\n\n\n\n{r} – notates what language the code is written in\n\n\n#| – defines code chunk options"
+    "text": "Code\n\n\n```{r}\n#| label: species-means\n#| tbl-cap: Mean body mass (g) of penguins on Palmer Archipelego\n#| warning: false\n\nlibrary(palmerpenguins)\n\npenguins %&gt;%\n  drop_na(body_mass_g) %&gt;% \n  group_by(species) %&gt;% \n  summarize(mean_weight = mean(body_mass_g)\n            )\n```\n\n# A tibble: 3 × 2\n  species   mean_weight\n  &lt;fct&gt;           &lt;dbl&gt;\n1 Adelie          3701.\n2 Chinstrap       3733.\n3 Gentoo          5076.\n\n\n\n\n\n\n\n\n\n{r} – notates what language the code is written in\n#| – defines code chunk options"
   },
   {
     "objectID": "materials/02-quarto-docs.html#text",
@@ -179,7 +179,7 @@
     "href": "materials/02-quarto-docs.html#text-formatting",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Text Formatting",
-    "text": "Text Formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+    "text": "Text Formatting\n\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Markdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read\n\n\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an [image](image.png)."
   },
   {
     "objectID": "materials/02-quarto-docs.html#headings",
@@ -1006,5 +1006,124 @@
     "title": "Workshop Presenters",
     "section": "",
     "text": "Hunter Glanz is an Associate Professor of Statistics at Cal Poly. He maintains a passion for machine learning, statistical computing, and data science, and enjoys advancing education efforts in these areas. In particular, Cal Poly’s courses in R, SAS, and Python give him the opportunity to connect students with exciting data science topics amid a firm grounding in communication of statistical ideas. Hunter serves on numerous committees and organizations dedicated to delivering cutting edge statistical and data science content to students and professionals alike.\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Emily’s involves graphical testing and evaluating the perceptual and cognitive implications of design choices in data visualization in order to more effectively communicate data and science to a variety of audiences. Emily is also interested in exploring how to bring visuals into the classroom.\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
+  },
+  {
+    "objectID": "materials/00-introductions.html#code-of-conduct",
+    "href": "materials/00-introductions.html#code-of-conduct",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\n\nThe American Statistical Association (ASA) is committed to providing an atmosphere in which personal respect and intellectual growth are valued and the free expression and exchange of ideas are encouraged. Consistent with this commitment, it is the policy of the ASA that all participants in ASA activities enjoy a welcoming environment free from unlawful discrimination, harassment, and retaliation. We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to, members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.\n\n\n\nASA Code of Conduct"
+  },
+  {
+    "objectID": "materials/00-introductions.html#expected-behavior",
+    "href": "materials/00-introductions.html#expected-behavior",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Expected Behavior",
+    "text": "Expected Behavior\n\nModel and support the norms of respect necessary to promote the conditions for healthy exchange of scientific ideas.\nIn speech or conduct, do not insult or disparage other participants.\nBe conscious of hierarchical structures, specifically the existence of stark power differentials between students, early career statisticians and established career statisticians—noting that fear of retaliation from more established statisticians can make it difficult for students and early career statisticians to express discomfort, rebuff unwelcome advances, and report violations of the conduct policy.\nBe sensitive to indications that may suggest that individuals are feeling unwelcome.\n\n\n\nASA Code of Conduct"
+  },
+  {
+    "objectID": "materials/00-introductions.html#workshop-structure",
+    "href": "materials/00-introductions.html#workshop-structure",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Workshop structure",
+    "text": "Workshop structure\n\nMy turn: Lecture segments + live coding\nOur turn: Live coding + follow along\nYour turn: Exercises"
+  },
+  {
+    "objectID": "materials/00-introductions.html#getting-help",
+    "href": "materials/00-introductions.html#getting-help",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Getting help",
+    "text": "Getting help\n\nDuring my turn and our turn segments – raise your hand\nDuring your turn segments – also feel free to raise your hand for questions but use the stickies to signal:\n\n = I’m stuck or I’m running into a code error\n = I have completed the activity"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto",
+    "href": "materials/02-quarto-docs.html#quarto",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto",
+    "text": "Quarto\nWith Quarto you can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.\n\n\njust like R Markdown…\n\n\n\nbut not just like it, there’s more to it…"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto-1",
+    "href": "materials/02-quarto-docs.html#quarto-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto-2",
+    "href": "materials/02-quarto-docs.html#quarto-2",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem\n\nunifies for people who love R Markdown"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto-3",
+    "href": "materials/02-quarto-docs.html#quarto-3",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem\n\nunifies for people who love R Markdown\nextends for people who don’t know R Markdown"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto-unifies-extends",
+    "href": "materials/02-quarto-docs.html#quarto-unifies-extends",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto Unifies & Extends",
+    "text": "Quarto Unifies & Extends\n\n\nConsistent implementation of attractive and handy features across outputs\nMore accessible defaults as well as better support for accessibility\nGuardrails, particularly helpful for new learners: YAML completion, code option completion\nSupport for other languages like Python, Julia, and more\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nQuarto integrates what has been learned over the last 10-years from RMarkdown into one system for creating and publishing reproducible documents.\nThink of all the packages from the R Markdown universe that you’ve come to love and rely on over the years. Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc.\nSuch a unification effort presents a fantastic opportunity to identify and address gaps functionality and inefficiencies in user experience, and the process of building Quarto has been no different."
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#quarto-workflow",
+    "href": "materials/02-quarto-docs.html#quarto-workflow",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Quarto workflow",
+    "text": "Quarto workflow\nRendering a Quarto file in RStudio via the Render button calls quarto render in a background job, preventing Quarto rendering from cluttering up the R console, and gives you and easy way to stop the render process.\n\nThere are a few different ways to render a Quarto file:\n\n\nOption 1: In RStudio as a background job, and preview the output.\n\n\n\n\nOption 2: In the Terminal via quarto render:\n\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx\n\n\n\n\nOption 3: In the R console, via the quarto R package:\n\n\nquarto::quarto_render(\"document.qmd\") # defaults to html\nquarto::quarto_render(\"document.qmd\", output_format = \"pdf\")"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#rendering",
+    "href": "materials/02-quarto-docs.html#rendering",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Rendering",
+    "text": "Rendering\n\nOption 1: In RStudio as a background job, and preview the output.\n\n\n\nOption 2: In the Terminal via quarto render:\n\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx\n\n\n\n\nOption 3: In the R console, via the quarto R package:\n\n\nlibrary(quarto)\n\nquarto_render(\"document.qmd\") # defaults to html\nquarto_render(\"document.qmd\", output_format = \"pdf\")"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#lists",
+    "href": "materials/02-quarto-docs.html#lists",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Lists",
+    "text": "Lists\nUnordered list:\n\n\nMarkdown:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1 \n\nOutput\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\nOrdered list:\n\n\nMarkdown:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nOutput\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
+  },
+  {
+    "objectID": "materials/03-styling-quarto-docs.html#more-callouts",
+    "href": "materials/03-styling-quarto-docs.html#more-callouts",
+    "title": "Styling Quarto Documents",
+    "section": "More callouts",
+    "text": "More callouts\n\n\n\n\n\n\nHere is a reminder note.\n\n\n\n\n\n\n\n\n\nCallouts provide a simple way to attract attention, for example, to this warning.\n\n\n\n\n\n\n\n\n\nDanger, callouts will really improve your writing.\n\n\n\n\n\n\n\n\n\nCaption\n\n\nTip with caption.\n\n\n\n\n\n\n\n\n\nHere is something under construction."
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#yaml",
+    "href": "materials/02-quarto-docs.html#yaml",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "YAML",
+    "text": "YAML\n\nprocessed in many stages of the rendering process and can influence the final document in many different ways. It is placed at the very beginning of the document and is read by each of Pandoc, Quarto and knitr. Along the way, the information that it contains can affect the code, content, and the rendering process."
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#anatomy-of-a-code-chunk",
+    "href": "materials/02-quarto-docs.html#anatomy-of-a-code-chunk",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Anatomy of a code chunk",
+    "text": "Anatomy of a code chunk\n\n\n\n```{r}\n#| label: penguin-species\n#| message: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\npenguins |&gt; \n  distinct(species)\n```\n\n# A tibble: 3 × 1\n  species  \n  &lt;fct&gt;    \n1 Adelie   \n2 Gentoo   \n3 Chinstrap\n\n\n\n\nHas 3x backticks on each end\nEngine (r) is indicated between curly braces {r}\nOptions stated with the #| (hashpipe): #| option1: value\n\n\n\n\n\n\n\n\nDifferent from RMarkdown formatting!\n\n\nNotice the options here are not inside the {} but inside the code chunk! Where previously we had:\n{r, echo = FALSE, message = FALSE, fig.align = \"center\"}\nnow we have:\n{r}\n#| echo: false\n#| message: false\n#| fig-align: center"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#text-formatting-1",
+    "href": "materials/02-quarto-docs.html#text-formatting-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "Text Formatting",
+    "text": "Text Formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#what-is-quarto",
+    "href": "materials/02-quarto-docs.html#what-is-quarto",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc that aims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   }
 ]

@@ -9,6 +9,7 @@ format:
     footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
     theme: night
     embed-resources: true
+    
 editor: source
 ---
 
@@ -23,110 +24,86 @@ Hello Quarto
 library(tidyverse)
 ```
 
-##
+## What is Quarto?
 
-[What is Quarto?]{.large}
+> Quarto® is an open-source scientific and technical publishing system built on Pandoc that aims to make the process of creating and collaborating dramatically better
 
-> [Quarto® is an open-source scientific and technical publishing system built on Pandoc]{.midi}
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/horst-quarto.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+
+
+## Quarto
+
+With Quarto you can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.
 
 . . .
 
-</br> 
+<br>
 
-::: {.large .gray}
-Quarto integrates what has been learned over the last 10-years from RMarkdown into **one** system for creating and publishing reproducible documents.
+*just like R Markdown...*
+
+. . .
+
+<br>
+
+but not *just like* it, there's more to it...
+
+## Quarto ... {.center auto-animate="true"}
+
+**unifies** + **extends** the R Markdown ecosystem
+
+## Quarto ... {.center auto-animate="true"}
+
+**unifies** + **extends** the R Markdown ecosystem
+
+<br>
+
+**unifies** for people who love R Markdown
+
+## Quarto ... {.center auto-animate="true"}
+
+**unifies** + **extends** the R Markdown ecosystem
+
+<br>
+
+**unifies** for people who love R Markdown
+
+**extends** for people who don't know R Markdown
+
+
+## Quarto Unifies & Extends 
+
+::: incremental
+- Consistent implementation of attractive and handy features across outputs
+- More accessible defaults as well as better support for accessibility
+- Guardrails, particularly helpful for new learners: YAML completion, code option completion
+- Support for other languages like Python, Julia, and more 
 :::
 
-## The R Markdown ecosystem
-
+::: columns
+::: {.column width="35%"}
 ![](images/02-rmd_ecosystem.png){fig-align="center"}
-
-::: notes
-Think of all the packages from the R Markdown universe that you've come to love and rely on over the years. Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc.
 :::
 
-## Quarto: Next generation R Markdown
+::: {.column width="30%"}
+:::
 
+::: {.column width="35%"}
+</br>
 ![](images/02-quarto_ball.png){fig-align="center" width="30%"}
+:::
+:::
+
+
+
 
 ::: notes
-Quarto unifies the functionality from these packages,
 
-building on Pandoc on the technical side and on the human side -- over a decade of experience developing, maintaining, and tweaking these packages as well as community feedback R Markdown extension packages.
+Quarto integrates what has been learned over the last 10-years from RMarkdown into **one** system for creating and publishing reproducible documents.
+
+Think of all the packages from the R Markdown universe that you've come to love and rely on over the years. Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc.
 
 Such a unification effort presents a fantastic opportunity to identify and address gaps functionality and inefficiencies in user experience, and the process of building Quarto has been no different.
 :::
-
-## Quarto highlights
-
-::: columns
-::: {.column width="5%"}
-:::
-
-::: {.column width="40%"}
-::: bulletbox
-::: {.fragment .fade-in-then-semi-out}
-![](images/02-quarto_ball-1_4.png){width="50px"} Consistent implementation of attractive and handy features across outputs
-:::
-:::
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="40%"}
-::: bulletbox
-::: {.fragment .fade-in-then-semi-out}
-![](images/02-quarto_ball-2_4.png){width="50px"} More accessible defaults as well as better support for accessibility
-:::
-:::
-:::
-
-::: {.column width="5%"}
-:::
-:::
-
-::: columns
-::: {.column width="5%"}
-:::
-
-::: {.column width="40%"}
-::: bulletbox
-::: {.fragment .fade-in-then-semi-out}
-![](images/02-quarto_ball-3_4.png){width="50px"} Guardrails, particularly helpful for new learners: YAML completion, code option completion
-:::
-:::
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="40%"}
-::: bulletbox
-::: {.fragment .fade-in-then-semi-out}
-![](images/02-quarto_ball.png){width="50px"} Support for other languages like Python, Julia, and more 
-:::
-:::
-:::
-
-::: {.column width="5%"}
-:::
-:::
-
-::: notes
-Some highlights of these improvements include
-
---\> consistent implementation of attractive and handy features across *all* outputs, like tabsets, code-folding, and syntax highlighting,
-
---\> more accessible defaults as well as better support for creating accessible documents,
-
---\> guardrails that are particularly helpful for new learners, like YAML completion and informative syntax errors,
-
---\> and perhaps most excitingly for those who are not coming from the R ecosystem, Quarto offers support for other languages like Python, Julia, and more via the Jupyter engine for executable code chunks. And it's designed to be expandable to more engines and languages, even those that might not exist today.
-
-[pause] So by now I'm assuming many of you have already started playing with Quarto, or you're waiting for me to do that. So, let's dive in and see what all the Quarto fuss is about!
-:::
-
 
 ## Quarto makes moving between formats straightforward {.takeaway .center}
 
@@ -182,24 +159,6 @@ website:
 :::
 :::
 
-::: notes
-What did spark my interest was how how straightforward it is with Quarto to move between output formats.
-
-As an educator, two things are of utmost importance to me about the tools I use to create my materials: reproducibility and ease of transition between output formats, like documents to slides to websites to books.
-
-Over the last year of using Quarto for pretty much everything, I've felt like I've finally found the tool that lets me go from one output type to the other with minimal, if any, futzing around with my source code beyond the yaml.
-For example, here are common things I produce
-
---\> a lesson in document form <br>
---\> the same content in presentation form <br>
---\> the same content on a page in a website,
-
-and you can see that all that needed to change going between these formats is a few lines in the yaml.
-Nothing in the content part of my document.
-No slide breaks to remove, no citation style to change, no headings to re-level.
-This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!
-:::
-
 # `r fontawesome::fa("laptop-code", "white")` Let's get started! {background-color="#447099" transition="slide-in"}
 
 - Open RStudio
@@ -250,11 +209,9 @@ This ease of transition has freed up time to focus my time on content, and that,
 :::
 :::
 
-## Anatomy of a Quarto document
+# Anatomy of a Quarto document
 
-</br>
-
-[The [YAML](https://yaml.org/) metadata or header is:]{style="font-size: 1.55em;"}
+## [YAML](https://yaml.org/) 
 
 > processed in many stages of the rendering process and can influence the final document in many different ways. It is placed at the very beginning of the document and is read by each of Pandoc, Quarto and `knitr`. Along the way, the information that it contains can affect the code, content, and the rendering process.
 
@@ -289,38 +246,59 @@ format: html
 ![](images/02-rstudio-source-visual.png){fig-align="center"}
 :::
  
-## Code
+# Code
 
-</br>
 
+## Anatomy of a code chunk
+
+::: columns
+::: {.column width="50%"}
 ```{r}
+#| label: penguin-species
+#| message: false
 #| echo: fenced
-#| output-location: column-fragment
-#| label: species-means
-#| tbl-cap: Mean body mass (g) of penguins on Palmer Archipelego
-#| warning: false
 
+library(tidyverse)
 library(palmerpenguins)
 
-penguins %>%
-  drop_na(body_mass_g) %>% 
-  group_by(species) %>% 
-  summarize(mean_weight = mean(body_mass_g)
-            )
+penguins |> 
+  distinct(species)
+```
+:::
 
+::: {.column .fragment width="50%"}
+-   Has 3x backticks on each end
+-   Engine (`r`) is indicated between curly braces `{r}`
+-   Options stated with the `#|` (hashpipe): `#| option1: value`
+
+::: fragment
+::: {.callout-note}
+# Different from RMarkdown formatting!
+
+Notice the options here **are not** inside the `{}` but inside the code chunk! Where previously we had:
+
+```r
+{r, echo = FALSE, message = FALSE, fig.align = "center"}
 ```
 
-. . .
+now we have: 
 
-</br>
+```r
+{r}
+#| echo: false
+#| message: false
+#| fig-align: center
+```
 
-[`{r}`]{.midi} -- notates what language the code is written in
+:::
+:::
+:::
+:::
 
-. . .
 
-[`#|`]{.midi} -- defines code chunk options
+# Text
 
-## Text
+## Text Formatting
 
 > Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. [Markdown](https://daringfireball.net/projects/markdown/) is a plain text format that is designed to be easy to write, and, even more importantly, easy to read
 
@@ -368,6 +346,109 @@ This is a sentence with some **bold text**, some *italic text* and an [image](im
 |     ###### Header 6 | ###### Header 6 |
 +---------------------+-----------------+
 
+## Lists
+
+Unordered list:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+``` markdown
+-   unordered list         
+    -   sub-item 1         
+    -   sub-item 1         
+        -   sub-sub-item 1 
+```
+:::
+
+::: {.column .fragment width="50%" fragment-index="1"}
+**Output**
+
+-   unordered list
+    -   sub-item 1\
+    -   sub-item 1
+        -   sub-sub-item 1
+:::
+:::
+
+Ordered list:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+``` markdown
+1. ordered list            
+2. item 2                  
+    i. sub-item 1          
+         A.  sub-sub-item 1
+```
+:::
+
+::: {.column .fragment width="50%" fragment-index="2"}
+**Output**
+
+1.  ordered list\
+2.  item 2
+    i.  sub-item 1
+        A.  sub-sub-item 1
+:::
+:::
+
+# `r fontawesome::fa("laptop-code", "white")` Your turn! {background-color="#447099" transition="slide-in"}
+Using the visual editor, add the following to your Quarto document:
+
+- A title
+- Your name as the author
+- Two new sections
+  * One with fact you want to learn
+  * One with your favorite thing about R
+
+## Quarto workflow
+
+Rendering a Quarto file in RStudio via the Render button calls `quarto render` in a **background job**, preventing Quarto rendering from cluttering up the R console, and gives you and easy way to stop the render process. 
+
+</br>
+
+There are a few different ways to render a Quarto file: 
+
+. . .
+
+1.  Option 1: In RStudio as a background job, and preview the output.
+
+. . .
+
+2.  Option 2: In the Terminal via `quarto render`:
+
+```{bash}
+#| eval: false
+#| echo: true
+
+quarto render document.qmd # defaults to html
+quarto render document.qmd --to pdf
+quarto render document.qmd --to docx
+```
+
+. . .
+
+3.  Option 3: In the R console, via the `quarto` R package:
+
+```{r}
+#| eval: false
+#| echo: true
+
+quarto::quarto_render("document.qmd") # defaults to html
+quarto::quarto_render("document.qmd", output_format = "pdf")
+```
+
+# `r fontawesome::fa("laptop-code", "white")` Your turn! {background-color="#447099" transition="slide-in"}
+- With the Quarto document you have open
+- Render your document using the RStudio \> Render button
+- Then compare the behavior of rendering with either
+    -   the terminal using `quarto render`  or 
+    -   the R console via `quarto::quarto_render()`
+
 
 ## Additional YAML Options
 
@@ -394,16 +475,17 @@ Notice!
 
 # `r fontawesome::fa("laptop-code", "white")` Your turn! {background-color="#447099" transition="slide-in"}
 
-The exhaustive list of YAML options that can be used for HTML documents can be found here: <https://quarto.org/docs/reference/formats/html>.
+The exhaustive list of YAML options that can be used for HTML documents can be found here: <https://quarto.org/docs/reference/formats/html>. You can also get a drop down menu of all possible YAML options by hitting Try <kbd>`Ctrl + space`</kbd>.
 
 </br>
 
 Using this resource add the following to your document:
 
 - code folding
+- a table of contents
 - is self-contained
-- center alignment of all figures
-- an execution option which suppresses messages output from R
+- all figures are center aligned
+- no messages wan execution option which suppresses messages output from R
 
 [Afterward, add at least one additional YAML option of your choosing!]{style="font-size: 1.25em; color: #e28743"}
 
