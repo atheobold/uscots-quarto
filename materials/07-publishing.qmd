@@ -11,9 +11,9 @@ format:
 editor: visual
 ---
 
-##  {background-image="images/05-style-crop.png" background-position="center" background-size="cover"}
+##  {background-image="images/07-publish.png" background-position="center" background-size="cover"}
 
-::: {style="font-size: 6em; color: #FFFFFF;"}
+::: {style="font-size: 6em; color: #000000;"}
 Publishing Your Materials
 :::
 

@@ -303,16 +303,16 @@
   {
     "objectID": "materials/07-publishing.html#github-pages",
     "href": "materials/07-publishing.html#github-pages",
-    "title": "Publishing Your Materials",
+    "title": "USCOTS 2023 Quarto Workshop",
     "section": "GitHub Pages",
     "text": "GitHub Pages\n\nHosted directly from your GitHub repository. Just edit, push, and your changes are live.\nSettings &gt; Pages"
   },
   {
     "objectID": "materials/07-publishing.html#hacky-url-can-you-spot-the-differences",
     "href": "materials/07-publishing.html#hacky-url-can-you-spot-the-differences",
-    "title": "Publishing Your Materials",
+    "title": "USCOTS 2023 Quarto Workshop",
     "section": "“Hacky” URL: Can you spot the differences?",
-    "text": "“Hacky” URL: Can you spot the differences?\nYou can follow the file structure from the “home base” in your GitHub repo.\nhttps://github.com/earobinson95/stat365-calpoly/blob/master/00-course-info/stat365-syllabus-S2023.html\nhttps://earobinson95.github.io/stat365-calpoly/00-course-info/stat365-syllabus-S2023.html"
+    "text": "“Hacky” URL: Can you spot the differences?\nYou can follow the file structure from the “home base” in your GitHub repo.\nhttps://github.com/earobinson95/stat365-calpoly/blob/master/00-course-info/stat365-syllabus-S2023.html\nhttps://earobinson95.github.io/stat365-calpoly/00-course-info/stat365-syllabus-S2023.html\n\n\n\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/03-activity-styling-quarto-docs.html",
@@ -1125,5 +1125,12 @@
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "What is Quarto?",
     "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc that aims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "materials/07-publishing.html#section",
+    "href": "materials/07-publishing.html#section",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "Publishing Your Materials"
   }
 ]
