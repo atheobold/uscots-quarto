@@ -1279,18 +1279,18 @@ margin-right: 0; }
 <section id="columns" class="slide level2">
 <h2>Columns</h2>
 <p>It can be useful to display content in columns.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a>:::: columns</span>
-<span id="cb7-2"><a href="#cb7-2"></a>::: column</span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a>::: {.columns}</span>
+<span id="cb7-2"><a href="#cb7-2"></a>::: {.column}</span>
 <span id="cb7-3"><a href="#cb7-3"></a></span>
 <span id="cb7-4"><a href="#cb7-4"></a>Content for first column.</span>
 <span id="cb7-5"><a href="#cb7-5"></a></span>
 <span id="cb7-6"><a href="#cb7-6"></a>:::</span>
-<span id="cb7-7"><a href="#cb7-7"></a>::: column</span>
+<span id="cb7-7"><a href="#cb7-7"></a>::: {.column}</span>
 <span id="cb7-8"><a href="#cb7-8"></a></span>
 <span id="cb7-9"><a href="#cb7-9"></a>Content for second column.</span>
 <span id="cb7-10"><a href="#cb7-10"></a></span>
 <span id="cb7-11"><a href="#cb7-11"></a>:::</span>
-<span id="cb7-12"><a href="#cb7-12"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-12"><a href="#cb7-12"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="columns">
 <div class="column">
 <p>Content for first column.</p>
@@ -1301,7 +1301,7 @@ margin-right: 0; }
 </section>
 <section id="you-might-want-uneven-columns" class="slide level2">
 <h2>You might want uneven columns</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a>:::: {.columns}</span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a>::: {.columns}</span>
 <span id="cb8-2"><a href="#cb8-2"></a>::: {.column width=25%}</span>
 <span id="cb8-3"><a href="#cb8-3"></a></span>
 <span id="cb8-4"><a href="#cb8-4"></a><span class="ss">+ </span>item 1</span>
@@ -1313,7 +1313,7 @@ margin-right: 0; }
 <span id="cb8-10"><a href="#cb8-10"></a><span class="al">![](link-to-image.png)</span></span>
 <span id="cb8-11"><a href="#cb8-11"></a></span>
 <span id="cb8-12"><a href="#cb8-12"></a>:::</span>
-<span id="cb8-13"><a href="#cb8-13"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-13"><a href="#cb8-13"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="columns">
 <div class="column" style="width:25%;">
 <ul>
@@ -1327,17 +1327,19 @@ margin-right: 0; }
 </section>
 <section id="or-more-than-two-columns" class="slide level2">
 <h2>or more than two columns</h2>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a>:::: {.columns}</span>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a>::: {.columns}</span>
 <span id="cb9-2"><a href="#cb9-2"></a>::: {.column width=33%}</span>
 <span id="cb9-3"><a href="#cb9-3"></a>Column 1</span>
 <span id="cb9-4"><a href="#cb9-4"></a>:::</span>
-<span id="cb9-5"><a href="#cb9-5"></a>::: {.column width=33%}</span>
-<span id="cb9-6"><a href="#cb9-6"></a>Column 2</span>
-<span id="cb9-7"><a href="#cb9-7"></a>:::</span>
-<span id="cb9-8"><a href="#cb9-8"></a>::: {.column width=33%}</span>
-<span id="cb9-9"><a href="#cb9-9"></a>Column 3</span>
-<span id="cb9-10"><a href="#cb9-10"></a>:::</span>
-<span id="cb9-11"><a href="#cb9-11"></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-5"><a href="#cb9-5"></a></span>
+<span id="cb9-6"><a href="#cb9-6"></a>::: {.column width=33%}</span>
+<span id="cb9-7"><a href="#cb9-7"></a>Column 2</span>
+<span id="cb9-8"><a href="#cb9-8"></a>:::</span>
+<span id="cb9-9"><a href="#cb9-9"></a></span>
+<span id="cb9-10"><a href="#cb9-10"></a>::: {.column width=33%}</span>
+<span id="cb9-11"><a href="#cb9-11"></a>Column 3</span>
+<span id="cb9-12"><a href="#cb9-12"></a>:::</span>
+<span id="cb9-13"><a href="#cb9-13"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="columns">
 <div class="column" style="width:33%;">
 <p>Column 1</p>
@@ -1522,7 +1524,7 @@ margin-right: 0; }
 <div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1"></a>::: column-margin</span>
 <span id="cb18-2"><a href="#cb18-2"></a>Content for the margin.</span>
 <span id="cb18-3"><a href="#cb18-3"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<aside><ol class="aside-footnotes"><li id="fn4"><p>Margins are also not supported by presentations.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>Margins are not supported by presentations.</p></li></ol></aside></section>
 <section id="you-can-place-output-in-the-margins" class="slide level2">
 <h2>You can place output in the margins</h2>
 <div class="cell column-margin">

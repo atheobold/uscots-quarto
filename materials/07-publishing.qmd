@@ -1,10 +1,24 @@
 ---
-title: "Publishing Your Materials"
 format: 
   revealjs:
-    standalone: true
+    slide-number: false
+    height: 900
+    width: 1600
+    logo: "images/cp_hex_logo.png"
+    footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
+    theme: [default, styles.scss]
+    embed-resources: true
 editor: visual
 ---
+
+##  {background-image="images/05-style-crop.png" background-position="center" background-size="cover"}
+
+::: {style="font-size: 6em; color: #FFFFFF;"}
+Publishing Your Materials
+:::
+
+
+
 
 ## GitHub Pages
 

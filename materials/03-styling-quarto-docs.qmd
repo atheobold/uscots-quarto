@@ -108,18 +108,18 @@ The document will then show a hyperlink to the [cross-referenced section](#toc-s
 It can be useful to display content in columns.
 
 ``` markdown
-:::: columns
-::: column
+::: {.columns}
+::: {.column}
 
 Content for first column.
 
 :::
-::: column
+::: {.column}
 
 Content for second column.
 
 :::
-::::
+:::
 ```
 
 ::: columns
@@ -135,7 +135,7 @@ Content for second column.
 ## You might want uneven columns
 
 ``` markdown
-:::: {.columns}
+::: {.columns}
 ::: {.column width=25%}
 
 + item 1
@@ -147,7 +147,7 @@ Content for second column.
 ![](link-to-image.png)
 
 :::
-::::
+:::
 ```
 
 ::: columns
@@ -157,24 +157,26 @@ Content for second column.
 :::
 
 ::: {.column width="75%"}
-![](images/uscots-banner.png){width="80%"}
+![](images/03-uscots-banner.png){width="80%"}
 :::
 :::
 
 ## or more than two columns
 
 ``` markdown
-:::: {.columns}
+::: {.columns}
 ::: {.column width=33%}
 Column 1
 :::
+
 ::: {.column width=33%}
 Column 2
 :::
+
 ::: {.column width=33%}
 Column 3
 :::
-::::
+:::
 ```
 
 ::: columns

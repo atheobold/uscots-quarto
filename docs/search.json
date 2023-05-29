@@ -438,21 +438,21 @@
     "href": "materials/03-styling-quarto-docs.html#columns",
     "title": "Styling Quarto Documents",
     "section": "Columns",
-    "text": "Columns\nIt can be useful to display content in columns.\n:::: columns\n::: column\n\nContent for first column.\n\n:::\n::: column\n\nContent for second column.\n\n:::\n::::\n\n\nContent for first column.\n\nContent for second column."
+    "text": "Columns\nIt can be useful to display content in columns.\n::: {.columns}\n::: {.column}\n\nContent for first column.\n\n:::\n::: {.column}\n\nContent for second column.\n\n:::\n:::\n\n\nContent for first column.\n\nContent for second column."
   },
   {
     "objectID": "materials/03-styling-quarto-docs.html#you-might-want-uneven-columns",
     "href": "materials/03-styling-quarto-docs.html#you-might-want-uneven-columns",
     "title": "Styling Quarto Documents",
     "section": "You might want uneven columns",
-    "text": "You might want uneven columns\n:::: {.columns}\n::: {.column width=25%}\n\n+ item 1\n+ item 2\n\n:::\n::: {.column width=75%}\n\n![](link-to-image.png)\n\n:::\n::::\n\n\n\nitem 1\nitem 2"
+    "text": "You might want uneven columns\n::: {.columns}\n::: {.column width=25%}\n\n+ item 1\n+ item 2\n\n:::\n::: {.column width=75%}\n\n![](link-to-image.png)\n\n:::\n:::\n\n\n\nitem 1\nitem 2"
   },
   {
     "objectID": "materials/03-styling-quarto-docs.html#or-more-than-two-columns",
     "href": "materials/03-styling-quarto-docs.html#or-more-than-two-columns",
     "title": "Styling Quarto Documents",
     "section": "or more than two columns",
-    "text": "or more than two columns\n:::: {.columns}\n::: {.column width=33%}\nColumn 1\n:::\n::: {.column width=33%}\nColumn 2\n:::\n::: {.column width=33%}\nColumn 3\n:::\n::::\n\n\nColumn 1\n\nColumn 2\n\nColumn 3"
+    "text": "or more than two columns\n::: {.columns}\n::: {.column width=33%}\nColumn 1\n:::\n\n::: {.column width=33%}\nColumn 2\n:::\n\n::: {.column width=33%}\nColumn 3\n:::\n:::\n\n\nColumn 1\n\nColumn 2\n\nColumn 3"
   },
   {
     "objectID": "materials/03-styling-quarto-docs.html#callouts",
@@ -501,7 +501,7 @@
     "href": "materials/03-styling-quarto-docs.html#margins4",
     "title": "Styling Quarto Documents",
     "section": "Margins1",
-    "text": "Margins1\nYou might have information you want to put in the margins of a document.\n::: column-margin\nContent for the margin.\n:::\nMargins are also not supported by presentations."
+    "text": "Margins1\nYou might have information you want to put in the margins of a document.\n::: column-margin\nContent for the margin.\n:::\nMargins are not supported by presentations."
   },
   {
     "objectID": "materials/03-styling-quarto-docs.html#you-can-place-output-in-the-margins",
