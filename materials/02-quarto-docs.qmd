@@ -12,7 +12,7 @@ format:
 editor: source
 ---
 
-##  {background-image="images/02-hamlet.jpeg" background-position="left"}
+##  {background-image="images/02-hamlet.jpeg" background-position="left" aria-label="A single page of an ancient scroll."}
 
 ::: {style="font-size: 8em; color: #34605f;"}
 Hello Quarto
@@ -80,7 +80,7 @@ but not *just like* it, there's more to it...
 
 ::: columns
 ::: {.column width="35%"}
-![](images/02-rmd_ecosystem.png){fig-align="center"}
+![](images/02-rmd_ecosystem.png){fig-align="center" fig-alt="A compilation of nine hex stickers, each from a package unique to RMarkdown (xaringan, distill, blogdown, bookdown, etc.)."}
 :::
 
 ::: {.column width="30%"}
@@ -88,7 +88,7 @@ but not *just like* it, there's more to it...
 
 ::: {.column width="35%"}
 </br>
-![](images/02-quarto_ball.png){fig-align="center" width="30%"}
+![](images/02-quarto_ball.png){fig-align="center" width="30%" fig-alt="The quarto logo, a blue circle with light blue cross sections."}}
 :::
 :::
 
@@ -204,7 +204,7 @@ website:
 :::
 
 ::: {.column width="40%"}
-![](https://quarto.org/images/hello-knitr.png)
+![](https://quarto.org/images/hello-knitr.png){fig-alt="A preview of how a rendered Quarto document looks."}
 :::
 :::
 
@@ -242,7 +242,7 @@ format: html
 ## 
 
 ::: borderbox
-![](images/02-rstudio-source-visual.png){fig-align="center"}
+![](images/02-rstudio-source-visual.png){fig-align="center" fig-alt="A side-by-side comparison of how a Quarto document looks in the visual editor and the source editor."}}
 :::
  
 # Code

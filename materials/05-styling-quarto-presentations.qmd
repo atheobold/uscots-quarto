@@ -11,7 +11,7 @@ format:
 editor: source
 ---
 
-##  {background-image="images/05-style-crop.png" background-position="center" background-size="cover"}
+##  {background-image="images/05-style-crop.png" background-position="center" background-size="cover" aria-label="A picture of the "Fab 5" from Queer Eye, looking as sylish as ever."}
 
 ::: {style="font-size: 6em; color: #FFFFFF;"}
 Styling Quarto Presentations
@@ -302,9 +302,12 @@ your presentation, you can control where the output goes!
 
 . . .
 
+<!-- look into how the caption can be printed in a different color! -->
+
 ```{r}
 #| label: starwars-heights-default-output
 #| echo: fenced
+#| tbl-cap: "A table of maximum and minimum heights for each homeworld in Starwars."
 
 starwars %>% 
   group_by(homeworld) %>% 
@@ -324,6 +327,7 @@ starwars %>%
 ```{r}
 #| label: starwars-heights-fragment-output
 #| echo: fenced
+#| tbl-cap: "A table of maximum and minimum heights for each homeworld in Starwars."
 #| output-location: fragment
 
 starwars %>% 
@@ -345,6 +349,7 @@ starwars %>%
 ```{r}
 #| label: starwars-heights-column-output
 #| echo: fenced
+#| tbl-cap: "A table of maximum and minimum heights for each homeworld in Starwars."
 #| output-location: column
 
 starwars %>% 
@@ -366,6 +371,7 @@ starwars %>%
 ```{r}
 #| label: starwars-heights-column-fragment-output
 #| echo: fenced
+#| tbl-cap: "A table of maximum and minimum heights for each homeworld in Starwars."
 #| output-location: column-fragment
 
 starwars %>% 
@@ -386,6 +392,7 @@ starwars %>%
 ```{r}
 #| label: starwars-heights-column-slide-output
 #| echo: fenced
+#| tbl-cap: "A table of maximum and minimum heights for each homeworld in Starwars."
 #| output-location: slide
 
 starwars %>% 

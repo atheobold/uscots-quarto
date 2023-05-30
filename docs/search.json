@@ -11,14 +11,14 @@
     "href": "materials/01-rstudio-refresher.html#section-1",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "",
-    "text": "What is RStudio?\n\nRStudio was an integrated development environment for R\n\n\n\n\nToday, RStudio is an IDE integrating multiple languages (e.g. R, Python, SQL) and tools (e.g. Quarto, TeX, JavaScript) for doing accessible and reproducible data science."
+    "text": "What is RStudio?\n\nRStudio is an integrated development environment for R\n\n\n\n\nToday, RStudio is an IDE integrating multiple languages (e.g. R, Python, SQL) and tools (e.g. Quarto, TeX, JavaScript) for doing accessible and reproducible data science."
   },
   {
     "objectID": "materials/01-rstudio-refresher.html#section-2",
     "href": "materials/01-rstudio-refresher.html#section-2",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "",
-    "text": "A Brief Refresher\n\nRStudio Cheatsheet\n\n\n\n\nLet’s live demo some RStudio functionality!\n\n\n\n\nUSCOTS Quarto Workshop"
+    "text": "A Brief Refresher\n\nRStudio Cheatsheet\n\n\n\n\nLet’s live demo some RStudio functionality!"
   },
   {
     "objectID": "materials/04-quarto-presentations.html#section",
@@ -39,7 +39,7 @@
     "href": "materials/04-quarto-presentations.html#creating-slides",
     "title": "Introduction to Quarto Presentations",
     "section": "Creating Slides",
-    "text": "Creating Slides\nSlides are delineated using headings (markdown headings indicated by # characters)\n\n\nYou might use a single # (level 1 header) for title slides\nYou might use a ## (level 2 header) for traditional slides\n\n\n\n\n\nUSCOTS Quarto Workshop"
+    "text": "Creating Slides\nSlides are delineated using headings (markdown headings indicated by # characters)\n\n\nYou might use a single # (level 1 header) for title slides\nYou might use a ## (level 2 header) for traditional slides"
   },
   {
     "objectID": "materials/05-activity-styling-quarto-presentations.html",
@@ -123,7 +123,7 @@
     "href": "materials/02-quarto-docs.html#what-is-quarto",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc that aims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc that aims to make the process of creating and collaborating dramatically better\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "materials/02-quarto-docs.html#quarto",
@@ -158,7 +158,7 @@
     "href": "materials/02-quarto-docs.html#quarto-unifies-extends",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Quarto Unifies & Extends",
-    "text": "Quarto Unifies & Extends\n\n\nConsistent implementation of attractive and handy features across outputs\nMore accessible defaults as well as better support for accessibility\nGuardrails, particularly helpful for new learners: YAML completion, code option completion\nSupport for other languages like Python, Julia, and more\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nQuarto integrates what has been learned over the last 10-years from RMarkdown into one system for creating and publishing reproducible documents.\nThink of all the packages from the R Markdown universe that you’ve come to love and rely on over the years. Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc.\nSuch a unification effort presents a fantastic opportunity to identify and address gaps functionality and inefficiencies in user experience, and the process of building Quarto has been no different."
+    "text": "Quarto Unifies & Extends\n\n\nConsistent implementation of attractive and handy features across outputs\nMore accessible defaults as well as better support for accessibility\nGuardrails, particularly helpful for new learners: YAML completion, code option completion\nSupport for other languages like Python, Julia, and more\n\n\n\n\n\n\n\n\n\n\n\n\n }\n\n\n\nQuarto integrates what has been learned over the last 10-years from RMarkdown into one system for creating and publishing reproducible documents.\nThink of all the packages from the R Markdown universe that you’ve come to love and rely on over the years. Each package addresses a different need and offers a different output: for example, you can use blogdown or distill for creating websites and blogs, bookdown for writing a book, rticles for writing journal articles, etc.\nSuch a unification effort presents a fantastic opportunity to identify and address gaps functionality and inefficiencies in user experience, and the process of building Quarto has been no different."
   },
   {
     "objectID": "materials/02-quarto-docs.html#quarto-makes-moving-between-formats-straightforward",
@@ -193,7 +193,7 @@
     "href": "materials/02-quarto-docs.html#anatomy-of-a-code-chunk",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Anatomy of a code chunk",
-    "text": "Anatomy of a code chunk\n\n\n\n```{r}\n#| label: penguin-species\n#| message: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\npenguins |&gt; \n  distinct(species)\n```\n\n# A tibble: 3 × 1\n  species  \n  &lt;fct&gt;    \n1 Adelie   \n2 Gentoo   \n3 Chinstrap\n\n\n\n\nHas 3x backticks on each end\nEngine (r) is indicated between curly braces {r}\nOptions stated with the #| (hashpipe): #| option1: value\n\n\n\n\n\n\n\n\nDifferent from RMarkdown formatting!\n\n\nNotice the options here are not inside the {} but inside the code chunk! Where previously we had:\n{r, echo = FALSE, message = FALSE, fig.align = \"center\"}\nnow we have:\n{r}\n#| echo: false\n#| message: false\n#| fig-align: center"
+    "text": "Anatomy of a code chunk\n\n\n\n```{r}\n#| label: penguin-species\n#| message: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\npenguins |> \n  distinct(species)\n```\n\n# A tibble: 3 × 1\n  species  \n  <fct>    \n1 Adelie   \n2 Gentoo   \n3 Chinstrap\n\n\n\n\nHas 3x backticks on each end\nEngine (r) is indicated between curly braces {r}\nOptions stated with the #| (hashpipe): #| option1: value\n\n\n\n\n\n\n\n\nDifferent from RMarkdown formatting!\n\n\n\nNotice the options here are not inside the {} but inside the code chunk! Where previously we had:\n{r, echo = FALSE, message = FALSE, fig.align = \"center\"}\nnow we have:\n{r}\n#| echo: false\n#| message: false\n#| fig-align: center"
   },
   {
     "objectID": "materials/02-quarto-docs.html#text-formatting",
@@ -291,49 +291,49 @@
     "href": "materials/05-styling-quarto-presentations.html#tabsets",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Tabsets",
-    "text": "Tabsets\nare quite useful for displaying content side-by-side…\n\n\nstr_to_lower()str_to_upper()str_to_title()\n\n\nconverts all letters in the strings to lowercase\n\n\n\nmy_vector_of_strings &lt;- c(\"Hello,\", \"my name is\", \"Bond\", \"James Bond\")\nstr_to_lower(my_vector_of_strings)\n\n[1] \"hello,\"     \"my name is\" \"bond\"       \"james bond\"\n\n\n\n\n\nconverts all letters in the strings to uppercase\n\n\n\nstr_to_upper(my_vector_of_strings)\n\n[1] \"HELLO,\"     \"MY NAME IS\" \"BOND\"       \"JAMES BOND\"\n\n\n\n\n\nconverts the first letter of the strings to uppercase\n\n\n\nstr_to_title(my_vector_of_strings)\n\n[1] \"Hello,\"     \"My Name Is\" \"Bond\"       \"James Bond\"\n\n\n\n\n\n\n\n\nLearn more about tabsets here!"
+    "text": "Tabsets\nare quite useful for displaying content side-by-side…\n\n\nstr_to_lower()str_to_upper()str_to_title()\n\n\nconverts all letters in the strings to lowercase\n\n\n\nmy_vector_of_strings <- c(\"Hello,\", \"my name is\", \"Bond\", \"James Bond\")\nstr_to_lower(my_vector_of_strings)\n\n[1] \"hello,\"     \"my name is\" \"bond\"       \"james bond\"\n\n\n\n\n\nconverts all letters in the strings to uppercase\n\n\n\nstr_to_upper(my_vector_of_strings)\n\n[1] \"HELLO,\"     \"MY NAME IS\" \"BOND\"       \"JAMES BOND\"\n\n\n\n\n\nconverts the first letter of the strings to uppercase\n\n\n\nstr_to_title(my_vector_of_strings)\n\n[1] \"Hello,\"     \"My Name Is\" \"Bond\"       \"James Bond\"\n\n\n\n\n\n\n\n\nLearn more about tabsets here!"
   },
   {
     "objectID": "materials/05-styling-quarto-presentations.html#code-output",
     "href": "materials/05-styling-quarto-presentations.html#code-output",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Code Output",
-    "text": "Code Output\nWhen you are interested in outputting both your code and its output in your presentation, you can control where the output goes!\n\n\n```{r}\n#| label: starwars-heights-default-output\n\nstarwars %&gt;% \n  group_by(homeworld) %&gt;% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %&gt;% \n  slice_max(order_by = max_height, n = 5) %&gt;% \n  gt::gt() %&gt;% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n\n\n\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
+    "text": "Code Output\nWhen you are interested in outputting both your code and its output in your presentation, you can control where the output goes!\n\n\n\n```{r}\n#| label: starwars-heights-default-output\n#| tbl-cap: \"A table of maximum and minimum heights for each homeworld in Starwars.\"\n\nstarwars %>% \n  group_by(homeworld) %>% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %>% \n  slice_max(order_by = max_height, n = 5) %>% \n  gt::gt() %>% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n\n\nA table of maximum and minimum heights for each homeworld in Starwars.\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
   },
   {
     "objectID": "materials/05-styling-quarto-presentations.html#fragment",
     "href": "materials/05-styling-quarto-presentations.html#fragment",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Fragment!",
-    "text": "Fragment!\n\n```{r}\n#| label: starwars-heights-fragment-output\n#| output-location: fragment\n\nstarwars %&gt;% \n  group_by(homeworld) %&gt;% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %&gt;% \n  slice_max(order_by = max_height, n = 5) %&gt;% \n  gt::gt() %&gt;% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n\n\n\n\n\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
+    "text": "Fragment!\n\n```{r}\n#| label: starwars-heights-fragment-output\n#| tbl-cap: \"A table of maximum and minimum heights for each homeworld in Starwars.\"\n#| output-location: fragment\n\nstarwars %>% \n  group_by(homeworld) %>% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %>% \n  slice_max(order_by = max_height, n = 5) %>% \n  gt::gt() %>% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n\n\n\n\nA table of maximum and minimum heights for each homeworld in Starwars.\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
   },
   {
     "objectID": "materials/05-styling-quarto-presentations.html#column",
     "href": "materials/05-styling-quarto-presentations.html#column",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Column!",
-    "text": "Column!\n\n\n```{r}\n#| label: starwars-heights-column-output\n#| output-location: column\n\nstarwars %&gt;% \n  group_by(homeworld) %&gt;% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %&gt;% \n  slice_max(order_by = max_height, n = 5) %&gt;% \n  gt::gt() %&gt;% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n\n\n\n\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
+    "text": "Column!\n\n\n```{r}\n#| label: starwars-heights-column-output\n#| tbl-cap: \"A table of maximum and minimum heights for each homeworld in Starwars.\"\n#| output-location: column\n\nstarwars %>% \n  group_by(homeworld) %>% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %>% \n  slice_max(order_by = max_height, n = 5) %>% \n  gt::gt() %>% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n\n\n\nA table of maximum and minimum heights for each homeworld in Starwars.\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
   },
   {
     "objectID": "materials/05-styling-quarto-presentations.html#column-fragment",
     "href": "materials/05-styling-quarto-presentations.html#column-fragment",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Column fragment!",
-    "text": "Column fragment!\n\n\n```{r}\n#| label: starwars-heights-column-fragment-output\n#| output-location: column-fragment\n\nstarwars %&gt;% \n  group_by(homeworld) %&gt;% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %&gt;% \n  slice_max(order_by = max_height, n = 5) %&gt;% \n  gt::gt() %&gt;% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n\n\n\n\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
+    "text": "Column fragment!\n\n\n```{r}\n#| label: starwars-heights-column-fragment-output\n#| tbl-cap: \"A table of maximum and minimum heights for each homeworld in Starwars.\"\n#| output-location: column-fragment\n\nstarwars %>% \n  group_by(homeworld) %>% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %>% \n  slice_max(order_by = max_height, n = 5) %>% \n  gt::gt() %>% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n\n\n\nA table of maximum and minimum heights for each homeworld in Starwars.\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
   },
   {
     "objectID": "materials/05-styling-quarto-presentations.html#slide",
     "href": "materials/05-styling-quarto-presentations.html#slide",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Slide!",
-    "text": "Slide!\n\n```{r}\n#| label: starwars-heights-column-slide-output\n#| output-location: slide\n\nstarwars %&gt;% \n  group_by(homeworld) %&gt;% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %&gt;% \n  slice_max(order_by = max_height, n = 5) %&gt;% \n  gt::gt() %&gt;% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n \nLearn more about code output locations here!\n\n\n\nUSCOTS Quarto Workshop"
+    "text": "Slide!\n\n```{r}\n#| label: starwars-heights-column-slide-output\n#| tbl-cap: \"A table of maximum and minimum heights for each homeworld in Starwars.\"\n#| output-location: slide\n\nstarwars %>% \n  group_by(homeworld) %>% \n  summarize(max_height = max(height), \n            min_height = min(height)\n            ) %>% \n  slice_max(order_by = max_height, n = 5) %>% \n  gt::gt() %>% \n  gt::cols_label(homeworld = \"Homeworld\", \n             max_height = \"Maximum Height\", \n             min_height = \"Minimum Height\")\n```\n\n\n \nLearn more about code output locations here!\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/05-styling-quarto-presentations.html#slide-output",
     "href": "materials/05-styling-quarto-presentations.html#slide-output",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Slide!",
-    "text": "Slide!\n\n\n\n\n\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
+    "text": "Slide!\n\n\n\n\nA table of maximum and minimum heights for each homeworld in Starwars.\n  \n    \n    \n      Homeworld\n      Maximum Height\n      Minimum Height\n    \n  \n  \n    Quermia\n264\n264\n    Kashyyyk\n234\n228\n    Kamino\n229\n183\n    Naboo\n224\n96\n    Kalee\n216\n216"
   },
   {
     "objectID": "materials/02-activity-quarto-yaml.html",
@@ -487,7 +487,7 @@
     "href": "materials/06-version-control.html#connect-rstudio-to-git-and-github",
     "title": "Introduction to Version Control",
     "section": "Connect RStudio to Git and GitHub",
-    "text": "Connect RStudio to Git and GitHub\nWe’re following the directions here: https://happygitwithr.com/rstudio-git-github.html\n\nMake a repository (repo) on GitHub\nClone the test GitHub repository to your computer via RStudio\nIn RStudio, start a new Project\n\n\nFile &gt; New Project &gt; Version Control &gt; Git\n\n\nIn “Repository URL”, paste the URL of your new GitHub repository"
+    "text": "Connect RStudio to Git and GitHub\nWe’re following the directions here: https://happygitwithr.com/rstudio-git-github.html\n\nMake a repository (repo) on GitHub\nClone the test GitHub repository to your computer via RStudio\nIn RStudio, start a new Project\n\n\nFile > New Project > Version Control > Git\n\n\nIn “Repository URL”, paste the URL of your new GitHub repository"
   },
   {
     "objectID": "materials/06-version-control.html#basic-git-commands-commit",
@@ -515,7 +515,7 @@
     "href": "materials/06-version-control.html#other-gitgithub-implementations",
     "title": "Introduction to Version Control",
     "section": "Other Git/GitHub implementations",
-    "text": "Other Git/GitHub implementations\n\n\nEverything we just did through RStudio can be done from the command line (ew?)\nGitHub Desktop is a wonderful and lightweight application for all of our Git/GitHub-related needs that works independent of any other application\n\n\n\n\n\nUSCOTS Quarto Workshop"
+    "text": "Other Git/GitHub implementations\n\n\nEverything we just did through RStudio can be done from the command line (ew?)\nGitHub Desktop is a wonderful and lightweight application for all of our Git/GitHub-related needs that works independent of any other application"
   },
   {
     "objectID": "materials/03-styling-quarto-docs.html#section-headers",
@@ -550,7 +550,7 @@
     "href": "materials/03-styling-quarto-docs.html#you-might-want-uneven-columns",
     "title": "Styling Quarto Documents",
     "section": "You might want uneven columns",
-    "text": "You might want uneven columns\n::: {.columns}\n::: {.column width=25%}\n\n+ item 1\n+ item 2\n\n:::\n::: {.column width=75%}\n\n![](link-to-image.png)\n\n:::\n:::\n\n\n\nitem 1\nitem 2"
+    "text": "You might want uneven columns\n::: {.columns}\n::: {.column width=25%}\n\n+ item 1\n+ item 2\n\n:::\n::: {.column width=75%}\n\n![](link-to-image.png){fig-alt=\"Alt text for image\"}\n\n:::\n:::\n\n\n\nitem 1\nitem 2\n\n\n{{fig-alt=“Banner for USCOTS 2023 conference slogan – communicating with / about data” width=“80%”}"
   },
   {
     "objectID": "materials/03-styling-quarto-docs.html#or-more-than-two-columns",
@@ -1125,5 +1125,47 @@
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "",
     "text": "We are assuming\n\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
+  },
+  {
+    "objectID": "materials/05-styling-quarto-presentations.html#background-imageimages05-style-crop.png-background-positioncenter-background-sizecover-aria-labela-picture-of-thefab-5-from-queer-eye-looking-as-sylish-as-ever.",
+    "href": "materials/05-styling-quarto-presentations.html#background-imageimages05-style-crop.png-background-positioncenter-background-sizecover-aria-labela-picture-of-thefab-5-from-queer-eye-looking-as-sylish-as-ever.",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "{background-image=“images/05-style-crop.png” background-position=“center” background-size=“cover” aria-label=“A picture of the”Fab 5” from Queer Eye, looking as sylish as ever.”}",
+    "text": "{background-image=“images/05-style-crop.png” background-position=“center” background-size=“cover” aria-label=“A picture of the”Fab 5” from Queer Eye, looking as sylish as ever.”}\n\nStyling Quarto Presentations"
+  },
+  {
+    "objectID": "materials/01-rstudio-refresher.html",
+    "href": "materials/01-rstudio-refresher.html",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "Hello RStudio (the IDE)"
+  },
+  {
+    "objectID": "materials/04-quarto-presentations.html",
+    "href": "materials/04-quarto-presentations.html",
+    "title": "Introduction to Quarto Presentations",
+    "section": "",
+    "text": "What is a Quarto Presentation?\n\nMostly a Quarto Document, but with a different output format and a few other small differences\n\n\n\n\n\nrevealjs: reveal.js (HTML or PDF)\npptx: PowerPoint (MS Office)\nbeamer: Beamer (LaTeX/PDF)"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html",
+    "href": "materials/02-quarto-docs.html",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "Hello Quarto"
+  },
+  {
+    "objectID": "materials/02-quarto-docs.html#section-1",
+    "href": "materials/02-quarto-docs.html#section-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "}"
+  },
+  {
+    "objectID": "materials/06-version-control.html",
+    "href": "materials/06-version-control.html",
+    "title": "Introduction to Version Control",
+    "section": "",
+    "text": "What is Version Control?\n\nThe practice of tracking and managing changes to software code\n\n\n\n\n\n\nGrown to include more than just software code (e.g. documents)!\nVersion control systems are software tools that help teams manage changes to materials over time."
   }
 ]

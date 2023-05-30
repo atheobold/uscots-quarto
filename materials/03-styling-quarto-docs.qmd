@@ -40,9 +40,12 @@ format:
 
 ::: column
 ::: r-stack
-![](images/03-section-headers.JPG)
+![](images/03-section-headers.JPG){fig-alt="A preview of how section headers look in a rendered Quarto document."}
 
-![](images/03-section-headers-numbers.JPG){.fragment}
+::: fragment
+![](images/03-section-headers-numbers.JPG){fig-alt="A preview of how numbered section headers look in a rendered Quarto document."}
+:::
+
 :::
 :::
 :::
@@ -63,7 +66,7 @@ format:
 :::
 
 ::: column
-![](images/03-toc.JPG)
+![](images/03-toc.JPG){fig-alt="A preview of how a table of contents looks in a rendered Quarto document."}
 :::
 :::
 
@@ -144,7 +147,7 @@ Content for second column.
 :::
 ::: {.column width=75%}
 
-![](link-to-image.png)
+![](link-to-image.png){fig-alt="Alt text for image"}
 
 :::
 :::
@@ -157,7 +160,7 @@ Content for second column.
 :::
 
 ::: {.column width="75%"}
-![](images/03-uscots-banner.png){width="80%"}
+![](images/03-uscots-banner.png){{fig-alt="Banner for USCOTS 2023 conference slogan -- communicating with / about data" width="80%"}
 :::
 :::
 

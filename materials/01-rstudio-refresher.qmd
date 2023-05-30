@@ -27,13 +27,13 @@ library(tidyverse)
 
 [What is RStudio?]{.large}
 
-> [RStudio was an integrated development environment for R]{.midi}
+> [RStudio is an integrated development environment for R]{.midi}
 
 . . .
 
 </br>
 
-::: {.large .gray}
+::: {style="font-size: 1.25em; color: #D4D4D4;"}
 Today, RStudio is an IDE integrating multiple languages (e.g. R, Python, SQL) and tools (e.g. Quarto, TeX, JavaScript) for doing accessible and reproducible data science.
 :::
 
