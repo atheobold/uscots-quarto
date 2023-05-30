@@ -11,13 +11,22 @@ format:
 editor: visual
 ---
 
+```{r}
+#| include: false
+library(tidyverse)
+```
+
 ##  {background-image="images/07-publish.png" background-position="center" background-size="cover"}
 
 ::: {style="font-size: 6em; color: #000000;"}
 Publishing Your Materials
 :::
 
+# 
 
+::: {style="font-size: 6em; color: #34605f;"}
+A simple option...
+:::
 
 
 ## GitHub Pages
@@ -32,14 +41,139 @@ Hosted directly from your GitHub repository. Just edit, push, and your changes a
 
 ## "Hacky" URL: Can you spot the differences?
 
+</br>
+
 You can follow the file structure from the "home base" in your GitHub repo.
+
+</br>
 
 <https://github.com/earobinson95/stat365-calpoly/blob/master/00-course-info/stat365-syllabus-S2023.html>
 
+</br>
+
 <https://earobinson95.github.io/stat365-calpoly/00-course-info/stat365-syllabus-S2023.html>
 
-<!-- Creating a Quarto website -->
+. . .
 
-<!-- Layout -->
+</br>
 
-<!-- Methods of publishing -->
+::: columns
+::: {.column width="47%"}
+**Before**
+
+`github.com/earobinson95`
+
+</br>
+
+`stat365-calpoly/blob/master/00-course-info`
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="47%"}
+**After**
+
+`earobinson95.github.io`
+
+</br>
+
+`stat365-calpoly/00-course-info/`
+
+:::
+:::
+
+# 
+
+::: {style="font-size: 6em; color: #34605f;"}
+A bit more complicated
+:::
+
+## Quarto projects
+
+-   Quarto projects have a `_quarto.yml` file
+
+-   The `type` field in this file indicates the type of project:
+
+    -   `default`: Collection of documents
+
+    -   `website`: Websites (and blogs)
+
+    -   `books`: Books 😃
+
+
+## Quarto websites
+
+-   Websites are essentially `format: html` + a Quarto Project
+
+-   But a website is different than `format: html` in that it has multiple pages
+
+-   Websites are our first exploration into Quarto Projects
+
+-   Websites and books are very similar in that they associate multiple pages/resources into a connected resource
+
+# `r fontawesome::fa("laptop-code", "white")` Our turn! {background-color="#447099"}
+
+Let's poke around the workshop website together to see how the documents and presentations we've covered are interwoven into the website:
+
+-   `_quarto.yml`
+
+-   `index.qmd` / landing page 
+
+-   Folder structure / navigation
+
+-   Freeze
+
+-   Styling
+
+
+## Freeze
+
+-   The `freeze` option controls when / if computational documents be re-rendered during a global project render:
+
+``` yaml
+execute:
+  freeze: true  # never re-render during project render
+```
+
+``` yaml
+execute:
+  freeze: auto  # re-render only when source changes
+```
+
+``` yaml
+execute:
+  freeze: false  # always re-render
+```
+
+</br>
+
+The `freeze` option is typically added to a `_metadata.yml` file within a specific directory, affecting all files in that directory.
+
+
+## Publishing
+
+-   [Quarto Pub](https://quartopub.com/) is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.
+
+-   Publish with `quarto publish`:
+
+``` {.bash filename="Terminal"}
+quarto publish quarto-pub
+```
+
+-   Gain a `_publish.yml` that is safe to check into version control.
+
+## Other venues
+
+-   GitHub Pages
+-   Posit Connect
+-   Netlify
+-   Confluence
+-   [More venues](https://quarto.org/docs/publishing/other.html)
+
+## Learn more
+
+[quarto.org/docs/websites](https://quarto.org/docs/websites/)
+
+![](images/07-quarto-website.png)

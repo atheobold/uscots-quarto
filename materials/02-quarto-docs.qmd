@@ -9,7 +9,6 @@ format:
     footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
     theme: night
     embed-resources: true
-    
 editor: source
 ---
 
