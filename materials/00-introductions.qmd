@@ -3,23 +3,30 @@ format:
   revealjs:
     logo: "images/cp_hex_logo.png"
     footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
-    theme: simple
+    theme: [simple, styles.scss]
     embed-resources: true
 editor: source
 ---
 
+##  {background-image="images/00-horst-quarto-meteor-transparent.png" background-position="center" background-size="cover" aria-label="A meteor where the head of the meteor is the Quarto logo."}
+
+::: {style="font-size: 2.5em; color: #000000;"}
+Reproducible documents, presentations, and websites with Quarto
+:::
+
+
 ## Welcome! 
 
-### `r fontawesome::fa("wifi")` WiFi
+`r fontawesome::fa("wifi")` WiFi
 
 -   Username: `fill in!`
 -   Password: `fill in!` 
 
-### Materials
+**Materials**
 
 To access the workshop materials use the following link:
 
-::: {style="font-size: 1.75em; color: #000000;"}
+::: {style="font-size: 1.25em; color: #000000;"}
 <https://atheobold.github.io/uscots-quarto/>
 :::
 
@@ -76,6 +83,8 @@ library(gtsummary)
 ::: {.column width="40%"}
 <h2>We are assuming</h2>
 
+</br>
+
 `r fa("r-project")` You know R
 
 `r fa("markdown")` You know a little bit of Markdown
@@ -89,6 +98,8 @@ library(gtsummary)
 ::: {.column width="55%"}
 ::: fragment
 <h2>We'll teach you about</h2>
+
+</br> 
 
 Quarto documents
 

@@ -81,7 +81,7 @@
     "href": "materials/00-introductions.html#section",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "",
-    "text": "We are assuming\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
+    "text": "Reproducible documents, presentations, and websites with Quarto"
   },
   {
     "objectID": "materials/00-introductions.html#workshop-structure",
@@ -354,7 +354,7 @@
     "href": "materials/07-publishing.html#github-pages",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "GitHub Pages",
-    "text": "GitHub Pages\n\nHosted directly from your GitHub repository. Just edit, push, and your changes are live.\nSettings &gt; Pages"
+    "text": "GitHub Pages\n\nHosted directly from your GitHub repository. Just edit, push, and your changes are live.\nSettings > Pages"
   },
   {
     "objectID": "materials/07-publishing.html#hacky-url-can-you-spot-the-differences",
@@ -1118,5 +1118,12 @@
     "title": "Workshop Presenters",
     "section": "",
     "text": "Hunter Glanz is an Associate Professor of Statistics at Cal Poly. He maintains a passion for machine learning, statistical computing, and data science, and enjoys advancing education efforts in these areas. In particular, Cal Poly’s courses in R, SAS, and Python give him the opportunity to connect students with exciting data science topics amid a firm grounding in communication of statistical ideas. Hunter serves on numerous committees and organizations dedicated to delivering cutting edge statistical and data science content to students and professionals alike.\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Emily’s involves graphical testing and evaluating the perceptual and cognitive implications of design choices in data visualization in order to more effectively communicate data and science to a variety of audiences. Emily is also interested in exploring how to bring visuals into the classroom.\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
+  },
+  {
+    "objectID": "materials/00-introductions.html#section-1",
+    "href": "materials/00-introductions.html#section-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "We are assuming\n\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
   }
 ]
