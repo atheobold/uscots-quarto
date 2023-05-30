@@ -3,13 +3,10 @@ title: "Activity 3 -- Make a simple Quarto presentation!"
 editor: visual
 ---
 
-We covered 
+We covered how Quarto presentations differ from Quarto documents!
 
-You find more extensive lists of **all** possible embellishments at:
+Using these resources, use RStudio to create a new Quarto presentation with a short bio and introduction about yourself!
 
--   [Overview for revealjs presentations](https://quarto.org/docs/presentations/revealjs/)
--   [Advanced revealjs](https://quarto.org/docs/presentations/revealjs/advanced.html)
+Walk through the "New Quarto Presentation" wizard and pay close attention to the prompts your given, choices you make, and the file your given to start with
 
-Using these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall!
-
-We encourage you to **start simple**! Try incorporating a theme and possibly some callouts and / or tabsets. After you've made some simple changes, maybe try out some more embellishments that fit your style!
+We encourage you to **start simple**! We will expand on this slide deck in the next activity!

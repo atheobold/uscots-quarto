@@ -13,21 +13,6 @@ format:
 editor: visual
 ---
 
-<!-- **Outline:** -->
-
-<!-- -   Outline structure of Quarto presentations -->
-
-<!--     -   Structure -->
-
-<!--     -   Slide separation -->
-
-<!--     -    -->
-
-## 
-
-::: {style="font-size: 8em; color: #34605f;"}
-Hello Quarto Presentations
-:::
 
 ```{r}
 #| include: false
@@ -49,6 +34,12 @@ library(tidyverse)
 -   pptx: PowerPoint (MS Office)
 -   beamer: Beamer (LaTeX/PDF)
 :::
+
+## Presentation Components
+
+1. Metadata: YAML
+2. Text: Markdown
+3. Code: Executed via `knitr` or `jupyter`
 
 
 ## Creating Slides

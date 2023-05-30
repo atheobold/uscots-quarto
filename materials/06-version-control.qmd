@@ -13,16 +13,6 @@ format:
 editor: visual
 ---
 
-<!-- **Outline:** -->
-
-<!-- -   Introduction to version control -->
-
-<!--     -   What is version control? -->
-
-<!--     -   Why do we want to use version control? -->
-
-<!--     -   How can you use version control? -->
-
 # What is version control
 
 ## 
@@ -69,7 +59,7 @@ editor: visual
 - Dropbox, OneDrive, etc.
 :::
 
-# Using RStudio with version control?
+# Using RStudio with version control
 
 ## Version control for our workshop
 
@@ -93,19 +83,39 @@ GitHub:
 
 - An online platform where we can share our code, materials, etc. online hassle-free
 
-## Getting started with Git
-
-Follow the instructions here, for your operating system, to install Git: [https://happygitwithr.com/install-git.html](https://happygitwithr.com/install-git.html)
-
 ## Getting started with GitHub
 
-::: incremental
 - Create an account on GitHub ([https://github.com](https://github.com)) -- this is free
 
 - Log in on the GitHub website
 
 - Let's talk about some of the key details and functionality here, namely what a **repository** is!
-:::
+
+## Getting started with Git
+
+Follow the instructions here, for your operating system, to install Git: [https://happygitwithr.com/install-git.html](https://happygitwithr.com/install-git.html)
+
+## Configure Git: Part I
+
+- Tell Git your email and username
+
+```{r, eval = FALSE}
+library(usethis)
+library(gitcreds)
+use_git_config(user.name = "JaneDoe2", user.email = "jane@example.org")
+create_github_token()
+```
+
+## Configure Git: Part II
+
+- Copy your Personal Access Token (PAT)
+
+- Enter password or token: Paste PAT
+
+```{r, eval = FALSE}
+gitcreds_set()
+```
+
 
 ## Connect RStudio to Git and GitHub
 
