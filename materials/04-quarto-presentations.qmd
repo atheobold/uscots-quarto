@@ -8,11 +8,10 @@ format:
     width: 1600
     logo: "images/cp_hex_logo.png"
     footer: "[USCOTS Quarto Workshop](https://atheobold.github.io/uscots-quarto/)"
-    theme: night
+    theme: [night, styles.scss]
     embed-resources: true
 editor: visual
 ---
-
 
 ```{r}
 #| include: false
@@ -29,7 +28,7 @@ library(tidyverse)
 
 </br>
 
-::: {.large .gray}
+::: {style="font-size: 1.25em; color: #D4D4D4;"}
 -   revealjs: reveal.js (HTML or PDF)
 -   pptx: PowerPoint (MS Office)
 -   beamer: Beamer (LaTeX/PDF)
@@ -37,21 +36,21 @@ library(tidyverse)
 
 ## Presentation Components
 
-1. Metadata: YAML
-2. Text: Markdown
-3. Code: Executed via `knitr` or `jupyter`
+::: midi
 
+1.  Metadata: YAML
+2.  Text: Markdown
+3.  Code: Executed via `knitr` or `jupyter`
+
+:::
 
 ## Creating Slides
 
-Slides are delineated using headings (markdown headings indicated by `#` characters)
+[Slides are delineated using headings (markdown headings indicated by `#` characters)]{.midi}
 
-. . .
+::: incremental
+-   You might use a single `#` (level 1 header) for title slides
 
-- You might use a single `#` (level 1 header) for title slides
+-   You might use a `##` (level 2 header) for traditional slides
 
-. . . 
-
-- You might use a `##` (level 2 header) for traditional slides
-
-## 
+:::

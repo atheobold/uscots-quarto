@@ -25,28 +25,21 @@
     "href": "materials/04-quarto-presentations.html#section",
     "title": "Introduction to Quarto Presentations",
     "section": "",
-    "text": "Hello Quarto Presentations"
+    "text": "What is a Quarto Presentation?\n\nMostly a Quarto Document, but with a different output format and a few other small differences\n\n\n\n\n\nrevealjs: reveal.js (HTML or PDF)\npptx: PowerPoint (MS Office)\nbeamer: Beamer (LaTeX/PDF)"
   },
   {
-    "objectID": "materials/04-quarto-presentations.html#section-1",
-    "href": "materials/04-quarto-presentations.html#section-1",
+    "objectID": "materials/04-quarto-presentations.html#presentation-components",
+    "href": "materials/04-quarto-presentations.html#presentation-components",
     "title": "Introduction to Quarto Presentations",
-    "section": "",
-    "text": "What is a Quarto Presentation?\n\nMostly a Quarto Document, but with a different output format and a few other small differences\n\n\n\n\n\nrevealjs: reveal.js (HTML or PDF)\npptx: PowerPoint (MS Office)\nbeamer: Beamer (LaTeX/PDF)"
+    "section": "Presentation Components",
+    "text": "Presentation Components\n\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter"
   },
   {
     "objectID": "materials/04-quarto-presentations.html#creating-slides",
     "href": "materials/04-quarto-presentations.html#creating-slides",
     "title": "Introduction to Quarto Presentations",
     "section": "Creating Slides",
-    "text": "Creating Slides\nSlides are delineated using headings (markdown headings indicated by # characters)\n\n\nYou might use a single # (level 1 header) for title slides\n\n\n\n\nYou might use a ## (level 2 header) for traditional slides"
-  },
-  {
-    "objectID": "materials/04-quarto-presentations.html#section-2",
-    "href": "materials/04-quarto-presentations.html#section-2",
-    "title": "Introduction to Quarto Presentations",
-    "section": "",
-    "text": "USCOTS Quarto Workshop"
+    "text": "Creating Slides\nSlides are delineated using headings (markdown headings indicated by # characters)\n\n\nYou might use a single # (level 1 header) for title slides\nYou might use a ## (level 2 header) for traditional slides\n\n\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/05-activity-styling-quarto-presentations.html",
@@ -116,7 +109,7 @@
     "href": "materials/04-activity-quarto-presentations.html",
     "title": "Activity 3 – Make a simple Quarto presentation!",
     "section": "",
-    "text": "We covered\nYou find more extensive lists of all possible embellishments at:\n\nOverview for revealjs presentations\nAdvanced revealjs\n\nUsing these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall!\nWe encourage you to start simple! Try incorporating a theme and possibly some callouts and / or tabsets. After you’ve made some simple changes, maybe try out some more embellishments that fit your style!"
+    "text": "We covered how Quarto presentations differ from Quarto documents!\nUsing these resources, use RStudio to create a new Quarto presentation with a short bio and introduction about yourself!\nWalk through the “New Quarto Presentation” wizard and pay close attention to the prompts your given, choices you make, and the file you’re given to start.\nWe encourage you to start simple! We will expand on this slide deck in the next activity!"
   },
   {
     "objectID": "materials/02-quarto-docs.html#section",
@@ -462,6 +455,13 @@
     "text": "Git and GitHub\nGit:\n\nFree and open-source distributed version control system\nStrong support for non-linear development\nDistributed development\n\n\nGitHub:\n\nAn online platform where we can share our code, materials, etc. online hassle-free"
   },
   {
+    "objectID": "materials/06-version-control.html#getting-started-with-github",
+    "href": "materials/06-version-control.html#getting-started-with-github",
+    "title": "Introduction to Version Control",
+    "section": "Getting started with GitHub",
+    "text": "Getting started with GitHub\n\nCreate an account on GitHub (https://github.com) – this is free\nLog in on the GitHub website\nLet’s talk about some of the key details and functionality here, namely what a repository is!"
+  },
+  {
     "objectID": "materials/06-version-control.html#getting-started-with-git",
     "href": "materials/06-version-control.html#getting-started-with-git",
     "title": "Introduction to Version Control",
@@ -469,11 +469,18 @@
     "text": "Getting started with Git\nFollow the instructions here, for your operating system, to install Git: https://happygitwithr.com/install-git.html"
   },
   {
-    "objectID": "materials/06-version-control.html#getting-started-with-github",
-    "href": "materials/06-version-control.html#getting-started-with-github",
+    "objectID": "materials/06-version-control.html#configure-git-part-i",
+    "href": "materials/06-version-control.html#configure-git-part-i",
     "title": "Introduction to Version Control",
-    "section": "Getting started with GitHub",
-    "text": "Getting started with GitHub\n\n\nCreate an account on GitHub (https://github.com) – this is free\nLog in on the GitHub website\nLet’s talk about some of the key details and functionality here, namely what a repository is!"
+    "section": "Configure Git: Part I",
+    "text": "Configure Git: Part I\n\nTell Git your email and username"
+  },
+  {
+    "objectID": "materials/06-version-control.html#configure-git-part-ii",
+    "href": "materials/06-version-control.html#configure-git-part-ii",
+    "title": "Introduction to Version Control",
+    "section": "Configure Git: Part II",
+    "text": "Configure Git: Part II\n\nCopy your Personal Access Token (PAT)\nEnter password or token: Paste PAT"
   },
   {
     "objectID": "materials/06-version-control.html#connect-rstudio-to-git-and-github",

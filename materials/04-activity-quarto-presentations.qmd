@@ -7,6 +7,6 @@ We covered how Quarto presentations differ from Quarto documents!
 
 Using these resources, use RStudio to create a new Quarto presentation with a short bio and introduction about yourself!
 
-Walk through the "New Quarto Presentation" wizard and pay close attention to the prompts your given, choices you make, and the file your given to start with
+Walk through the "New Quarto Presentation" wizard and pay close attention to the prompts your given, choices you make, and the file you're given to start.
 
 We encourage you to **start simple**! We will expand on this slide deck in the next activity!
