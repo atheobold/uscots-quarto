@@ -19,8 +19,8 @@ Reproducible documents, presentations, and websites with Quarto
 
 `r fontawesome::fa("wifi")` WiFi
 
--   Username: `fill in!`
--   Password: `fill in!` 
+-   Username: `psu-guest`
+-   Password: NO PASSWORD!
 
 **Materials**
 
@@ -120,15 +120,19 @@ Options for publishing your content
 
 -   **Your turn:** Exercises
 
-## Getting help
+. . .
+
+</br>
+
+<h2> **Getting help** </h2>
 
 -   During **my turn** and **our turn** segments -- raise your hand
 
--   During **your turn** segments -- also feel free to raise your hand for questions but use the stickies to signal:
+-   During **your turn** segments -- also feel free to raise your hand for questions! 
 
-    - `r fa("square", "pink")` = I'm stuck or I'm running into a code error
-  
-    - `r fa("square", "green")` = I have completed the activity
+    <!-- - `r fa("square", "pink")` = I'm stuck or I'm running into a code error -->
+
+    <!-- - `r fa("square", "green")` = I have completed the activity -->
 
 ## Workshop Prep
 
