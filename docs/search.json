@@ -18,7 +18,7 @@
     "href": "materials/01-rstudio-refresher.html#section-2",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "",
-    "text": "A Brief Refresher\n\nRStudio Cheatsheet\n\n\n\n\nLet’s live demo some RStudio functionality!"
+    "text": "A Brief Refresher\n\nRStudio Cheatsheet\n\n\n\n\nLet’s live demo some RStudio functionality!\n\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/04-quarto-presentations.html#section",
@@ -39,7 +39,7 @@
     "href": "materials/04-quarto-presentations.html#creating-slides",
     "title": "Introduction to Quarto Presentations",
     "section": "Creating Slides",
-    "text": "Creating Slides\nSlides are delineated using headings (markdown headings indicated by # characters)\n\n\nYou might use a single # (level 1 header) for title slides\nYou might use a ## (level 2 header) for traditional slides"
+    "text": "Creating Slides\nSlides are delineated using headings (markdown headings indicated by # characters)\n\n\nYou might use a single # (level 1 header) for title slides\nYou might use a ## (level 2 header) for traditional slides\n\n\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/05-activity-styling-quarto-presentations.html",
@@ -47,6 +47,13 @@
     "title": "Activity 4 – Embellishing your Quarto presentation!",
     "section": "",
     "text": "We covered the following “common” Quarto embellishments for presentations:\n\nThemes\nCallouts\nTabsets\nCode output locations\nFragments\n\nYou find more extensive lists of all possible embellishments at:\n\nOverview for revealjs presentations\nAdvanced revealjs\n\nUsing these resources, craft your presentation into a slide deck you can use for Day 1 of your course this fall!\nWe encourage you to start simple! Try incorporating a theme and possibly some callouts and / or tabsets. After you’ve made some simple changes, maybe try out some more embellishments that fit your style!"
+  },
+  {
+    "objectID": "materials/00-introductions.html#section",
+    "href": "materials/00-introductions.html#section",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "Reproducible documents, presentations, and websites with Quarto"
   },
   {
     "objectID": "materials/00-introductions.html#welcome",
@@ -77,11 +84,11 @@
     "text": "Your Workshop Leaders\n\n\n\nHunter Glanz\n\n\n\nEmily Robinson\n\n\n\nAllison Theobold"
   },
   {
-    "objectID": "materials/00-introductions.html#section",
-    "href": "materials/00-introductions.html#section",
+    "objectID": "materials/00-introductions.html#section-1",
+    "href": "materials/00-introductions.html#section-1",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "",
-    "text": "Reproducible documents, presentations, and websites with Quarto"
+    "text": "We are assuming\n\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
   },
   {
     "objectID": "materials/00-introductions.html#workshop-structure",
@@ -123,7 +130,7 @@
     "href": "materials/02-quarto-docs.html#what-is-quarto",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc that aims to make the process of creating and collaborating dramatically better\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "What is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc that aims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "materials/02-quarto-docs.html#quarto",
@@ -189,11 +196,18 @@
     "text": "Required Inputs\n\n\nWhat editor should be the default for working in the document?\n\n---\neditor: visual\n---\n\n\n\n\nWhat format should the document render in?\n\n---\nformat: html\n---"
   },
   {
+    "objectID": "materials/02-quarto-docs.html#section-1",
+    "href": "materials/02-quarto-docs.html#section-1",
+    "title": "USCOTS 2023 Quarto Workshop",
+    "section": "",
+    "text": "}"
+  },
+  {
     "objectID": "materials/02-quarto-docs.html#anatomy-of-a-code-chunk",
     "href": "materials/02-quarto-docs.html#anatomy-of-a-code-chunk",
     "title": "USCOTS 2023 Quarto Workshop",
     "section": "Anatomy of a code chunk",
-    "text": "Anatomy of a code chunk\n\n\n\n```{r}\n#| label: penguin-species\n#| message: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\npenguins |> \n  distinct(species)\n```\n\n# A tibble: 3 × 1\n  species  \n  <fct>    \n1 Adelie   \n2 Gentoo   \n3 Chinstrap\n\n\n\n\nHas 3x backticks on each end\nEngine (r) is indicated between curly braces {r}\nOptions stated with the #| (hashpipe): #| option1: value\n\n\n\n\n\n\n\n\nDifferent from RMarkdown formatting!\n\n\n\nNotice the options here are not inside the {} but inside the code chunk! Where previously we had:\n{r, echo = FALSE, message = FALSE, fig.align = \"center\"}\nnow we have:\n{r}\n#| echo: false\n#| message: false\n#| fig-align: center"
+    "text": "Anatomy of a code chunk\n\n\n\n```{r}\n#| label: penguin-species\n#| message: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\npenguins |> \n  distinct(species)\n```\n\n# A tibble: 3 × 1\n  species  \n  <fct>    \n1 Adelie   \n2 Gentoo   \n3 Chinstrap\n\n\n\n\nHas 3x backticks on each end\nEngine (r) is indicated between curly braces {r}\nOptions stated with the #| (hashpipe): #| option1: value\n\n\n\n\n\n\n\n\nDifferent from RMarkdown formatting!\n\n\nNotice the options here are not inside the {} but inside the code chunk! Where previously we had:\n{r, echo = FALSE, message = FALSE, fig.align = \"center\"}\nnow we have:\n{r}\n#| echo: false\n#| message: false\n#| fig-align: center"
   },
   {
     "objectID": "materials/02-quarto-docs.html#text-formatting",
@@ -238,11 +252,11 @@
     "text": "Additional YAML Options\n\n---\nformat: \n  html:\n    code-fold: true\n---\n\nNotice!\n\nhtml: is now on a new line\nthis line is below format: and indented\nthe HTML formatting options are on their own line\nthese lines are below html: and indented"
   },
   {
-    "objectID": "materials/05-styling-quarto-presentations.html#section",
-    "href": "materials/05-styling-quarto-presentations.html#section",
+    "objectID": "materials/05-styling-quarto-presentations.html#background-imageimages05-style-crop.png-background-positioncenter-background-sizecover-aria-labela-picture-of-thefab-5-from-queer-eye-looking-as-sylish-as-ever.",
+    "href": "materials/05-styling-quarto-presentations.html#background-imageimages05-style-crop.png-background-positioncenter-background-sizecover-aria-labela-picture-of-thefab-5-from-queer-eye-looking-as-sylish-as-ever.",
     "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "Styling Quarto Presentations"
+    "section": "{background-image=“images/05-style-crop.png” background-position=“center” background-size=“cover” aria-label=“A picture of the”Fab 5” from Queer Eye, looking as sylish as ever.”}",
+    "text": "{background-image=“images/05-style-crop.png” background-position=“center” background-size=“cover” aria-label=“A picture of the”Fab 5” from Queer Eye, looking as sylish as ever.”}\n\nStyling Quarto Presentations"
   },
   {
     "objectID": "materials/05-styling-quarto-presentations.html#themes",
@@ -515,7 +529,7 @@
     "href": "materials/06-version-control.html#other-gitgithub-implementations",
     "title": "Introduction to Version Control",
     "section": "Other Git/GitHub implementations",
-    "text": "Other Git/GitHub implementations\n\n\nEverything we just did through RStudio can be done from the command line (ew?)\nGitHub Desktop is a wonderful and lightweight application for all of our Git/GitHub-related needs that works independent of any other application"
+    "text": "Other Git/GitHub implementations\n\n\nEverything we just did through RStudio can be done from the command line (ew?)\nGitHub Desktop is a wonderful and lightweight application for all of our Git/GitHub-related needs that works independent of any other application\n\n\n\n\n\nUSCOTS Quarto Workshop"
   },
   {
     "objectID": "materials/03-styling-quarto-docs.html#section-headers",
@@ -641,42 +655,7 @@
     "href": "resources/stat2-lab-1.html",
     "title": "Welcome to Posit Cloud!",
     "section": "",
-    "text": "This is a Quarto document!\nQuarto is a software that allows you to interweave text and R code to create HTML, PDF, and Microsoft Word documents\nThere are two ways to view a Quarto document, (1) as the “Source” file, or (2) as the “Visual” file. We will only use the Visual option in this class, as it allows you to interact with Quarto similar to how you interact with Word.\n\n\nSimilar to a Word Doc, there are a variety of ways you can spice up a Quarto document! Let’s explore a few.\nQuestion 1: Using the formatting options, make a numbered list of your top three favorite animals.\nQuestion 2: Using the formatting options, insert an image of your favorite animal.\nQuestion 3: Now, change the “Formatting your Document” section name to the name of your favorite animal. Make sure your header is a level 1 – use the Header 1 formatting option!\n\n\n\nYou can differentiate the R code within a Quarto file from the body of the document, based on the gray boxes that start with an {r}.\nHere is an example of an R code chunk:\nNotice that after the {r} there is a name (packages), that is the name of the code chunk. It is good practice to name your code chunks based on the action they perform. It makes it easier to navigate to them in the navigation pane.\nThis code chunk has three things we want to pay attention to:\n\nThe #| include: false option at the beginning of the code chunk. We use these options to control how the code output looks in our final rendered document.\nThe library(tidyverse) code loads in an R package called the “tidyverse”. This is code you will have in every lab assignment for this class!\nCode comments which are denoted by a ## symbol. Code comments are a way for you (and me) to write what the code is doing, without R thinking what we are writing is code it should execute.\n\n\n\n\nWhen you click the Render button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.\nQuestion 4: Do you see the above code chunk when you knit the document? Why do you think this is the case?\n\n\n\nYou can include code output in your knitted document:\n\nglimpse(mpg)\n\nRows: 234\nColumns: 11\n$ manufacturer &lt;chr&gt; \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"…\n$ model        &lt;chr&gt; \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4 quattro\", \"…\n$ displ        &lt;dbl&gt; 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2.0, 2.…\n$ year         &lt;int&gt; 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 1999, 200…\n$ cyl          &lt;int&gt; 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, …\n$ trans        &lt;chr&gt; \"auto(l5)\", \"manual(m5)\", \"manual(m6)\", \"auto(av)\", \"auto…\n$ drv          &lt;chr&gt; \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"4\", \"4\", \"4\", \"4\", \"4…\n$ cty          &lt;int&gt; 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17, 17, 1…\n$ hwy          &lt;int&gt; 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25, 25, 2…\n$ fl           &lt;chr&gt; \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p…\n$ class        &lt;chr&gt; \"compact\", \"compact\", \"compact\", \"compact\", \"compact\", \"c…\n\n\nQuestion 5: What do you think the above code does? What type of output does it give you?\nHint: You have saw this type of output earlier today!\n\n\n\n\nYou can also embed plots in the rendered document.\nHere is an example of a plot.\n\n\n\n\n\nQuestion 6: What do you think the echo: false option does in the above code chunk?\nQuestion 7: What do you think the mapping = aes(y = manufacturer, x = hwy)) code does?\nQuestion 8: What do you think the labs(x = \"Highway Miles Per Gallon\", y = \"Car Manufacturer\") code does?"
-  },
-  {
-    "objectID": "resources/stat2-lab-1.html#formatting-your-document",
-    "href": "resources/stat2-lab-1.html#formatting-your-document",
-    "title": "Welcome to Posit Cloud!",
-    "section": "",
-    "text": "Similar to a Word Doc, there are a variety of ways you can spice up a Quarto document! Let’s explore a few.\nQuestion 1: Using the formatting options, make a numbered list of your top three favorite animals.\nQuestion 2: Using the formatting options, insert an image of your favorite animal.\nQuestion 3: Now, change the “Formatting your Document” section name to the name of your favorite animal. Make sure your header is a level 1 – use the Header 1 formatting option!"
-  },
-  {
-    "objectID": "resources/stat2-lab-1.html#r-code",
-    "href": "resources/stat2-lab-1.html#r-code",
-    "title": "Welcome to Posit Cloud!",
-    "section": "",
-    "text": "You can differentiate the R code within a Quarto file from the body of the document, based on the gray boxes that start with an {r}.\nHere is an example of an R code chunk:\nNotice that after the {r} there is a name (packages), that is the name of the code chunk. It is good practice to name your code chunks based on the action they perform. It makes it easier to navigate to them in the navigation pane.\nThis code chunk has three things we want to pay attention to:\n\nThe #| include: false option at the beginning of the code chunk. We use these options to control how the code output looks in our final rendered document.\nThe library(tidyverse) code loads in an R package called the “tidyverse”. This is code you will have in every lab assignment for this class!\nCode comments which are denoted by a ## symbol. Code comments are a way for you (and me) to write what the code is doing, without R thinking what we are writing is code it should execute."
-  },
-  {
-    "objectID": "resources/stat2-lab-1.html#rendering",
-    "href": "resources/stat2-lab-1.html#rendering",
-    "title": "Welcome to Posit Cloud!",
-    "section": "",
-    "text": "When you click the Render button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.\nQuestion 4: Do you see the above code chunk when you knit the document? Why do you think this is the case?"
-  },
-  {
-    "objectID": "resources/stat2-lab-1.html#including-code-output",
-    "href": "resources/stat2-lab-1.html#including-code-output",
-    "title": "Welcome to Posit Cloud!",
-    "section": "",
-    "text": "You can include code output in your knitted document:\n\nglimpse(mpg)\n\nRows: 234\nColumns: 11\n$ manufacturer &lt;chr&gt; \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"…\n$ model        &lt;chr&gt; \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4 quattro\", \"…\n$ displ        &lt;dbl&gt; 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2.0, 2.…\n$ year         &lt;int&gt; 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 1999, 200…\n$ cyl          &lt;int&gt; 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, …\n$ trans        &lt;chr&gt; \"auto(l5)\", \"manual(m5)\", \"manual(m6)\", \"auto(av)\", \"auto…\n$ drv          &lt;chr&gt; \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"4\", \"4\", \"4\", \"4\", \"4…\n$ cty          &lt;int&gt; 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17, 17, 1…\n$ hwy          &lt;int&gt; 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25, 25, 2…\n$ fl           &lt;chr&gt; \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p…\n$ class        &lt;chr&gt; \"compact\", \"compact\", \"compact\", \"compact\", \"compact\", \"c…\n\n\nQuestion 5: What do you think the above code does? What type of output does it give you?\nHint: You have saw this type of output earlier today!"
-  },
-  {
-    "objectID": "resources/stat2-lab-1.html#including-plots",
-    "href": "resources/stat2-lab-1.html#including-plots",
-    "title": "Welcome to Posit Cloud!",
-    "section": "",
-    "text": "You can also embed plots in the rendered document.\nHere is an example of a plot.\n\n\n\n\n\nQuestion 6: What do you think the echo: false option does in the above code chunk?\nQuestion 7: What do you think the mapping = aes(y = manufacturer, x = hwy)) code does?\nQuestion 8: What do you think the labs(x = \"Highway Miles Per Gallon\", y = \"Car Manufacturer\") code does?"
+    "text": "This is a Quarto document!\nQuarto is a software that allows you to interweave text and R code to create HTML, PDF, and Microsoft Word documents\nThere are two ways to view a Quarto document, (1) as the “Source” file, or (2) as the “Visual” file. We will only use the Visual option in this class, as it allows you to interact with Quarto similar to how you interact with Word.\n\n\nSimilar to a Word Doc, there are a variety of ways you can spice up a Quarto document! Let’s explore a few.\nQuestion 1: Using the formatting options, make a numbered list of your top three favorite animals.\nQuestion 2: Using the formatting options, insert an image of your favorite animal.\nQuestion 3: Now, change the “Formatting your Document” section name to the name of your favorite animal. Make sure your header is a level 1 – use the Header 1 formatting option!\n\n\n\nYou can differentiate the R code within a Quarto file from the body of the document, based on the gray boxes that start with an {r}.\nHere is an example of an R code chunk:\nNotice that after the {r} there is a name (packages), that is the name of the code chunk. It is good practice to name your code chunks based on the action they perform. It makes it easier to navigate to them in the navigation pane.\nThis code chunk has three things we want to pay attention to:\n\nThe #| include: false option at the beginning of the code chunk. We use these options to control how the code output looks in our final rendered document.\nThe library(tidyverse) code loads in an R package called the “tidyverse”. This is code you will have in every lab assignment for this class!\nCode comments which are denoted by a ## symbol. Code comments are a way for you (and me) to write what the code is doing, without R thinking what we are writing is code it should execute.\n\n\n\n\nWhen you click the Render button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.\nQuestion 4: Do you see the above code chunk when you knit the document? Why do you think this is the case?\n\n\n\nYou can include code output in your knitted document:\n\nglimpse(mpg)\n\nRows: 234\nColumns: 11\n$ manufacturer <chr> \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"…\n$ model        <chr> \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4 quattro\", \"…\n$ displ        <dbl> 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2.0, 2.…\n$ year         <int> 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 1999, 200…\n$ cyl          <int> 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, …\n$ trans        <chr> \"auto(l5)\", \"manual(m5)\", \"manual(m6)\", \"auto(av)\", \"auto…\n$ drv          <chr> \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"4\", \"4\", \"4\", \"4\", \"4…\n$ cty          <int> 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17, 17, 1…\n$ hwy          <int> 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25, 25, 2…\n$ fl           <chr> \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p…\n$ class        <chr> \"compact\", \"compact\", \"compact\", \"compact\", \"compact\", \"c…\n\n\nQuestion 5: What do you think the above code does? What type of output does it give you?\nHint: You have saw this type of output earlier today!\n\n\n\n\nYou can also embed plots in the rendered document.\nHere is an example of a plot.\n\n\n\n\n\nQuestion 6: What do you think the echo: false option does in the above code chunk?\nQuestion 7: What do you think the mapping = aes(y = manufacturer, x = hwy)) code does?\nQuestion 8: What do you think the labs(x = \"Highway Miles Per Gallon\", y = \"Car Manufacturer\") code does?"
   },
   {
     "objectID": "resources/stat2-week1-day1.html#section",
@@ -847,13 +826,6 @@
     "text": "Each Thursday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Canvas (one submission per group). The questions to be submitted on Canvas are bolded in the lab. As you work through the lab with your group have the Canvas lab assignment open so that you can answer those questions as you go. Today’s activity is Lab 1 in Canvas for practice submitting as a group."
   },
   {
-    "objectID": "resources/stat1-lab-1.html#general-information-on-thursday-labs",
-    "href": "resources/stat1-lab-1.html#general-information-on-thursday-labs",
-    "title": "Welcome to RStudio Cloud!",
-    "section": "",
-    "text": "Each Thursday you will complete a lab in class with your group. Questions are selected from each lab to be turned in on Canvas (one submission per group). The questions to be submitted on Canvas are bolded in the lab. As you work through the lab with your group have the Canvas lab assignment open so that you can answer those questions as you go. Today’s activity is Lab 1 in Canvas for practice submitting as a group."
-  },
-  {
     "objectID": "resources/stat1-lab-1.html#what-is-this-document",
     "href": "resources/stat1-lab-1.html#what-is-this-document",
     "title": "Welcome to RStudio Cloud!",
@@ -886,14 +858,14 @@
     "href": "resources/stat1-lab-1.html#including-plots",
     "title": "Welcome to RStudio Cloud!",
     "section": "Including Plots",
-    "text": "Including Plots\nYou can also embed plots in the knitted document.\nHere is an example of a plot:\nQuestion 5: What do you think the echo: false option does in the above code chunk?"
+    "text": "Including Plots\nYou can also embed plots in the knitted document.\nHere is an example of a plot:\n\n\n\nQuestion 5: What do you think the echo: false option does in the above code chunk?"
   },
   {
     "objectID": "resources/stat1-lab-1.html#loading-data-into-r",
     "href": "resources/stat1-lab-1.html#loading-data-into-r",
     "title": "Welcome to RStudio Cloud!",
     "section": "Loading Data into R",
-    "text": "Loading Data into R\nYou can load data files into R using functions from different packages. You will learn that the function you use depends on what format the data are in. Today, we will work with data that are stored in a Comma Separated Values file (a CSV). For this format of data, we will use the read_csv() function to read in our data.\nThe data are located in the data folder of your project. To load in the data, we need to specify the “path” to the data, or where R needs to look for the data. I like to use the here() function from the here package to read in data, because I find the format intuitive. I’ll walk you through what the code below is doing.\n\nbroadway &lt;- read_csv(\n  here(\"resources\", \n       \"data\", \n       \"broadway.csv\")\n                     )\n\n\nbroadway is the name of the object we are storing the dataset into\nThe &lt;- “assigns” the output of the read_csv() function into the broadway object\nread_csv() is a function that reads in our csv data file\nhere() is a function that specifies where the data live\n\"data\" is the name of the folder the data live in\n\"broadway.csv\" is the name of the dataset\n\nClick on the broadway dataset in the upper righthand corner to open up a data viewer for you to look over the dataset.\nQuestion 6: Based on your inspection of the data, what are the observations / cases in these data?\nQuestion 7: What are the variables in these data?"
+    "text": "Loading Data into R\nYou can load data files into R using functions from different packages. You will learn that the function you use depends on what format the data are in. Today, we will work with data that are stored in a Comma Separated Values file (a CSV). For this format of data, we will use the read_csv() function to read in our data.\nThe data are located in the data folder of your project. To load in the data, we need to specify the “path” to the data, or where R needs to look for the data. I like to use the here() function from the here package to read in data, because I find the format intuitive. I’ll walk you through what the code below is doing.\n\nbroadway <- read_csv(\n  here(\"resources\", \n       \"data\", \n       \"broadway.csv\")\n                     )\n\n\nbroadway is the name of the object we are storing the dataset into\nThe <- “assigns” the output of the read_csv() function into the broadway object\nread_csv() is a function that reads in our csv data file\nhere() is a function that specifies where the data live\n\"data\" is the name of the folder the data live in\n\"broadway.csv\" is the name of the dataset\n\nClick on the broadway dataset in the upper righthand corner to open up a data viewer for you to look over the dataset.\nQuestion 6: Based on your inspection of the data, what are the observations / cases in these data?\nQuestion 7: What are the variables in these data?"
   },
   {
     "objectID": "resources/stat1-lab-1.html#lab-submission",
@@ -1085,13 +1057,6 @@
     "text": "by: Hunter Glanz, Emily Robinson & Allison Theobold"
   },
   {
-    "objectID": "index.html#reproducible-documents-presentations-and-websites-with-quarto",
-    "href": "index.html#reproducible-documents-presentations-and-websites-with-quarto",
-    "title": "USCOTS 2023 Workshop",
-    "section": "",
-    "text": "by: Hunter Glanz, Emily Robinson & Allison Theobold"
-  },
-  {
     "objectID": "index.html#workshop-description",
     "href": "index.html#workshop-description",
     "title": "USCOTS 2023 Workshop",
@@ -1118,54 +1083,5 @@
     "title": "Workshop Presenters",
     "section": "",
     "text": "Hunter Glanz is an Associate Professor of Statistics at Cal Poly. He maintains a passion for machine learning, statistical computing, and data science, and enjoys advancing education efforts in these areas. In particular, Cal Poly’s courses in R, SAS, and Python give him the opportunity to connect students with exciting data science topics amid a firm grounding in communication of statistical ideas. Hunter serves on numerous committees and organizations dedicated to delivering cutting edge statistical and data science content to students and professionals alike.\n\n\n\nEmily Robinson is an Assistant Professor of Statistics at Cal Poly. Emily’s involves graphical testing and evaluating the perceptual and cognitive implications of design choices in data visualization in order to more effectively communicate data and science to a variety of audiences. Emily is also interested in exploring how to bring visuals into the classroom.\n\n\n\nAllison Theobold is an Assistant Professor of Statistics at Cal Poly. Allison’s work focuses on innovation in statistics and data science education, with an emphasis on equitable pedagogy and learning trajectories. Allison is also interested in exploring pedagogical approaches for enhancing retention of under-represented students in STEM, including creating inclusive discoursive spaces and equitable group collaborations."
-  },
-  {
-    "objectID": "materials/00-introductions.html#section-1",
-    "href": "materials/00-introductions.html#section-1",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "We are assuming\n\n\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto\n\n\n\n\n\nWe’ll teach you about\n\n\nQuarto documents\nQuarto presentations\nStyling documents & presentations\nOptions for publishing your content"
-  },
-  {
-    "objectID": "materials/05-styling-quarto-presentations.html#background-imageimages05-style-crop.png-background-positioncenter-background-sizecover-aria-labela-picture-of-thefab-5-from-queer-eye-looking-as-sylish-as-ever.",
-    "href": "materials/05-styling-quarto-presentations.html#background-imageimages05-style-crop.png-background-positioncenter-background-sizecover-aria-labela-picture-of-thefab-5-from-queer-eye-looking-as-sylish-as-ever.",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "{background-image=“images/05-style-crop.png” background-position=“center” background-size=“cover” aria-label=“A picture of the”Fab 5” from Queer Eye, looking as sylish as ever.”}",
-    "text": "{background-image=“images/05-style-crop.png” background-position=“center” background-size=“cover” aria-label=“A picture of the”Fab 5” from Queer Eye, looking as sylish as ever.”}\n\nStyling Quarto Presentations"
-  },
-  {
-    "objectID": "materials/01-rstudio-refresher.html",
-    "href": "materials/01-rstudio-refresher.html",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "Hello RStudio (the IDE)"
-  },
-  {
-    "objectID": "materials/04-quarto-presentations.html",
-    "href": "materials/04-quarto-presentations.html",
-    "title": "Introduction to Quarto Presentations",
-    "section": "",
-    "text": "What is a Quarto Presentation?\n\nMostly a Quarto Document, but with a different output format and a few other small differences\n\n\n\n\n\nrevealjs: reveal.js (HTML or PDF)\npptx: PowerPoint (MS Office)\nbeamer: Beamer (LaTeX/PDF)"
-  },
-  {
-    "objectID": "materials/02-quarto-docs.html",
-    "href": "materials/02-quarto-docs.html",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "Hello Quarto"
-  },
-  {
-    "objectID": "materials/02-quarto-docs.html#section-1",
-    "href": "materials/02-quarto-docs.html#section-1",
-    "title": "USCOTS 2023 Quarto Workshop",
-    "section": "",
-    "text": "}"
-  },
-  {
-    "objectID": "materials/06-version-control.html",
-    "href": "materials/06-version-control.html",
-    "title": "Introduction to Version Control",
-    "section": "",
-    "text": "What is Version Control?\n\nThe practice of tracking and managing changes to software code\n\n\n\n\n\n\nGrown to include more than just software code (e.g. documents)!\nVersion control systems are software tools that help teams manage changes to materials over time."
   }
 ]
