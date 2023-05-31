@@ -11,7 +11,7 @@ format:
 editor: source
 ---
 
-##  {background-image="images/05-style-crop.png" background-position="center" background-size="cover" aria-label="A picture of the "Fab 5" from Queer Eye, looking as sylish as ever."}
+##  {background-image="images/05-style-crop.png" background-position="center" background-size="cover" aria-label="A picture of the Fab 5 from Queer Eye, looking as sylish as ever."}
 
 ::: {style="font-size: 6em; color: #FFFFFF;"}
 Styling Quarto Presentations
